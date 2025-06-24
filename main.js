@@ -2,7 +2,8 @@ document.getElementById("submitButton").addEventListener("click", () => {
   const postcode = document.getElementById("postcodeInput").value.toUpperCase().trim();
 
   // You need a lookup table or hash to map which batch JSON file contains this postcode
-  const batchFile = determineBatchFile(postcode); // replace this with real logic
+  const postcode = document.getElementById("postcodeInput").value.toUpperCase().replace(/\s+/g, '');
+
 
   fetch(`${batchFile}.json`)
     .then((response) => {
