@@ -13,6 +13,26 @@
   box-shadow: 0 2px 6px rgba(0,0,0,0.3);
   font-family: 'Inter', sans-serif;
 }
+.card-wrap {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
+
+.insight-card {
+  background: #111;
+  border-left: 5px solid #00ffae;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 255, 174, 0.2);
+  text-align: left;
+  animation: fadeIn 0.6s ease-out;
+}
 
 .insight-title {
   font-size: 1rem;
