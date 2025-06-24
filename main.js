@@ -50,7 +50,7 @@ document.getElementById("submitButton").addEventListener("click", () => {
         if (items) {
           html += `<h3 class='insight-subtitle'>Media Index for ${segment.type}</h3>`;
           html += items
-            .filter((it) => it.index >= 900)
+            .filter((it) => it.index >= 200)
             .map(
               (it) => `
           <div class="insight-card" data-aos="fade-up">
@@ -63,6 +63,20 @@ document.getElementById("submitButton").addEventListener("click", () => {
             .join("");
         }
       });
+
+      const budget = parseFloat(document.getElementById("budgetInput").value) || 0;
+      const { totalIndex, distribution } = calculateBudgetDistribution(entries, media, budget);
+      html += `<h3 class='insight-subtitle'>Total Media Index: ${totalIndex}</h3>`;
+      html += Object.entries(distribution)
+        .map(
+          ([channel, info]) => `
+          <div class="insight-card" data-aos="fade-up">
+            <div class="insight-title">${channel}</div>
+            <div class="insight-index">Budget £${info.budget.toFixed(2)}</div>
+          </div>
+        `
+        )
+        .join("");
 
       // Area 3: Summary CTA
       html += `</div><button id="resetButton" class="reset-btn">Try another postcode</button>`;
