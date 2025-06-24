@@ -1,0 +1,34 @@
+{
+  "B Prestige Positions (15+)": [
+    {
+      "channel": "Digital Display",
+      "index": 1280,
+      "message": "Affluent professionals with high engagement in online advertising."
+    },
+    {
+      "channel": "Print Magazines",
+      "index": 1020,
+      "message": "Regular readers of lifestyle magazines."
+    }
+  ],
+  "A02 Uptown Elite (15+)": [
+    {
+      "channel": "Outdoor Advertising",
+      "index": 1100,
+      "message": "Often commute through premium billboard locations."
+    },
+    {
+      "channel": "Streaming TV",
+      "index": 1250,
+      "message": "Heavy users of subscription streaming services."
+    }
+  ],
+  "K Municipal Tenants (15+)": [
+    {
+      "channel": "Local Radio",
+      "index": 970,
+      "message": "Frequent listeners of community stations."
+    }
+  ]
+}
+
