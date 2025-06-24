@@ -21,20 +21,22 @@ document.getElementById("submitButton").addEventListener("click", () => {
       }
 
       const entries = data[postcode];
-      let html = `<h2>Insights for ${postcode}</h2><div class='card-wrap'>`;
+      let html = `<h2>Insights for <span class="highlight">${postcode}</span></h2><div class="card-wrap">`;
 
       entries.forEach((entry) => {
         const channel = entry.channel || entry.type || "Unknown";
-        const index = entry.index !== undefined ? entry.index : entry.count || "—";
+        const count = entry.count !== undefined ? entry.count : entry.index || "—";
         const message = entry.message || "";
+
         html += `
-          <div class="insight-card">
+          <div class="insight-card compact">
             <div class="insight-title">${channel}</div>
-            <div class="insight-index">Index = ${index}</div>
-            <div class="insight-message">${message}</div>
+            <div class="insight-index">Count = ${count}</div>
+            ${message ? `<div class="insight-message">${message}</div>` : ""}
           </div>
         `;
       });
+
       html += `</div><button id="resetButton" class="reset-btn">Try another postcode</button>`;
       resultContainer.innerHTML = html;
 
