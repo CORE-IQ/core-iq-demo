@@ -1,16 +1,29 @@
 // main.js
 
+// Determine the base path for JSON files so it works when embedded
+// in an iframe or served from a subdirectory.
+const basePath = (() => {
+  const scripts = document.getElementsByTagName('script');
+  const current = scripts[scripts.length - 1].src || '';
+  return current.substring(0, current.lastIndexOf('/') + 1);
+})();
+
 document.getElementById("submitButton").addEventListener("click", () => {
   const rawInput = document.getElementById("postcodeInput").value;
-  const postcode = rawInput.toUpperCase().replace(/\s+/g, '');
+  const postcode = rawInput.toUpperCase().replace(/\s+/g, "");
   const batchFile = determineBatchFile(postcode);
 
-  fetch(`${batchFile}.json`)
-    .then((response) => {
-      if (!response.ok) throw new Error("File not found");
-      return response.json();
-    })
-    .then((data) => {
+  const postcodeData = fetch(`${basePath}${batchFile}.json`).then((r) => {
+    if (!r.ok) throw new Error("File not found");
+    return r.json();
+  });
+
+  const mediaData = fetch(`${basePath}media.json`).then((r) => {
+    if (!r.ok) throw new Error("Media file not found");
+    return r.json();
+  });
+
+  Promise.all([postcodeData, mediaData]).then(([data, media]) => {
       const resultContainer = document.getElementById("resultContainer");
       resultContainer.classList.remove("hidden");
       resultContainer.innerHTML = "";
@@ -24,24 +37,40 @@ document.getElementById("submitButton").addEventListener("click", () => {
       }
 
       const entries = data[postcode];
+      const highSegments = entries.filter((e) => e.type && e.count >= 900);
       let html = `<h2 class="result-heading">Insights for ${postcode}</h2><div class='card-wrap'>`;
 
       // Area 1: Mosaic Segments
-      html += entries.filter(entry => entry.type && entry.count >= 900).map(entry => `
+      html += highSegments
+        .map(
+          (entry) => `
         <div class="insight-card" data-aos="fade-up">
           <div class="insight-title">${entry.type}</div>
-          <div class="insight-index">Count = ${entry.count ?? '—'}</div>
+          <div class="insight-index">Count = ${entry.count ?? "—"}</div>
         </div>
-      `).join('');
+      `
+        )
+        .join("");
 
-      // Area 2: Media Weighting
-      html += entries.filter(entry => entry.channel && entry.index >= 900).map(entry => `
-        <div class="insight-card" data-aos="fade-up">
-          <div class="insight-title">${entry.channel}</div>
-          <div class="insight-index">Index = ${entry.index ?? '—'}</div>
-          <div class="insight-message">${entry.message ?? ''}</div>
-        </div>
-      `).join('');
+      // Area 2: Media Weighting from separate file
+      highSegments.forEach((segment) => {
+        const items = media[segment.type];
+        if (items) {
+          html += `<h3 class='insight-subtitle'>Media Index for ${segment.type}</h3>`;
+          html += items
+            .filter((it) => it.index >= 900)
+            .map(
+              (it) => `
+          <div class="insight-card" data-aos="fade-up">
+            <div class="insight-title">${it.channel}</div>
+            <div class="insight-index">Index = ${it.index ?? "—"}</div>
+            <div class="insight-message">${it.message ?? ""}</div>
+          </div>
+        `
+            )
+            .join("");
+        }
+      });
 
       // Area 3: Summary CTA
       html += `</div><button id="resetButton" class="reset-btn">Try another postcode</button>`;
