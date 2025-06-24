@@ -67,3 +67,10 @@
 .reset-btn:hover {
   background: #00cc8a;
 }
+
+.insight-subtitle {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  color: #fff;
+}
