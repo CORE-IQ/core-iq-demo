@@ -57,7 +57,9 @@ document.getElementById("submitButton").addEventListener("click", () => {
 
       const buffer = 150;
       const resultTop = document.getElementById("resultContainer").offsetTop;
-      window.scrollTo({ top: resultTop - buffer, behavior: 'smooth' });
+      const offsetTop = document.getElementById("resultContainer").getBoundingClientRect().top + window.scrollY;
+
+
 
     })
     .catch((error) => {
