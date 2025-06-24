@@ -27,7 +27,7 @@ document.getElementById("submitButton").addEventListener("click", () => {
       let html = `<h2 class="result-heading">Insights for ${postcode}</h2><div class='card-wrap'>`;
 
       // Area 1: Mosaic Segments
-      html += entries.filter(entry => entry.type && entry.count >= 500).map(entry => `
+      html += entries.filter(entry => entry.type && entry.count >= 700).map(entry => `
         <div class="insight-card" data-aos="fade-up">
           <div class="insight-title">${entry.type}</div>
           <div class="insight-index">Count = ${entry.count ?? '—'}</div>
