@@ -1,19 +1,4 @@
 .card-wrap {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin-top: 24px;
-}
-
-.insight-card {
-  background: #111;
-  border-left: 4px solid #00ffae;
-  padding: 16px 20px;
-  border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-  font-family: 'Inter', sans-serif;
-}
-.card-wrap {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
@@ -66,4 +51,11 @@
 
 .reset-btn:hover {
   background: #00cc8a;
+}
+
+.insight-subtitle {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  color: #fff;
 }
