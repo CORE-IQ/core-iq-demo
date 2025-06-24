@@ -1,3 +1,5 @@
+// main.js
+
 document.getElementById("submitButton").addEventListener("click", () => {
   const rawInput = document.getElementById("postcodeInput").value;
   const postcode = rawInput.toUpperCase().replace(/\s+/g, '');
@@ -11,59 +13,58 @@ document.getElementById("submitButton").addEventListener("click", () => {
     .then((data) => {
       const resultContainer = document.getElementById("resultContainer");
       resultContainer.classList.remove("hidden");
-      resultContainer.innerHTML = '';
+      resultContainer.innerHTML = "";
 
       if (!data[postcode]) {
-        resultContainer.innerHTML = `<p>No data found for postcode <strong>${postcode}</strong>.</p>`;
+        resultContainer.innerHTML = `
+          <div class="centered-card">
+            <p>No data found for postcode <strong>${postcode}</strong>.</p>
+          </div>`;
         return;
       }
 
       const entries = data[postcode];
-      let html = `<h2 style="margin-bottom: 1rem;">Insights for ${postcode}</h2><div class="card-wrap">`;
+      let html = `<h2 class="result-heading">Insights for ${postcode}</h2><div class='card-wrap'>`;
 
-      entries.forEach((entry) => {
-        const type = entry.type || entry.channel || "Unknown";
-        const count = entry.count !== undefined ? entry.count : "—";
-        const index = entry.index !== undefined ? entry.index : "—";
-        const message = entry.message || "";
+      // Area 1: Mosaic Segments
+      html += entries.filter(entry => entry.type).map(entry => `
+        <div class="insight-card" data-aos="fade-up">
+          <div class="insight-title">${entry.type}</div>
+          <div class="insight-index">Count = ${entry.count ?? '—'}</div>
+        </div>
+      `).join('');
 
-        html += `
-          <div class="insight-card">
-            <div class="insight-title">${type}</div>
-            <div class="insight-index">Count = ${count} — Index = ${index}</div>
-            ${message ? `<div class="insight-message">${message}</div>` : ""}
-          </div>
-        `;
-      });
+      // Area 2: Media Weighting
+      html += entries.filter(entry => entry.channel).map(entry => `
+        <div class="insight-card" data-aos="fade-up">
+          <div class="insight-title">${entry.channel}</div>
+          <div class="insight-index">Index = ${entry.index ?? '—'}</div>
+          <div class="insight-message">${entry.message ?? ''}</div>
+        </div>
+      `).join('');
 
+      // Area 3: Summary CTA
       html += `</div><button id="resetButton" class="reset-btn">Try another postcode</button>`;
       resultContainer.innerHTML = html;
 
-      // Add reset functionality
       document.getElementById("resetButton").addEventListener("click", () => {
-        document.getElementById("postcodeInput").value = '';
+        document.getElementById("postcodeInput").value = "";
         resultContainer.classList.add("hidden");
-        resultContainer.innerHTML = '';
+        resultContainer.innerHTML = "";
         document.getElementById("postcodeInput").focus();
         window.scrollTo({ top: 0, behavior: 'smooth' });
       });
 
-      // Scroll to results smoothly
-      window.scrollTo({
-        top: document.getElementById("resultContainer").offsetTop - 20,
-        behavior: 'smooth'
-      });
+      window.scrollTo({ top: document.getElementById("resultContainer").offsetTop - 50, behavior: 'smooth' });
     })
     .catch((error) => {
       console.error("Error loading data:", error);
-      const resultContainer = document.getElementById("resultContainer");
-      resultContainer.classList.remove("hidden");
-      resultContainer.innerHTML = `<p>There was an error loading insights.</p>`;
+      document.getElementById("resultContainer").innerHTML = `<p>There was an error loading insights.</p>`;
     });
 });
 
 function determineBatchFile(postcode) {
-  const firstLetter = postcode[0]?.toUpperCase() || '';
+  const firstLetter = postcode[0].toUpperCase();
   const map = {
     A: "1", B: "1", C: "2", D: "2", E: "3", F: "3",
     G: "4", H: "4", I: "5", J: "5", K: "6", L: "6",
