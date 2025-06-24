@@ -1,0 +1,29 @@
+[
+  {
+    "group": "SG1 Fitness Females",
+    "gender": "female",
+    "interests": ["gym", "yoga"],
+    "card": "virgin credit card",
+    "occupation": "finance",
+    "location": "Cardiff",
+    "index": 120
+  },
+  {
+    "group": "SG2 Urban Professionals",
+    "gender": "male",
+    "interests": ["basketball"],
+    "card": "amex",
+    "occupation": "technology",
+    "location": "London",
+    "index": 110
+  },
+  {
+    "group": "SG3 Rural Families",
+    "gender": "female",
+    "interests": ["gardening"],
+    "card": "visa",
+    "occupation": "education",
+    "location": "York",
+    "index": 95
+  }
+]
