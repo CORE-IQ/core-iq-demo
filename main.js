@@ -1,7 +1,8 @@
+// main.js
+
 document.getElementById("submitButton").addEventListener("click", () => {
   const rawInput = document.getElementById("postcodeInput").value;
   const postcode = rawInput.toUpperCase().replace(/\s+/g, '');
-
   const batchFile = determineBatchFile(postcode);
 
   fetch(`${batchFile}.json`)
@@ -12,6 +13,7 @@ document.getElementById("submitButton").addEventListener("click", () => {
     .then((data) => {
       const resultContainer = document.getElementById("resultContainer");
       resultContainer.classList.remove("hidden");
+      resultContainer.innerHTML = "";
 
       if (!data[postcode]) {
         resultContainer.innerHTML = `<p>No data found for postcode <strong>${postcode}</strong>.</p>`;
@@ -19,17 +21,29 @@ document.getElementById("submitButton").addEventListener("click", () => {
       }
 
       const entries = data[postcode];
-      let html = `<h2>Insights for <strong>${postcode}</strong></h2>`;
-      html += "<ul>";
+      let html = `<h2>Insights for ${postcode}</h2><div class='card-wrap'>`;
+
       entries.forEach((entry) => {
+        const channel = entry.channel || entry.type || "Unknown";
+        const index = entry.index !== undefined ? entry.index : entry.count || "—";
+        const message = entry.message || "";
         html += `
-          <li>
-            <strong>${entry.type}</strong><br/>
-            Index = ${entry.index} — ${entry.message || ''}
-          </li>`;
+          <div class="insight-card">
+            <div class="insight-title">${channel}</div>
+            <div class="insight-index">Index = ${index}</div>
+            <div class="insight-message">${message}</div>
+          </div>
+        `;
       });
-      html += "</ul>";
+      html += `</div><button id="resetButton" class="reset-btn">Try another postcode</button>`;
       resultContainer.innerHTML = html;
+
+      document.getElementById("resetButton").addEventListener("click", () => {
+        document.getElementById("postcodeInput").value = "";
+        resultContainer.classList.add("hidden");
+        resultContainer.innerHTML = "";
+        document.getElementById("postcodeInput").focus();
+      });
     })
     .catch((error) => {
       console.error("Error loading data:", error);
@@ -45,5 +59,5 @@ function determineBatchFile(postcode) {
     M: "7", N: "7", O: "8", P: "8", Q: "9", R: "9",
     S: "9", T: "9", U: "9", V: "9", W: "9", X: "9", Y: "9", Z: "9"
   };
-  return map[firstLetter] || "1"; // fallback to batch 1
+  return map[firstLetter] || "1";
 }
