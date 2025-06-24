@@ -55,7 +55,10 @@ document.getElementById("submitButton").addEventListener("click", () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
       });
 
-      window.scrollTo({ top: document.getElementById("resultContainer").offsetTop - 50, behavior: 'smooth' });
+      const buffer = 150;
+      const resultTop = document.getElementById("resultContainer").offsetTop;
+      window.scrollTo({ top: resultTop - buffer, behavior: 'smooth' });
+
     })
     .catch((error) => {
       console.error("Error loading data:", error);
