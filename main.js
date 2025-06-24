@@ -1,9 +1,8 @@
 document.getElementById("submitButton").addEventListener("click", () => {
-  const postcode = document.getElementById("postcodeInput").value.toUpperCase().trim();
+  const rawInput = document.getElementById("postcodeInput").value;
+  const postcode = rawInput.toUpperCase().replace(/\s+/g, '');
 
-  // You need a lookup table or hash to map which batch JSON file contains this postcode
-  const postcode = document.getElementById("postcodeInput").value.toUpperCase().replace(/\s+/g, '');
-
+  const batchFile = determineBatchFile(postcode);
 
   fetch(`${batchFile}.json`)
     .then((response) => {
@@ -15,7 +14,7 @@ document.getElementById("submitButton").addEventListener("click", () => {
       resultContainer.classList.remove("hidden");
 
       if (!data[postcode]) {
-        resultContainer.innerHTML = `<p>No data found for ${postcode}.</p>`;
+        resultContainer.innerHTML = `<p>No data found for postcode <strong>${postcode}</strong>.</p>`;
         return;
       }
 
@@ -34,7 +33,6 @@ document.getElementById("submitButton").addEventListener("click", () => {
     });
 });
 
-// Temporary example until we map properly:
 function determineBatchFile(postcode) {
   const firstLetter = postcode[0].toUpperCase();
   const map = {
@@ -43,5 +41,6 @@ function determineBatchFile(postcode) {
     M: "7", N: "7", O: "8", P: "8", Q: "9", R: "9",
     S: "9", T: "9", U: "9", V: "9", W: "9", X: "9", Y: "9", Z: "9"
   };
-  return map[firstLetter] || "1"; // default to "1.json"
+  return map[firstLetter] || "1"; // fallback
 }
+
