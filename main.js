@@ -1,5 +1,3 @@
-// main.js
-
 document.getElementById("submitButton").addEventListener("click", () => {
   const rawInput = document.getElementById("postcodeInput").value;
   const postcode = rawInput.toUpperCase().replace(/\s+/g, '');
@@ -21,18 +19,18 @@ document.getElementById("submitButton").addEventListener("click", () => {
       }
 
       const entries = data[postcode];
-      let html = `<h2>Insights for <span class="highlight">${postcode}</span></h2><div class="card-wrap">`;
+      let html = `<h2>Insights for ${postcode}</h2><div class="card-wrap">`;
 
       entries.forEach((entry) => {
         const channel = entry.channel || entry.type || "Unknown";
-        const count = entry.count !== undefined ? entry.count : entry.index || "—";
+        const count = entry.count !== undefined ? entry.count : "—";
         const message = entry.message || "";
 
         html += `
-          <div class="insight-card compact">
+          <div class="insight-card">
             <div class="insight-title">${channel}</div>
             <div class="insight-index">Count = ${count}</div>
-            ${message ? `<div class="insight-message">${message}</div>` : ""}
+            ${message ? `<div class="insight-message">${message}</div>` : ''}
           </div>
         `;
       });
