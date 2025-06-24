@@ -51,7 +51,8 @@
       color: #ccc;
     }
 
-    input[type="text"] {
+    input[type="text"],
+    input[type="number"] {
       padding: 12px 20px;
       border-radius: 12px;
       border: none;
@@ -131,10 +132,12 @@
     <h1>Find Your Audience Profile</h1>
     <p>Enter your UK postcode or US ZIP code to get matched with your Experian Mosaic group and media consumption insight.</p>
     <input type="text" id="postcodeInput" placeholder="Enter postcode or ZIP" />
+    <input type="number" id="budgetInput" placeholder="Budget (£)" />
     <button id="submitButton">GET INSIGHTS</button>
     <div id="resultContainer" class="hidden"></div>
   </div>
 
+  <script src="budget.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
