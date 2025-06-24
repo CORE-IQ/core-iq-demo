@@ -35,7 +35,7 @@ document.getElementById("submitButton").addEventListener("click", () => {
       `).join('');
 
       // Area 2: Media Weighting
-      html += entries.filter(entry => entry.channel && entry.index >= 500).map(entry => `
+      html += entries.filter(entry => entry.channel && entry.index >= 700).map(entry => `
         <div class="insight-card" data-aos="fade-up">
           <div class="insight-title">${entry.channel}</div>
           <div class="insight-index">Index = ${entry.index ?? '—'}</div>
