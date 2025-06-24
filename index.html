@@ -1,24 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CORE-IQ™ Postcode Lookup</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <div class="container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CORE-IQ™ Postcode Lookup</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+        background-color: #000;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+        min-height: 100vh;
+      }
+
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+      }
+
+      p {
+        color: #aaa;
+        margin-bottom: 30px;
+        text-align: center;
+        max-width: 600px;
+      }
+
+      input {
+        padding: 12px;
+        border: none;
+        border-radius: 8px;
+        margin-right: 10px;
+        width: 220px;
+        max-width: 60vw;
+        font-size: 1rem;
+      }
+
+      button {
+        padding: 12px 18px;
+        background-color: #00ffae;
+        color: #000;
+        border: none;
+        border-radius: 8px;
+        font-weight: 600;
+        cursor: pointer;
+        font-size: 1rem;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      .card-wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 30px;
+        max-width: 700px;
+        width: 100%;
+      }
+
+      .insight-card {
+        background-color: #111;
+        border-left: 6px solid #00ffae;
+        padding: 16px 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 255, 174, 0.1);
+        transition: background 0.3s ease;
+      }
+
+      .insight-card:hover {
+        background-color: #1a1a1a;
+      }
+
+      .insight-title {
+        font-weight: 700;
+        font-size: 1rem;
+        margin-bottom: 4px;
+      }
+
+      .insight-index,
+      .insight-message {
+        font-size: 0.9rem;
+        color: #ccc;
+      }
+
+      #resetButton {
+        margin-top: 32px;
+        background: #00ffae;
+        color: #000;
+        font-weight: 600;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        display: inline-block;
+      }
+
+      @media (max-width: 500px) {
+        input {
+          margin-bottom: 10px;
+          width: 100%;
+        }
+
+        button {
+          width: 100%;
+        }
+
+        .card-wrap {
+          gap: 12px;
+        }
+      }
+    </style>
+  </head>
+  <body>
     <h1>Find Your Audience Profile</h1>
     <p>
-      Enter your UK postcode or US ZIP code to get matched with your Experian
-      Mosaic group and media consumption insight.
+      Enter your UK postcode or US ZIP code to get matched with your Experian Mosaic group and media consumption insight.
     </p>
-    <input type="text" id="postcodeInput" placeholder="Enter postcode or ZIP..." />
-    <button id="submitButton">GET INSIGHTS</button>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 20px;">
+      <input type="text" id="postcodeInput" placeholder="Enter postcode or ZIP" />
+      <button id="submitButton">GET INSIGHTS</button>
+    </div>
+    <div id="resultContainer" class="hidden"></div>
 
-    <div id="resultContainer" class="results hidden"></div>
-  </div>
-
-  <script src="main.js"></script>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
