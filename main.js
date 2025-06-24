@@ -19,10 +19,14 @@ document.getElementById("submitButton").addEventListener("click", () => {
       }
 
       const entries = data[postcode];
-      let html = `<h2>Insights for ${postcode}</h2>`;
+      let html = `<h2>Insights for <strong>${postcode}</strong></h2>`;
       html += "<ul>";
       entries.forEach((entry) => {
-        html += `<li><strong>${entry.channel || entry.type}</strong>: Index = ${entry.index || entry.count} — ${entry.message || ''}</li>`;
+        html += `
+          <li>
+            <strong>${entry.type}</strong><br/>
+            Index = ${entry.index} — ${entry.message || ''}
+          </li>`;
       });
       html += "</ul>";
       resultContainer.innerHTML = html;
@@ -41,7 +45,5 @@ function determineBatchFile(postcode) {
     M: "7", N: "7", O: "8", P: "8", Q: "9", R: "9",
     S: "9", T: "9", U: "9", V: "9", W: "9", X: "9", Y: "9", Z: "9"
   };
-  return map[firstLetter] || "1"; // fallback
+  return map[firstLetter] || "1"; // fallback to batch 1
 }
-
-
