@@ -36,15 +36,17 @@ document.getElementById("submitButton").addEventListener("click", () => {
       });
 
       html += `</div><button id="resetButton" class="reset-btn">Try another postcode</button>`;
-      resultContainer.innerHTML = html;
+  resultContainer.innerHTML = html;
 
-      document.getElementById("resetButton").addEventListener("click", () => {
-        document.getElementById("postcodeInput").value = "";
-        resultContainer.classList.add("hidden");
-        resultContainer.innerHTML = "";
-        document.getElementById("postcodeInput").focus();
-      });
-    })
+// Scroll to insights smoothly
+document.getElementById("resultContainer").scrollIntoView({ behavior: "smooth", block: "start" });
+
+document.getElementById("resetButton").addEventListener("click", () => {
+  document.getElementById("postcodeInput").value = "";
+  resultContainer.classList.add("hidden");
+  resultContainer.innerHTML = "";
+  document.getElementById("postcodeInput").focus();
+});
     .catch((error) => {
       console.error("Error loading data:", error);
       document.getElementById("resultContainer").innerHTML = `<p>There was an error loading insights.</p>`;
