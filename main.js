@@ -22,7 +22,7 @@ document.getElementById("submitButton").addEventListener("click", () => {
       let html = `<h2>Insights for ${postcode}</h2>`;
       html += "<ul>";
       entries.forEach((entry) => {
-        html += `<li><strong>${entry.channel}</strong>: Index = ${entry.index} — ${entry.message}</li>`;
+        html += `<li><strong>${entry.channel || entry.type}</strong>: Index = ${entry.index || entry.count} — ${entry.message || ''}</li>`;
       });
       html += "</ul>";
       resultContainer.innerHTML = html;
@@ -43,4 +43,5 @@ function determineBatchFile(postcode) {
   };
   return map[firstLetter] || "1"; // fallback
 }
+
 
