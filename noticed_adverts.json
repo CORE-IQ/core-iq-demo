@@ -1,0 +1,557 @@
+{
+  "A - City Prosperity (15+)": [
+    {
+      "channel": "Newspapers",
+      "index": 97,
+      "message": "Engagement with newspapers adverts is indexed at 97 vs UK average."
+    },
+    {
+      "channel": "Magazines",
+      "index": 144,
+      "message": "Engagement with magazines adverts is indexed at 144 vs UK average."
+    },
+    {
+      "channel": "Radio",
+      "index": 77,
+      "message": "Engagement with radio adverts is indexed at 77 vs UK average."
+    },
+    {
+      "channel": "Television",
+      "index": 74,
+      "message": "Engagement with television adverts is indexed at 74 vs UK average."
+    },
+    {
+      "channel": "Cinema",
+      "index": 158,
+      "message": "Engagement with cinema adverts is indexed at 158 vs UK average."
+    },
+    {
+      "channel": "Internet",
+      "index": 117,
+      "message": "Engagement with internet adverts is indexed at 117 vs UK average."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 143,
+      "message": "Engagement with outdoor adverts is indexed at 143 vs UK average."
+    }
+  ],
+  "B - Prestige Positions (15+)": [
+    {
+      "channel": "Newspapers",
+      "index": 149,
+      "message": "Engagement with newspapers adverts is indexed at 149 vs UK average."
+    },
+    {
+      "channel": "Magazines",
+      "index": 125,
+      "message": "Engagement with magazines adverts is indexed at 125 vs UK average."
+    },
+    {
+      "channel": "Radio",
+      "index": 71,
+      "message": "Engagement with radio adverts is indexed at 71 vs UK average."
+    },
+    {
+      "channel": "Television",
+      "index": 97,
+      "message": "Engagement with television adverts is indexed at 97 vs UK average."
+    },
+    {
+      "channel": "Cinema",
+      "index": 117,
+      "message": "Engagement with cinema adverts is indexed at 117 vs UK average."
+    },
+    {
+      "channel": "Internet",
+      "index": 81,
+      "message": "Engagement with internet adverts is indexed at 81 vs UK average."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 78,
+      "message": "Engagement with outdoor adverts is indexed at 78 vs UK average."
+    }
+  ],
+  "C - Country Living (15+)": [
+    {
+      "channel": "Newspapers",
+      "index": 97,
+      "message": "Engagement with newspapers adverts is indexed at 97 vs UK average."
+    },
+    {
+      "channel": "Magazines",
+      "index": 180,
+      "message": "Engagement with magazines adverts is indexed at 180 vs UK average."
+    },
+    {
+      "channel": "Radio",
+      "index": 100,
+      "message": "Engagement with radio adverts is indexed at 100 vs UK average."
+    },
+    {
+      "channel": "Television",
+      "index": 106,
+      "message": "Engagement with television adverts is indexed at 106 vs UK average."
+    },
+    {
+      "channel": "Cinema",
+      "index": 71,
+      "message": "Engagement with cinema adverts is indexed at 71 vs UK average."
+    },
+    {
+      "channel": "Internet",
+      "index": 72,
+      "message": "Engagement with internet adverts is indexed at 72 vs UK average."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 53,
+      "message": "Engagement with outdoor adverts is indexed at 53 vs UK average."
+    }
+  ],
+  "D - Rural Reality (15+)": [
+    {
+      "channel": "Newspapers",
+      "index": 94,
+      "message": "Engagement with newspapers adverts is indexed at 94 vs UK average."
+    },
+    {
+      "channel": "Magazines",
+      "index": 90,
+      "message": "Engagement with magazines adverts is indexed at 90 vs UK average."
+    },
+    {
+      "channel": "Radio",
+      "index": 174,
+      "message": "Engagement with radio adverts is indexed at 174 vs UK average."
+    },
+    {
+      "channel": "Television",
+      "index": 106,
+      "message": "Engagement with television adverts is indexed at 106 vs UK average."
+    },
+    {
+      "channel": "Cinema",
+      "index": 73,
+      "message": "Engagement with cinema adverts is indexed at 73 vs UK average."
+    },
+    {
+      "channel": "Internet",
+      "index": 92,
+      "message": "Engagement with internet adverts is indexed at 92 vs UK average."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 44,
+      "message": "Engagement with outdoor adverts is indexed at 44 vs UK average."
+    }
+  ],
+  "E - Senior Security (15+)": [
+    {
+      "channel": "Newspapers",
+      "index": 208,
+      "message": "Engagement with newspapers adverts is indexed at 208 vs UK average."
+    },
+    {
+      "channel": "Magazines",
+      "index": 135,
+      "message": "Engagement with magazines adverts is indexed at 135 vs UK average."
+    },
+    {
+      "channel": "Radio",
+      "index": 41,
+      "message": "Engagement with radio adverts is indexed at 41 vs UK average."
+    },
+    {
+      "channel": "Television",
+      "index": 108,
+      "message": "Engagement with television adverts is indexed at 108 vs UK average."
+    },
+    {
+      "channel": "Cinema",
+      "index": 45,
+      "message": "Engagement with cinema adverts is indexed at 45 vs UK average."
+    },
+    {
+      "channel": "Internet",
+      "index": 29,
+      "message": "Engagement with internet adverts is indexed at 29 vs UK average."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 50,
+      "message": "Engagement with outdoor adverts is indexed at 50 vs UK average."
+    }
+  ],
+  "F - Suburban Stability (15+)": [
+    {
+      "channel": "Newspapers",
+      "index": 82,
+      "message": "Engagement with newspapers adverts is indexed at 82 vs UK average."
+    },
+    {
+      "channel": "Magazines",
+      "index": 78,
+      "message": "Engagement with magazines adverts is indexed at 78 vs UK average."
+    },
+    {
+      "channel": "Radio",
+      "index": 104,
+      "message": "Engagement with radio adverts is indexed at 104 vs UK average."
+    },
+    {
+      "channel": "Television",
+      "index": 122,
+      "message": "Engagement with television adverts is indexed at 122 vs UK average."
+    },
+    {
+      "channel": "Cinema",
+      "index": 77,
+      "message": "Engagement with cinema adverts is indexed at 77 vs UK average."
+    },
+    {
+      "channel": "Internet",
+      "index": 86,
+      "message": "Engagement with internet adverts is indexed at 86 vs UK average."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 91,
+      "message": "Engagement with outdoor adverts is indexed at 91 vs UK average."
+    }
+  ],
+  "G - Domestic Success (15+)": [
+    {
+      "channel": "Newspapers",
+      "index": 90,
+      "message": "Engagement with newspapers adverts is indexed at 90 vs UK average."
+    },
+    {
+      "channel": "Magazines",
+      "index": 106,
+      "message": "Engagement with magazines adverts is indexed at 106 vs UK average."
+    },
+    {
+      "channel": "Radio",
+      "index": 120,
+      "message": "Engagement with radio adverts is indexed at 120 vs UK average."
+    },
+    {
+      "channel": "Television",
+      "index": 108,
+      "message": "Engagement with television adverts is indexed at 108 vs UK average."
+    },
+    {
+      "channel": "Cinema",
+      "index": 128,
+      "message": "Engagement with cinema adverts is indexed at 128 vs UK average."
+    },
+    {
+      "channel": "Internet",
+      "index": 107,
+      "message": "Engagement with internet adverts is indexed at 107 vs UK average."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 118,
+      "message": "Engagement with outdoor adverts is indexed at 118 vs UK average."
+    }
+  ],
+  "H - Aspiring Homemakers (15+)": [
+    {
+      "channel": "Newspapers",
+      "index": 62,
+      "message": "Engagement with newspapers adverts is indexed at 62 vs UK average."
+    },
+    {
+      "channel": "Magazines",
+      "index": 90,
+      "message": "Engagement with magazines adverts is indexed at 90 vs UK average."
+    },
+    {
+      "channel": "Radio",
+      "index": 143,
+      "message": "Engagement with radio adverts is indexed at 143 vs UK average."
+    },
+    {
+      "channel": "Television",
+      "index": 92,
+      "message": "Engagement with television adverts is indexed at 92 vs UK average."
+    },
+    {
+      "channel": "Cinema",
+      "index": 163,
+      "message": "Engagement with cinema adverts is indexed at 163 vs UK average."
+    },
+    {
+      "channel": "Internet",
+      "index": 117,
+      "message": "Engagement with internet adverts is indexed at 117 vs UK average."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 107,
+      "message": "Engagement with outdoor adverts is indexed at 107 vs UK average."
+    }
+  ],
+  "I - Family Basics (15+)": [
+    {
+      "channel": "Newspapers",
+      "index": 50,
+      "message": "Engagement with newspapers adverts is indexed at 50 vs UK average."
+    },
+    {
+      "channel": "Magazines",
+      "index": 54,
+      "message": "Engagement with magazines adverts is indexed at 54 vs UK average."
+    },
+    {
+      "channel": "Radio",
+      "index": 95,
+      "message": "Engagement with radio adverts is indexed at 95 vs UK average."
+    },
+    {
+      "channel": "Television",
+      "index": 95,
+      "message": "Engagement with television adverts is indexed at 95 vs UK average."
+    },
+    {
+      "channel": "Cinema",
+      "index": 121,
+      "message": "Engagement with cinema adverts is indexed at 121 vs UK average."
+    },
+    {
+      "channel": "Internet",
+      "index": 147,
+      "message": "Engagement with internet adverts is indexed at 147 vs UK average."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 122,
+      "message": "Engagement with outdoor adverts is indexed at 122 vs UK average."
+    }
+  ],
+  "J - Transient Renters (15+)": [
+    {
+      "channel": "Newspapers",
+      "index": 81,
+      "message": "Engagement with newspapers adverts is indexed at 81 vs UK average."
+    },
+    {
+      "channel": "Magazines",
+      "index": 31,
+      "message": "Engagement with magazines adverts is indexed at 31 vs UK average."
+    },
+    {
+      "channel": "Radio",
+      "index": 103,
+      "message": "Engagement with radio adverts is indexed at 103 vs UK average."
+    },
+    {
+      "channel": "Television",
+      "index": 84,
+      "message": "Engagement with television adverts is indexed at 84 vs UK average."
+    },
+    {
+      "channel": "Cinema",
+      "index": 99,
+      "message": "Engagement with cinema adverts is indexed at 99 vs UK average."
+    },
+    {
+      "channel": "Internet",
+      "index": 131,
+      "message": "Engagement with internet adverts is indexed at 131 vs UK average."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 189,
+      "message": "Engagement with outdoor adverts is indexed at 189 vs UK average."
+    }
+  ],
+  "K - Municipal Tenants (15+)": [
+    {
+      "channel": "Newspapers",
+      "index": 102,
+      "message": "Engagement with newspapers adverts is indexed at 102 vs UK average."
+    },
+    {
+      "channel": "Magazines",
+      "index": 92,
+      "message": "Engagement with magazines adverts is indexed at 92 vs UK average."
+    },
+    {
+      "channel": "Radio",
+      "index": 102,
+      "message": "Engagement with radio adverts is indexed at 102 vs UK average."
+    },
+    {
+      "channel": "Television",
+      "index": 91,
+      "message": "Engagement with television adverts is indexed at 91 vs UK average."
+    },
+    {
+      "channel": "Cinema",
+      "index": 72,
+      "message": "Engagement with cinema adverts is indexed at 72 vs UK average."
+    },
+    {
+      "channel": "Internet",
+      "index": 109,
+      "message": "Engagement with internet adverts is indexed at 109 vs UK average."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 137,
+      "message": "Engagement with outdoor adverts is indexed at 137 vs UK average."
+    }
+  ],
+  "L - Vintage Values (15+)": [
+    {
+      "channel": "Newspapers",
+      "index": 124,
+      "message": "Engagement with newspapers adverts is indexed at 124 vs UK average."
+    },
+    {
+      "channel": "Magazines",
+      "index": 158,
+      "message": "Engagement with magazines adverts is indexed at 158 vs UK average."
+    },
+    {
+      "channel": "Radio",
+      "index": 112,
+      "message": "Engagement with radio adverts is indexed at 112 vs UK average."
+    },
+    {
+      "channel": "Television",
+      "index": 107,
+      "message": "Engagement with television adverts is indexed at 107 vs UK average."
+    },
+    {
+      "channel": "Cinema",
+      "index": 26,
+      "message": "Engagement with cinema adverts is indexed at 26 vs UK average."
+    },
+    {
+      "channel": "Internet",
+      "index": 43,
+      "message": "Engagement with internet adverts is indexed at 43 vs UK average."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 30,
+      "message": "Engagement with outdoor adverts is indexed at 30 vs UK average."
+    }
+  ],
+  "M - Modest Traditions (15+)": [
+    {
+      "channel": "Newspapers",
+      "index": 103,
+      "message": "Engagement with newspapers adverts is indexed at 103 vs UK average."
+    },
+    {
+      "channel": "Magazines",
+      "index": 104,
+      "message": "Engagement with magazines adverts is indexed at 104 vs UK average."
+    },
+    {
+      "channel": "Radio",
+      "index": 65,
+      "message": "Engagement with radio adverts is indexed at 65 vs UK average."
+    },
+    {
+      "channel": "Television",
+      "index": 116,
+      "message": "Engagement with television adverts is indexed at 116 vs UK average."
+    },
+    {
+      "channel": "Cinema",
+      "index": 57,
+      "message": "Engagement with cinema adverts is indexed at 57 vs UK average."
+    },
+    {
+      "channel": "Internet",
+      "index": 92,
+      "message": "Engagement with internet adverts is indexed at 92 vs UK average."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 84,
+      "message": "Engagement with outdoor adverts is indexed at 84 vs UK average."
+    }
+  ],
+  "N - Urban Cohesion (15+)": [
+    {
+      "channel": "Newspapers",
+      "index": 125,
+      "message": "Engagement with newspapers adverts is indexed at 125 vs UK average."
+    },
+    {
+      "channel": "Magazines",
+      "index": 100,
+      "message": "Engagement with magazines adverts is indexed at 100 vs UK average."
+    },
+    {
+      "channel": "Radio",
+      "index": 78,
+      "message": "Engagement with radio adverts is indexed at 78 vs UK average."
+    },
+    {
+      "channel": "Television",
+      "index": 90,
+      "message": "Engagement with television adverts is indexed at 90 vs UK average."
+    },
+    {
+      "channel": "Cinema",
+      "index": 110,
+      "message": "Engagement with cinema adverts is indexed at 110 vs UK average."
+    },
+    {
+      "channel": "Internet",
+      "index": 110,
+      "message": "Engagement with internet adverts is indexed at 110 vs UK average."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 113,
+      "message": "Engagement with outdoor adverts is indexed at 113 vs UK average."
+    }
+  ],
+  "O - Rental Hubs (15+)": [
+    {
+      "channel": "Newspapers",
+      "index": 60,
+      "message": "Engagement with newspapers adverts is indexed at 60 vs UK average."
+    },
+    {
+      "channel": "Magazines",
+      "index": 94,
+      "message": "Engagement with magazines adverts is indexed at 94 vs UK average."
+    },
+    {
+      "channel": "Radio",
+      "index": 111,
+      "message": "Engagement with radio adverts is indexed at 111 vs UK average."
+    },
+    {
+      "channel": "Television",
+      "index": 92,
+      "message": "Engagement with television adverts is indexed at 92 vs UK average."
+    },
+    {
+      "channel": "Cinema",
+      "index": 147,
+      "message": "Engagement with cinema adverts is indexed at 147 vs UK average."
+    },
+    {
+      "channel": "Internet",
+      "index": 137,
+      "message": "Engagement with internet adverts is indexed at 137 vs UK average."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 127,
+      "message": "Engagement with outdoor adverts is indexed at 127 vs UK average."
+    }
+  ]
+}
