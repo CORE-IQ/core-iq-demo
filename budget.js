@@ -23,3 +23,5 @@ function calculateBudgetDistribution(entries, media, totalBudget) {
   return { totalIndex, distribution };
 }
 
+
+if (typeof module !== "undefined") module.exports = { calculateBudgetDistribution };

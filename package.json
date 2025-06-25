@@ -1,0 +1,12 @@
+{
+  "name": "core-iq-demo",
+  "version": "1.0.0",
+  "description": "Demo for CORE-IQ audience insights",
+  "main": "index.html",
+  "scripts": {
+    "test": "node budget.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
