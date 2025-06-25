@@ -889,27 +889,6 @@
     "light_hex": "#857819",
     "dark_rgb": "112,100,16",
     "dark_hex": "#706410"
-  },
-  {
-    "group_code": "Experian Public © 2024",
-    "group_name": NaN,
-    "description": NaN,
-    "household_percentage": NaN,
-    "population_percentage": NaN,
-    "light_rgb": NaN,
-    "light_hex": NaN,
-    "dark_rgb": NaN,
-    "dark_hex": NaN
-  },
-  {
-    "group_code": "All rights reserved.",
-    "group_name": NaN,
-    "description": NaN,
-    "household_percentage": NaN,
-    "population_percentage": NaN,
-    "light_rgb": NaN,
-    "light_hex": NaN,
-    "dark_rgb": NaN,
-    "dark_hex": "Document Version: 3.2"
   }
 ]
+
