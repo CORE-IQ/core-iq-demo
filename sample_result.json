@@ -1,0 +1,21 @@
+{
+  "mosaic_group": "City Prosperity (Group A)",
+  "description": "High-status city dwellers...",
+  "demographics": [
+    { "label": "Age", "value": "26–35", "index": 139 },
+    { "label": "Household Income", "value": "£100K–£149.9K", "index": 420 }
+  ],
+  "key_features": ["Urban areas", "High-value flats"],
+  "media_channels": [
+    { "label": "TV", "index": 130 },
+    { "label": "Internet", "index": 96 }
+  ],
+  "top_postcodes": [
+    { "code": "LS14", "count": 1204 },
+    { "code": "NG8", "count": 992 }
+  ],
+  "media_plan_allocation": [
+    { "channel": "Paid Social", "index": 143, "budget": 6820 },
+    { "channel": "Radio", "index": 84, "budget": 0 }
+  ]
+}
