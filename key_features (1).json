@@ -1,0 +1,998 @@
+[
+  {
+    "group_code":"A",
+    "group_name":"City Prosperity",
+    "features":[
+      "Urban areas",
+      "High value flats",
+      "High income",
+      "Cosmopolitan lifestyles",
+      "High-tech homes",
+      "Uber passengers"
+    ]
+  },
+  {
+    "group_code":"B",
+    "group_name":"Prestige Positions",
+    "features":[
+      "Own large, detached houses",
+      "Highly educated",
+      "High discretionary income",
+      "Garden or allotment",
+      "Pay credit cards in full",
+      "Breakdown cover"
+    ]
+  },
+  {
+    "group_code":"C",
+    "group_name":"Country Living",
+    "features":[
+      "Rural locations",
+      "Own old, detached houses",
+      "Electronic money transfers",
+      "Garden or allotment",
+      "Oil central heating",
+      "High environmental impact gap"
+    ]
+  },
+  {
+    "group_code":"D",
+    "group_name":"Rural Reality",
+    "features":[
+      "Rural areas",
+      "Oil\/solid fuel central heating",
+      "Internet at home",
+      "Free mobile phone apps",
+      "Watch TV",
+      "Comprehensive car insurance"
+    ]
+  },
+  {
+    "group_code":"E",
+    "group_name":"Senior Security",
+    "features":[
+      "Retired singles and couples",
+      "Pre-war generation",
+      "Established in community",
+      "Low internet use",
+      "Have wills",
+      "Solar panels"
+    ]
+  },
+  {
+    "group_code":"F",
+    "group_name":"Suburban Stability",
+    "features":[
+      "Older families, no children",
+      "Own mid-value semis",
+      "3 bedrooms",
+      "Established in community",
+      "News and media sites",
+      "Solar panels"
+    ]
+  },
+  {
+    "group_code":"G",
+    "group_name":"Domestic Success",
+    "features":[
+      "Families with children",
+      "Mid to high household income",
+      "Monthly discretionary income under \u00a31000",
+      "Very high mortgage debt",
+      "Internet via smartphone",
+      "Online shoppers"
+    ]
+  },
+  {
+    "group_code":"H",
+    "group_name":"Aspiring Homemakers",
+    "features":[
+      "Families with young children",
+      "3 bedrooms",
+      "High outstanding mortgages",
+      "Internet via smartphone",
+      "Texts and photos on smartphone",
+      "Order from takeaways"
+    ]
+  },
+  {
+    "group_code":"I",
+    "group_name":"Family Basics",
+    "features":[
+      "Families with children",
+      "Council\/HA tenants",
+      "Low discretionary income",
+      "Low affluence",
+      "Internet via smartphone",
+      "Games consoles"
+    ]
+  },
+  {
+    "group_code":"J",
+    "group_name":"Transient Renters",
+    "features":[
+      "Young singles and homesharers",
+      "Millennials",
+      "Rent low value terraces",
+      "Internet via smartphone",
+      "High social networking",
+      "Don't use landlines"
+    ]
+  },
+  {
+    "group_code":"K",
+    "group_name":"Municipal Tenants",
+    "features":[
+      "Council\/HA flats",
+      "Densely populated",
+      "No qualifications",
+      "Low discretionary income",
+      "Low environmental impact gap",
+      "Fuel poverty"
+    ]
+  },
+  {
+    "group_code":"L",
+    "group_name":"Vintage Value",
+    "features":[
+      "Retired singles",
+      "Council\/HA tenants",
+      "No qualifications",
+      "Low discretionary income",
+      "Very low-tech households",
+      "Fuel and water poverty"
+    ]
+  },
+  {
+    "group_code":"M",
+    "group_name":"Modest Traditions",
+    "features":[
+      "Homeowners",
+      "No children",
+      "Established in community",
+      "Low discretionary income",
+      "Watch TV",
+      "Solar panels"
+    ]
+  },
+  {
+    "group_code":"N",
+    "group_name":"Urban Cohesion",
+    "features":[
+      "Homesharers in terraces",
+      "Uber passengers",
+      "Free mobile phone apps",
+      "Read news and shop online",
+      "Visual arts and design sites",
+      "Watch TV"
+    ]
+  },
+  {
+    "group_code":"O",
+    "group_name":"Rental Hubs",
+    "features":[
+      "Young singles and homesharers",
+      "Rent flats",
+      "Very high internet use",
+      "Internet via smartphone",
+      "Watch videos online",
+      "Don't use landlines"
+    ]
+  },
+  {
+    "group_code":"A01",
+    "group_name":"World-Class Wealth",
+    "features":[
+      "Expensive properties",
+      "5+ bedrooms",
+      "High income",
+      "University graduates",
+      "Company director",
+      "Uber passengers"
+    ]
+  },
+  {
+    "group_code":"A02",
+    "group_name":"Uptown Elite",
+    "features":[
+      "Expensive properties",
+      "High income",
+      "Quality news",
+      "Waitrose",
+      "Uber passengers",
+      "Performing arts sites"
+    ]
+  },
+  {
+    "group_code":"A03",
+    "group_name":"Penthouse Chic",
+    "features":[
+      "Urban areas",
+      "Expensive rented flats",
+      "University degrees",
+      "High discretionary income",
+      "Online shoppers",
+      "Foreign language TV"
+    ]
+  },
+  {
+    "group_code":"A04",
+    "group_name":"Metro High-Flyers",
+    "features":[
+      "Singles",
+      "Small, rented flats",
+      "Career-focussed",
+      "High income",
+      "Cosmopolitan lifestyles",
+      "Uber passengers"
+    ]
+  },
+  {
+    "group_code":"B05",
+    "group_name":"Premium Fortunes",
+    "features":[
+      "Company directors",
+      "Expensive detached houses",
+      "5+ bedrooms",
+      "Highly educated",
+      "High discretionary income",
+      "myWaitrose"
+    ]
+  },
+  {
+    "group_code":"B06",
+    "group_name":"Diamond Days",
+    "features":[
+      "Retired",
+      "Expensive detached houses",
+      "Highly educated",
+      "Quality news",
+      "myWaitrose",
+      "Lowest social media users"
+    ]
+  },
+  {
+    "group_code":"B07",
+    "group_name":"Alpha Families",
+    "features":[
+      "Families with 2+ children",
+      "Large, detached houses",
+      "High value properties",
+      "University degrees",
+      "High income, large mortgage",
+      "Electronic money transfers"
+    ]
+  },
+  {
+    "group_code":"B08",
+    "group_name":"Bank of Mum and Dad",
+    "features":[
+      "Settled families",
+      "Adult children at home",
+      "Own large, detached houses",
+      "Company directors",
+      "High discretionary income",
+      "Electronic money transfers"
+    ]
+  },
+  {
+    "group_code":"B09",
+    "group_name":"Empty-Nest Adventure",
+    "features":[
+      "Married couples, no children",
+      "Baby boomers",
+      "Large, detached houses",
+      "Highly educated",
+      "High discretionary income",
+      "Premium bonds"
+    ]
+  },
+  {
+    "group_code":"C10",
+    "group_name":"Wealthy Landowners",
+    "features":[
+      "Large, detached houses",
+      "University degrees",
+      "High discretionary income",
+      "Horse or pony",
+      "Oil central heating",
+      "Electronic money transfers"
+    ]
+  },
+  {
+    "group_code":"C11",
+    "group_name":"Rural Vogue",
+    "features":[
+      "Rural areas",
+      "Families with school-age children",
+      "Large, detached houses",
+      "Good income",
+      "Electronic money transfers",
+      "Oil\/solid fuel central heating"
+    ]
+  },
+  {
+    "group_code":"C12",
+    "group_name":"Scattered Homesteads",
+    "features":[
+      "Rural areas",
+      "Agriculture, forestry and fishing",
+      "Large, detached houses",
+      "Farms and named buildings",
+      "Oil\/solid fuel central heating",
+      "High environmental impact gap"
+    ]
+  },
+  {
+    "group_code":"C13",
+    "group_name":"Village Retirement",
+    "features":[
+      "Retired singles and couples",
+      "No children",
+      "Pre-war generation",
+      "Large, detached houses",
+      "No outstanding mortgage",
+      "Have wills"
+    ]
+  },
+  {
+    "group_code":"D14",
+    "group_name":"Satellite Settlers",
+    "features":[
+      "Rural areas",
+      "Older households, no children",
+      "Homeowners",
+      "Garden or allotment",
+      "Internet from desktop\/laptop",
+      "Free mobile phone apps"
+    ]
+  },
+  {
+    "group_code":"D15",
+    "group_name":"Local Focus",
+    "features":[
+      "Rural areas",
+      "Families with children",
+      "Oil\/solid fuel central heating",
+      "Internet via smartphone",
+      "Single trip travel insurance",
+      "Free mobile phone apps"
+    ]
+  },
+  {
+    "group_code":"D16",
+    "group_name":"Outlying Seniors",
+    "features":[
+      "Rural areas",
+      "Retired singles and couples",
+      "No children",
+      "Low income",
+      "No qualifications",
+      "Fuel and water poverty"
+    ]
+  },
+  {
+    "group_code":"D17",
+    "group_name":"Far-Flung Outposts",
+    "features":[
+      "Rural areas",
+      "Named buildings",
+      "Oil\/solid fuel central heating",
+      "Co-operative membership",
+      "Electronic money transfers",
+      "Fuel poverty"
+    ]
+  },
+  {
+    "group_code":"E18",
+    "group_name":"Legacy Elders",
+    "features":[
+      "Retired singles",
+      "Pre-war generation",
+      "University degrees",
+      "Homeowners",
+      "No outstanding mortgage",
+      "Have wills"
+    ]
+  },
+  {
+    "group_code":"E19",
+    "group_name":"Bungalow Haven",
+    "features":[
+      "Pre-war generation",
+      "Own bungalows",
+      "No outstanding mortgage",
+      "University degrees",
+      "Pay credit cards in full",
+      "Have wills"
+    ]
+  },
+  {
+    "group_code":"E20",
+    "group_name":"Classic Grandparents",
+    "features":[
+      "Retired couples",
+      "Established in community",
+      "No qualifications",
+      "Low internet use",
+      "Have wills",
+      "Solar panels"
+    ]
+  },
+  {
+    "group_code":"E21",
+    "group_name":"Solo Retirees",
+    "features":[
+      "Retired singles",
+      "No qualifications",
+      "Own mid-value semis",
+      "Low income",
+      "Water poverty",
+      "Genealogy sites"
+    ]
+  },
+  {
+    "group_code":"F22",
+    "group_name":"Boomerang Boarders",
+    "features":[
+      "Adult children at home",
+      "Own 3 bed semis",
+      "Established in community",
+      "Low to mid-income",
+      "Watch TV",
+      "Solar panels"
+    ]
+  },
+  {
+    "group_code":"F23",
+    "group_name":"Family Ties",
+    "features":[
+      "Teenage\/adult children at home",
+      "Own 3 bed semis",
+      "Outstanding mortgage under \u00a3100k",
+      "Internet via smartphone",
+      "Games consoles",
+      "Order from takeaways"
+    ]
+  },
+  {
+    "group_code":"F24",
+    "group_name":"Fledgling Free",
+    "features":[
+      "Older married couples",
+      "No children",
+      "Baby boomers",
+      "Own 3 bed semis",
+      "Vocational qualifications",
+      "Solar panels"
+    ]
+  },
+  {
+    "group_code":"F25",
+    "group_name":"Dependable Me",
+    "features":[
+      "Older singles, no children",
+      "Baby boomers",
+      "Homeowners",
+      "3 bedrooms",
+      "University degrees",
+      "Pay credit cards in full"
+    ]
+  },
+  {
+    "group_code":"G26",
+    "group_name":"Caf\u00e9s and Catchments",
+    "features":[
+      "Families with children",
+      "Generation X",
+      "University degrees",
+      "High value, pre-war properties",
+      "Mid to high household income",
+      "High mortgage debt"
+    ]
+  },
+  {
+    "group_code":"G27",
+    "group_name":"Thriving Independence",
+    "features":[
+      "Middle-aged singles",
+      "No children",
+      "Homeowners",
+      "Calls via smartphone",
+      "Internet first place for information",
+      "Electronic money transfers"
+    ]
+  },
+  {
+    "group_code":"G28",
+    "group_name":"Modern Parents",
+    "features":[
+      "Families with school-age children",
+      "Modern houses",
+      "Mid-sized, detached houses",
+      "Mid to high household income",
+      "Monthly discretionary income under \u00a31000",
+      "Outstanding mortgage"
+    ]
+  },
+  {
+    "group_code":"G29",
+    "group_name":"Mid-Career Convention",
+    "features":[
+      "Married couples",
+      "2+ children",
+      "Generation X",
+      "Homeowners",
+      "Outstanding mortgage",
+      "Order from takeaways"
+    ]
+  },
+  {
+    "group_code":"H30",
+    "group_name":"Primary Ambitions",
+    "features":[
+      "Families with young children",
+      "3 bed terraces",
+      "Vocational qualifications",
+      "High outstanding mortgages",
+      "Internet via smartphone",
+      "Children's toys\/accessories sites"
+    ]
+  },
+  {
+    "group_code":"H31",
+    "group_name":"Affordable Fringe",
+    "features":[
+      "Families with 2+ children",
+      "Generation X\/Xennial parents",
+      "A-level education",
+      "Mid household income",
+      "Low value properties",
+      "Homeowners with mortgages"
+    ]
+  },
+  {
+    "group_code":"H32",
+    "group_name":"First-Rung Futures",
+    "features":[
+      "Singles",
+      "Millennials",
+      "University degrees",
+      "High outstanding mortgages",
+      "Internet via smartphone",
+      "Don't use landlines"
+    ]
+  },
+  {
+    "group_code":"H33",
+    "group_name":"Contemporary Starts",
+    "features":[
+      "Millennials",
+      "Modern houses",
+      "Lived in current home for 1-3 years",
+      "University degrees",
+      "Work full-time",
+      "Internet via smartphone"
+    ]
+  },
+  {
+    "group_code":"H34",
+    "group_name":"New Foundations",
+    "features":[
+      "Modern houses",
+      "Newly moved in",
+      "Homeowners",
+      "High outstanding mortgages",
+      "Work full-time",
+      "Internet via smartphone"
+    ]
+  },
+  {
+    "group_code":"H35",
+    "group_name":"Flying Solo",
+    "features":[
+      "Young singles and homesharers",
+      "Newly moved in renters",
+      "No children",
+      "A-level education",
+      "Standard current\/savings account",
+      "Don't use landlines"
+    ]
+  },
+  {
+    "group_code":"I36",
+    "group_name":"Solid Economy",
+    "features":[
+      "Council\/HA tenants",
+      "School-age children",
+      "No qualifications",
+      "Low discretionary income",
+      "Standard current\/savings account",
+      "Single trip travel insurance"
+    ]
+  },
+  {
+    "group_code":"I37",
+    "group_name":"Budget Generations",
+    "features":[
+      "Families with teenage\/adult children",
+      "3 bedrooms",
+      "Low outstanding mortgage",
+      "Low discretionary income",
+      "Order from takeaways",
+      "Solar panels"
+    ]
+  },
+  {
+    "group_code":"I38",
+    "group_name":"Economical Families",
+    "features":[
+      "Families with many children",
+      "Low value terraces",
+      "Low to mid household income",
+      "Low discretionary income",
+      "Internet via smartphone",
+      "Games consoles"
+    ]
+  },
+  {
+    "group_code":"I39",
+    "group_name":"Families on a Budget",
+    "features":[
+      "Single parents",
+      "Lots of school-age children",
+      "Council\/HA tenants",
+      "Unemployed",
+      "Very low income",
+      "Water poverty"
+    ]
+  },
+  {
+    "group_code":"J40",
+    "group_name":"Value Rentals",
+    "features":[
+      "Single parents",
+      "Millennials",
+      "Low value houses",
+      "A-level education",
+      "Low discretionary income",
+      "Don't use landlines"
+    ]
+  },
+  {
+    "group_code":"J41",
+    "group_name":"Youthful Endeavours",
+    "features":[
+      "Young singles and homesharers",
+      "No qualifications",
+      "Unemployed",
+      "Low discretionary income",
+      "Very low affluence",
+      "Fuel and water poverty"
+    ]
+  },
+  {
+    "group_code":"J42",
+    "group_name":"Midlife Renters",
+    "features":[
+      "Singles and homesharers",
+      "No children",
+      "Rent terraced houses",
+      "Work full-time",
+      "Internet via smartphone",
+      "Free mobile phone apps"
+    ]
+  },
+  {
+    "group_code":"J43",
+    "group_name":"Renting Rooms",
+    "features":[
+      "Singles and homesharers",
+      "Rent terraced houses",
+      "Vocational qualifications",
+      "Low discretionary income",
+      "Mobile calls in home",
+      "Minimum credit card payments"
+    ]
+  },
+  {
+    "group_code":"K44",
+    "group_name":"Inner City Stalwarts",
+    "features":[
+      "Council\/HA tenants",
+      "No children",
+      "1 bed flats",
+      "No qualifications",
+      "High street supermarkets",
+      "Fuel poverty"
+    ]
+  },
+  {
+    "group_code":"K45",
+    "group_name":"City Diversity",
+    "features":[
+      "Council\/HA flats",
+      "Densely populated",
+      "Would like to set up their own business",
+      "Uber passengers",
+      "Technology news online",
+      "Third party car insurance"
+    ]
+  },
+  {
+    "group_code":"K46",
+    "group_name":"High Rise Residents",
+    "features":[
+      "Council\/HA flats",
+      "Densely populated",
+      "GCSE education",
+      "Low discretionary income",
+      "Electric central heating",
+      "Fuel poverty"
+    ]
+  },
+  {
+    "group_code":"K47",
+    "group_name":"Single Essentials",
+    "features":[
+      "Council\/HA tenants",
+      "Low value, 1 bed flats",
+      "No qualifications",
+      "Low discretionary income",
+      "Unemployed",
+      "Fuel poverty"
+    ]
+  },
+  {
+    "group_code":"K48",
+    "group_name":"Mature Workers",
+    "features":[
+      "Council\/HA tenants",
+      "Low value properties",
+      "No qualifications",
+      "Low discretionary income",
+      "Fuel and water poverty",
+      "Solar panels"
+    ]
+  },
+  {
+    "group_code":"L49",
+    "group_name":"Flatlet Seniors",
+    "features":[
+      "Retired singles",
+      "Low value council\/HA flats",
+      "1 bedroom",
+      "No qualifications",
+      "Low discretionary income",
+      "Fuel and water poverty"
+    ]
+  },
+  {
+    "group_code":"L50",
+    "group_name":"Pocket Pensions",
+    "features":[
+      "Retired singles",
+      "Council\/HA tenants",
+      "1 bed bungalows",
+      "No qualifications",
+      "Very low discretionary income",
+      "Fuel and water poverty"
+    ]
+  },
+  {
+    "group_code":"L51",
+    "group_name":"Retirement Communities",
+    "features":[
+      "Retired singles",
+      "Pre-war generation",
+      "1 bed purpose built flats",
+      "University degrees",
+      "Very low-tech households",
+      "Have wills"
+    ]
+  },
+  {
+    "group_code":"L52",
+    "group_name":"Estate Veterans",
+    "features":[
+      "Retired singles",
+      "Council\/HA tenants",
+      "No qualifications",
+      "Very low discretionary income",
+      "Established in community",
+      "Fuel and water poverty"
+    ]
+  },
+  {
+    "group_code":"L53",
+    "group_name":"Seasoned Survivors",
+    "features":[
+      "Retired singles",
+      "Pre-war generation",
+      "No qualifications",
+      "Worked in metals and mining",
+      "Fuel and water poverty",
+      "Solar panels"
+    ]
+  },
+  {
+    "group_code":"M54",
+    "group_name":"Down-to-Earth Owners",
+    "features":[
+      "Married baby boomers",
+      "Homeowners",
+      "Established in community",
+      "No qualifications",
+      "Low household income",
+      "Solar panels"
+    ]
+  },
+  {
+    "group_code":"M55",
+    "group_name":"Back with the Folks",
+    "features":[
+      "Homeowners",
+      "Adult children at home",
+      "3 bedrooms",
+      "Low outstanding mortgage",
+      "Established in community",
+      "Solar panels"
+    ]
+  },
+  {
+    "group_code":"M56",
+    "group_name":"Self Supporters",
+    "features":[
+      "Middle-aged singles",
+      "No children",
+      "Low value, terraced houses",
+      "Low discretionary income",
+      "Access internet from home",
+      "Watch TV"
+    ]
+  },
+  {
+    "group_code":"N57",
+    "group_name":"Community Elders",
+    "features":[
+      "Older singles",
+      "Inter-war terraces",
+      "Established in community",
+      "No outstanding mortgage",
+      "Comprehensive car insurance",
+      "Watch TV"
+    ]
+  },
+  {
+    "group_code":"N58",
+    "group_name":"Culture & Comfort",
+    "features":[
+      "Homesharers in inter-war terraces",
+      "3 bedrooms",
+      "Want to get to the top in their career",
+      "Internet via smartphone",
+      "Uber passengers",
+      "Train ticket sites"
+    ]
+  },
+  {
+    "group_code":"N59",
+    "group_name":"Large Family Living",
+    "features":[
+      "Homesharers with school age children",
+      "Large households",
+      "Terraces",
+      "Have never worked",
+      "Low discretionary income",
+      "Not internet savvy at all"
+    ]
+  },
+  {
+    "group_code":"N60",
+    "group_name":"Ageing Access",
+    "features":[
+      "Retired singles",
+      "Baby boomers",
+      "Purpose built flats",
+      "1 or 2 bedrooms",
+      "No outstanding mortgage",
+      "Visual arts and design sites"
+    ]
+  },
+  {
+    "group_code":"O61",
+    "group_name":"Career Builders",
+    "features":[
+      "Young singles and homesharers",
+      "Rent flats",
+      "University degrees",
+      "Work full-time",
+      "Access internet at work",
+      "Don't use landlines"
+    ]
+  },
+  {
+    "group_code":"O62",
+    "group_name":"Central Pulse",
+    "features":[
+      "Rent 1 bed flats",
+      "University degrees",
+      "Access internet at work",
+      "Electric central heating",
+      "Low environmental impact gap",
+      "Walk to shops"
+    ]
+  },
+  {
+    "group_code":"O63",
+    "group_name":"Flexible Workforce",
+    "features":[
+      "Young singles and homesharers",
+      "Millennials",
+      "Rent flats",
+      "Want to get to the top in their career",
+      "Don't use landlines",
+      "Third party car insurance"
+    ]
+  },
+  {
+    "group_code":"O64",
+    "group_name":"Bus-Route Renters",
+    "features":[
+      "Young singles and homesharers",
+      "No children",
+      "Rented 1 bed flats",
+      "Work full-time",
+      "Text messages",
+      "Electric central heating"
+    ]
+  },
+  {
+    "group_code":"O65",
+    "group_name":"Learners & Earners",
+    "features":[
+      "Full-time students",
+      "Provider maintained properties",
+      "Very internet savvy",
+      "Don't use landlines",
+      "Shop online",
+      "Spend little on main shop"
+    ]
+  },
+  {
+    "group_code":"O66",
+    "group_name":"Student Scene",
+    "features":[
+      "Full-time students",
+      "Communal establishments",
+      "Internet access in library",
+      "High social networking",
+      "Watch videos online",
+      "Walk to shops"
+    ]
+  },
+  {
+    "group_code":"Experian Public \u00a9 2024",
+    "group_name":null,
+    "features":[
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "group_code":"All rights reserved.",
+    "group_name":null,
+    "features":[
+      null,
+      null,
+      null,
+      null,
+      null,
+      "Document Version: 3.2"
+    ]
+  }
+]
