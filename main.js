@@ -1,4 +1,5 @@
 // main.js
+// Animations are handled entirely with CSS; no AOS library is used.
 
 document.getElementById("submitButton").addEventListener("click", () => {
   const rawInput = document.getElementById("postcodeInput").value;
@@ -36,7 +37,7 @@ document.getElementById("submitButton").addEventListener("click", () => {
       html += highSegments
         .map(
           (entry) => `
-        <div class="insight-card" data-aos="fade-up">
+        <div class="insight-card">
           <div class="insight-title">${entry.type}</div>
           <div class="insight-index">Count = ${entry.count ?? "—"}</div>
         </div>
@@ -54,7 +55,7 @@ document.getElementById("submitButton").addEventListener("click", () => {
               (it) => {
                 const indexClass = it.index > 300 ? 'high-index' : 'low-index';
                 return `
-          <div class="insight-card ${indexClass}" data-aos="fade-up">
+          <div class="insight-card ${indexClass}">
             <div class="insight-title">${it.channel}</div>
             <div class="insight-index">Index = ${it.index ?? "—"}</div>
             <div class="insight-message">${it.message ?? ""}</div>
@@ -72,7 +73,7 @@ document.getElementById("submitButton").addEventListener("click", () => {
       html += Object.entries(distribution)
         .map(
           ([channel, info]) => `
-          <div class="insight-card" data-aos="fade-up">
+          <div class="insight-card">
             <div class="insight-title">${channel}</div>
             <div class="insight-index">Budget £${info.budget.toFixed(2)}</div>
           </div>
