@@ -60,7 +60,9 @@ document.getElementById("submitButton").addEventListener("click", () => {
           html += items
             .map(
               (it) => {
-                const indexClass = it.index > 300 ? 'high-index' : 'low-index';
+                let indexClass = '';
+                if (it.index > 101) indexClass = 'high-index';
+                else if (it.index < 100) indexClass = 'low-index';
                 return `
           <div class="insight-card ${indexClass}">
             <div class="insight-title">${it.channel}</div>
