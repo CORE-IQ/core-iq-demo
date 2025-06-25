@@ -1,0 +1,170 @@
+[
+  {
+    "group": "Group A - City Prosperity",
+    "type": "A01 - Global Power Brokers"
+  },
+  {
+    "group": "Group A - City Prosperity",
+    "type": "A02 - Voices of Authority"
+  },
+  {
+    "group": "Group A - City Prosperity",
+    "type": "A03 - Business Class"
+  },
+  {
+    "group": "Group A - City Prosperity",
+    "type": "A04 - New City Chic"
+  },
+  {
+    "group": "Group A - City Prosperity",
+    "type": "A05 - Penthouse Chic"
+  },
+  {
+    "group": "Group A - City Prosperity",
+    "type": "A06 - Modern Start-ups"
+  },
+  {
+    "group": "Group B - Prestige Positions",
+    "type": "B07 - Alpha Families"
+  },
+  {
+    "group": "Group B - Prestige Positions",
+    "type": "B08 - Bank of Mum and Dad"
+  },
+  {
+    "group": "Group B - Prestige Positions",
+    "type": "B09 - Empty-Nest Adventure"
+  },
+  {
+    "group": "Group B - Prestige Positions",
+    "type": "B10 - Economic Guard"
+  },
+  {
+    "group": "Group C - Country Living",
+    "type": "C11 - Rural Vogue"
+  },
+  {
+    "group": "Group C - Country Living",
+    "type": "C12 - Scattered Homesteads"
+  },
+  {
+    "group": "Group C - Country Living",
+    "type": "C13 - Village Retirement"
+  },
+  {
+    "group": "Group C - Country Living",
+    "type": "C14 - Agricultural Pastimes"
+  },
+  {
+    "group": "Group D - Domestic Success",
+    "type": "D15 - Modern Parents"
+  },
+  {
+    "group": "Group D - Domestic Success",
+    "type": "D16 - Mid-Career Convention"
+  },
+  {
+    "group": "Group D - Domestic Success",
+    "type": "D17 - Thriving Independence"
+  },
+  {
+    "group": "Group D - Domestic Success",
+    "type": "D18 - Offspring Overspill"
+  },
+  {
+    "group": "Group E - Senior Security",
+    "type": "E19 - Legacy Elders"
+  },
+  {
+    "group": "Group E - Senior Security",
+    "type": "E20 - Classic Grandparents"
+  },
+  {
+    "group": "Group E - Senior Security",
+    "type": "E21 - Solo Retirees"
+  },
+  {
+    "group": "Group F - Suburban Stability",
+    "type": "F22 - Boomerang Boarders"
+  },
+  {
+    "group": "Group F - Suburban Stability",
+    "type": "F23 - Family Ties"
+  },
+  {
+    "group": "Group F - Suburban Stability",
+    "type": "F24 - Midlife Stopgap"
+  },
+  {
+    "group": "Group F - Suburban Stability",
+    "type": "F25 - Dependable Me"
+  },
+  {
+    "group": "Group G - Municipal Challenge",
+    "type": "G26 - High Rise Residents"
+  },
+  {
+    "group": "Group G - Municipal Challenge",
+    "type": "G27 - Supported Elders"
+  },
+  {
+    "group": "Group G - Municipal Challenge",
+    "type": "G28 - Low Income Workers"
+  },
+  {
+    "group": "Group G - Municipal Challenge",
+    "type": "G29 - Inner City Struggles"
+  },
+  {
+    "group": "Group H - Rental Hubs",
+    "type": "H30 - Make Do & Move"
+  },
+  {
+    "group": "Group H - Rental Hubs",
+    "type": "H31 - First-Rung Futures"
+  },
+  {
+    "group": "Group H - Rental Hubs",
+    "type": "H32 - Flying Solo"
+  },
+  {
+    "group": "Group H - Rental Hubs",
+    "type": "H33 - Ex-Council Community"
+  },
+  {
+    "group": "Group H - Rental Hubs",
+    "type": "H34 - New Foundations"
+  },
+  {
+    "group": "Group I - Family Basics",
+    "type": "I35 - Primary Ambitions"
+  },
+  {
+    "group": "Group I - Family Basics",
+    "type": "I36 - Affordable Fringe"
+  },
+  {
+    "group": "Group I - Family Basics",
+    "type": "I37 - Striving Families"
+  },
+  {
+    "group": "Group I - Family Basics",
+    "type": "I38 - Budget Generations"
+  },
+  {
+    "group": "Group J - Not Private",
+    "type": "J39 - Delayed Savers"
+  },
+  {
+    "group": "Group J - Not Private",
+    "type": "J40 - Streetwise Singles"
+  },
+  {
+    "group": "Group J - Not Private",
+    "type": "J41 - Youthful Endeavours"
+  },
+  {
+    "group": "Group J - Not Private",
+    "type": "J42 - Midlife Renters"
+  }
+]
