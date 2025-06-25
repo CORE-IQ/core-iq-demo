@@ -1,0 +1,1662 @@
+[
+  {
+    "group_type":"A",
+    "group_name":"City Prosperity",
+    "rankings":{
+      "Age":6.0,
+      "Bedrooms":11.0,
+      "Children":9.0,
+      "Environmental Impact Gap":2,
+      "Household Income":2.0,
+      "Household Technology":6.0,
+      "Internet Usage":1.0,
+      "Mortgage Debt":2.0,
+      "Online Purchases (per month)":10.0,
+      "Online Video Viewing":8.0,
+      "Property Value":1.0,
+      "Residency":12.0,
+      "Social Network Usage":5.0,
+      "Urban":1.0
+    }
+  },
+  {
+    "group_type":"B",
+    "group_name":"Prestige Positions",
+    "rankings":{
+      "Age":12.0,
+      "Bedrooms":1.0,
+      "Children":7.0,
+      "Environmental Impact Gap":8,
+      "Household Income":1.0,
+      "Household Technology":10.0,
+      "Internet Usage":14.0,
+      "Mortgage Debt":4.0,
+      "Online Purchases (per month)":5.0,
+      "Online Video Viewing":13.0,
+      "Property Value":2.0,
+      "Residency":4.0,
+      "Social Network Usage":13.0,
+      "Urban":13.0
+    }
+  },
+  {
+    "group_type":"C",
+    "group_name":"Country Living",
+    "rankings":{
+      "Age":13.0,
+      "Bedrooms":2.0,
+      "Children":8.0,
+      "Environmental Impact Gap":15,
+      "Household Income":4.0,
+      "Household Technology":14.0,
+      "Internet Usage":13.0,
+      "Mortgage Debt":7.0,
+      "Online Purchases (per month)":6.0,
+      "Online Video Viewing":12.0,
+      "Property Value":3.0,
+      "Residency":5.0,
+      "Social Network Usage":12.0,
+      "Urban":15.0
+    }
+  },
+  {
+    "group_type":"D",
+    "group_name":"Rural Reality",
+    "rankings":{
+      "Age":10.0,
+      "Bedrooms":7.0,
+      "Children":5.0,
+      "Environmental Impact Gap":11,
+      "Household Income":9.0,
+      "Household Technology":11.0,
+      "Internet Usage":9.0,
+      "Mortgage Debt":8.0,
+      "Online Purchases (per month)":3.0,
+      "Online Video Viewing":11.0,
+      "Property Value":10.0,
+      "Residency":8.0,
+      "Social Network Usage":9.0,
+      "Urban":14.0
+    }
+  },
+  {
+    "group_type":"E",
+    "group_name":"Senior Security",
+    "rankings":{
+      "Age":15.0,
+      "Bedrooms":5.0,
+      "Children":15.0,
+      "Environmental Impact Gap":13,
+      "Household Income":13.0,
+      "Household Technology":15.0,
+      "Internet Usage":15.0,
+      "Mortgage Debt":14.0,
+      "Online Purchases (per month)":15.0,
+      "Online Video Viewing":15.0,
+      "Property Value":6.0,
+      "Residency":1.0,
+      "Social Network Usage":15.0,
+      "Urban":12.0
+    }
+  },
+  {
+    "group_type":"F",
+    "group_name":"Suburban Stability",
+    "rankings":{
+      "Age":9.0,
+      "Bedrooms":4.0,
+      "Children":12.0,
+      "Environmental Impact Gap":12,
+      "Household Income":6.0,
+      "Household Technology":9.0,
+      "Internet Usage":10.0,
+      "Mortgage Debt":9.0,
+      "Online Purchases (per month)":8.0,
+      "Online Video Viewing":9.0,
+      "Property Value":7.0,
+      "Residency":2.0,
+      "Social Network Usage":10.0,
+      "Urban":11.0
+    }
+  },
+  {
+    "group_type":"G",
+    "group_name":"Domestic Success",
+    "rankings":{
+      "Age":5.0,
+      "Bedrooms":3.0,
+      "Children":1.0,
+      "Environmental Impact Gap":9,
+      "Household Income":3.0,
+      "Household Technology":2.0,
+      "Internet Usage":2.0,
+      "Mortgage Debt":1.0,
+      "Online Purchases (per month)":2.0,
+      "Online Video Viewing":6.0,
+      "Property Value":4.0,
+      "Residency":11.0,
+      "Social Network Usage":6.0,
+      "Urban":10.0
+    }
+  },
+  {
+    "group_type":"H",
+    "group_name":"Aspiring Homemakers",
+    "rankings":{
+      "Age":2.0,
+      "Bedrooms":6.0,
+      "Children":3.0,
+      "Environmental Impact Gap":5,
+      "Household Income":5.0,
+      "Household Technology":3.0,
+      "Internet Usage":7.0,
+      "Mortgage Debt":3.0,
+      "Online Purchases (per month)":1.0,
+      "Online Video Viewing":4.0,
+      "Property Value":9.0,
+      "Residency":13.0,
+      "Social Network Usage":4.0,
+      "Urban":9.0
+    }
+  },
+  {
+    "group_type":"I",
+    "group_name":"Family Basics",
+    "rankings":{
+      "Age":4.0,
+      "Bedrooms":8.0,
+      "Children":2.0,
+      "Environmental Impact Gap":6,
+      "Household Income":10.0,
+      "Household Technology":4.0,
+      "Internet Usage":5.0,
+      "Mortgage Debt":10.0,
+      "Online Purchases (per month)":4.0,
+      "Online Video Viewing":3.0,
+      "Property Value":12.0,
+      "Residency":9.0,
+      "Social Network Usage":3.0,
+      "Urban":6.0
+    }
+  },
+  {
+    "group_type":"J",
+    "group_name":"Transient Renters",
+    "rankings":{
+      "Age":1.0,
+      "Bedrooms":12.0,
+      "Children":4.0,
+      "Environmental Impact Gap":7,
+      "Household Income":12.0,
+      "Household Technology":5.0,
+      "Internet Usage":3.0,
+      "Mortgage Debt":12.0,
+      "Online Purchases (per month)":9.0,
+      "Online Video Viewing":1.0,
+      "Property Value":15.0,
+      "Residency":15.0,
+      "Social Network Usage":1.0,
+      "Urban":5.0
+    }
+  },
+  {
+    "group_type":"K",
+    "group_name":"Municipal Tenants",
+    "rankings":{
+      "Age":7.0,
+      "Bedrooms":14.0,
+      "Children":10.0,
+      "Environmental Impact Gap":3,
+      "Household Income":14.0,
+      "Household Technology":7.0,
+      "Internet Usage":6.0,
+      "Mortgage Debt":13.0,
+      "Online Purchases (per month)":12.0,
+      "Online Video Viewing":7.0,
+      "Property Value":11.0,
+      "Residency":10.0,
+      "Social Network Usage":7.0,
+      "Urban":2.0
+    }
+  },
+  {
+    "group_type":"L",
+    "group_name":"Vintage Value",
+    "rankings":{
+      "Age":14.0,
+      "Bedrooms":13.0,
+      "Children":14.0,
+      "Environmental Impact Gap":4,
+      "Household Income":15.0,
+      "Household Technology":13.0,
+      "Internet Usage":12.0,
+      "Mortgage Debt":15.0,
+      "Online Purchases (per month)":14.0,
+      "Online Video Viewing":14.0,
+      "Property Value":13.0,
+      "Residency":6.0,
+      "Social Network Usage":14.0,
+      "Urban":7.0
+    }
+  },
+  {
+    "group_type":"M",
+    "group_name":"Modest Traditions",
+    "rankings":{
+      "Age":11.0,
+      "Bedrooms":10.0,
+      "Children":13.0,
+      "Environmental Impact Gap":14,
+      "Household Income":11.0,
+      "Household Technology":12.0,
+      "Internet Usage":11.0,
+      "Mortgage Debt":11.0,
+      "Online Purchases (per month)":13.0,
+      "Online Video Viewing":10.0,
+      "Property Value":14.0,
+      "Residency":3.0,
+      "Social Network Usage":11.0,
+      "Urban":8.0
+    }
+  },
+  {
+    "group_type":"N",
+    "group_name":"Urban Cohesion",
+    "rankings":{
+      "Age":8.0,
+      "Bedrooms":9.0,
+      "Children":6.0,
+      "Environmental Impact Gap":10,
+      "Household Income":8.0,
+      "Household Technology":8.0,
+      "Internet Usage":8.0,
+      "Mortgage Debt":5.0,
+      "Online Purchases (per month)":11.0,
+      "Online Video Viewing":5.0,
+      "Property Value":5.0,
+      "Residency":7.0,
+      "Social Network Usage":8.0,
+      "Urban":4.0
+    }
+  },
+  {
+    "group_type":"O",
+    "group_name":"Rental Hubs",
+    "rankings":{
+      "Age":3.0,
+      "Bedrooms":15.0,
+      "Children":11.0,
+      "Environmental Impact Gap":1,
+      "Household Income":7.0,
+      "Household Technology":1.0,
+      "Internet Usage":4.0,
+      "Mortgage Debt":6.0,
+      "Online Purchases (per month)":7.0,
+      "Online Video Viewing":2.0,
+      "Property Value":8.0,
+      "Residency":14.0,
+      "Social Network Usage":2.0,
+      "Urban":3.0
+    }
+  },
+  {
+    "group_type":"A01",
+    "group_name":"World-Class Wealth",
+    "rankings":{
+      "Age":42.0,
+      "Bedrooms":5.0,
+      "Children":22.0,
+      "Environmental Impact Gap":16,
+      "Household Income":2.0,
+      "Household Technology":50.0,
+      "Internet Usage":43.0,
+      "Mortgage Debt":1.0,
+      "Online Purchases (per month)":55.0,
+      "Online Video Viewing":52.0,
+      "Property Value":1.0,
+      "Residency":30.0,
+      "Social Network Usage":33.0,
+      "Urban":4.0
+    }
+  },
+  {
+    "group_type":"A02",
+    "group_name":"Uptown Elite",
+    "rankings":{
+      "Age":41.0,
+      "Bedrooms":17.0,
+      "Children":25.0,
+      "Environmental Impact Gap":27,
+      "Household Income":8.0,
+      "Household Technology":44.0,
+      "Internet Usage":11.0,
+      "Mortgage Debt":9.0,
+      "Online Purchases (per month)":24.0,
+      "Online Video Viewing":35.0,
+      "Property Value":5.0,
+      "Residency":28.0,
+      "Social Network Usage":35.0,
+      "Urban":8.0
+    }
+  },
+  {
+    "group_type":"A03",
+    "group_name":"Penthouse Chic",
+    "rankings":{
+      "Age":20.0,
+      "Bedrooms":58.0,
+      "Children":38.0,
+      "Environmental Impact Gap":5,
+      "Household Income":6.0,
+      "Household Technology":2.0,
+      "Internet Usage":47.0,
+      "Mortgage Debt":11.0,
+      "Online Purchases (per month)":66.0,
+      "Online Video Viewing":50.0,
+      "Property Value":3.0,
+      "Residency":57.0,
+      "Social Network Usage":30.0,
+      "Urban":1.0
+    }
+  },
+  {
+    "group_type":"A04",
+    "group_name":"Metro High-Flyers",
+    "rankings":{
+      "Age":14.0,
+      "Bedrooms":57.0,
+      "Children":36.0,
+      "Environmental Impact Gap":12,
+      "Household Income":12.0,
+      "Household Technology":17.0,
+      "Internet Usage":2.0,
+      "Mortgage Debt":14.0,
+      "Online Purchases (per month)":31.0,
+      "Online Video Viewing":28.0,
+      "Property Value":7.0,
+      "Residency":52.0,
+      "Social Network Usage":12.0,
+      "Urban":2.0
+    }
+  },
+  {
+    "group_type":"B05",
+    "group_name":"Premium Fortunes",
+    "rankings":{
+      "Age":38.0,
+      "Bedrooms":1.0,
+      "Children":19.0,
+      "Environmental Impact Gap":26,
+      "Household Income":1.0,
+      "Household Technology":4.0,
+      "Internet Usage":14.0,
+      "Mortgage Debt":4.0,
+      "Online Purchases (per month)":3.0,
+      "Online Video Viewing":54.0,
+      "Property Value":2.0,
+      "Residency":25.0,
+      "Social Network Usage":48.0,
+      "Urban":50.0
+    }
+  },
+  {
+    "group_type":"B06",
+    "group_name":"Diamond Days",
+    "rankings":{
+      "Age":59.0,
+      "Bedrooms":4.0,
+      "Children":57.0,
+      "Environmental Impact Gap":32,
+      "Household Income":13.0,
+      "Household Technology":34.0,
+      "Internet Usage":32.0,
+      "Mortgage Debt":52.0,
+      "Online Purchases (per month)":9.0,
+      "Online Video Viewing":58.0,
+      "Property Value":6.0,
+      "Residency":11.0,
+      "Social Network Usage":61.0,
+      "Urban":53.0
+    }
+  },
+  {
+    "group_type":"B07",
+    "group_name":"Alpha Families",
+    "rankings":{
+      "Age":33.0,
+      "Bedrooms":2.0,
+      "Children":7.0,
+      "Environmental Impact Gap":30,
+      "Household Income":3.0,
+      "Household Technology":8.0,
+      "Internet Usage":29.0,
+      "Mortgage Debt":3.0,
+      "Online Purchases (per month)":6.0,
+      "Online Video Viewing":24.0,
+      "Property Value":8.0,
+      "Residency":39.0,
+      "Social Network Usage":20.0,
+      "Urban":58.0
+    }
+  },
+  {
+    "group_type":"B08",
+    "group_name":"Bank of Mum and Dad",
+    "rankings":{
+      "Age":36.0,
+      "Bedrooms":7.0,
+      "Children":42.0,
+      "Environmental Impact Gap":33,
+      "Household Income":11.0,
+      "Household Technology":28.0,
+      "Internet Usage":45.0,
+      "Mortgage Debt":23.0,
+      "Online Purchases (per month)":36.0,
+      "Online Video Viewing":38.0,
+      "Property Value":10.0,
+      "Residency":5.0,
+      "Social Network Usage":38.0,
+      "Urban":51.0
+    }
+  },
+  {
+    "group_type":"B09",
+    "group_name":"Empty-Nest Adventure",
+    "rankings":{
+      "Age":54.0,
+      "Bedrooms":8.0,
+      "Children":52.0,
+      "Environmental Impact Gap":37,
+      "Household Income":23.0,
+      "Household Technology":57.0,
+      "Internet Usage":64.0,
+      "Mortgage Debt":47.0,
+      "Online Purchases (per month)":42.0,
+      "Online Video Viewing":59.0,
+      "Property Value":13.0,
+      "Residency":10.0,
+      "Social Network Usage":63.0,
+      "Urban":52.0
+    }
+  },
+  {
+    "group_type":"C10",
+    "group_name":"Wealthy Landowners",
+    "rankings":{
+      "Age":46.0,
+      "Bedrooms":3.0,
+      "Children":30.0,
+      "Environmental Impact Gap":47,
+      "Household Income":5.0,
+      "Household Technology":14.0,
+      "Internet Usage":58.0,
+      "Mortgage Debt":21.0,
+      "Online Purchases (per month)":15.0,
+      "Online Video Viewing":43.0,
+      "Property Value":4.0,
+      "Residency":24.0,
+      "Social Network Usage":31.0,
+      "Urban":64.0
+    }
+  },
+  {
+    "group_type":"C11",
+    "group_name":"Rural Vogue",
+    "rankings":{
+      "Age":29.0,
+      "Bedrooms":9.0,
+      "Children":9.0,
+      "Environmental Impact Gap":62,
+      "Household Income":10.0,
+      "Household Technology":48.0,
+      "Internet Usage":28.0,
+      "Mortgage Debt":15.0,
+      "Online Purchases (per month)":38.0,
+      "Online Video Viewing":21.0,
+      "Property Value":18.0,
+      "Residency":45.0,
+      "Social Network Usage":42.0,
+      "Urban":65.0
+    }
+  },
+  {
+    "group_type":"C12",
+    "group_name":"Scattered Homesteads",
+    "rankings":{
+      "Age":51.0,
+      "Bedrooms":12.0,
+      "Children":40.0,
+      "Environmental Impact Gap":66,
+      "Household Income":29.0,
+      "Household Technology":66.0,
+      "Internet Usage":34.0,
+      "Mortgage Debt":40.0,
+      "Online Purchases (per month)":10.0,
+      "Online Video Viewing":57.0,
+      "Property Value":21.0,
+      "Residency":22.0,
+      "Social Network Usage":50.0,
+      "Urban":66.0
+    }
+  },
+  {
+    "group_type":"C13",
+    "group_name":"Village Retirement",
+    "rankings":{
+      "Age":61.0,
+      "Bedrooms":13.0,
+      "Children":64.0,
+      "Environmental Impact Gap":52,
+      "Household Income":36.0,
+      "Household Technology":59.0,
+      "Internet Usage":63.0,
+      "Mortgage Debt":58.0,
+      "Online Purchases (per month)":61.0,
+      "Online Video Viewing":56.0,
+      "Property Value":16.0,
+      "Residency":16.0,
+      "Social Network Usage":64.0,
+      "Urban":62.0
+    }
+  },
+  {
+    "group_type":"D14",
+    "group_name":"Satellite Settlers",
+    "rankings":{
+      "Age":40.0,
+      "Bedrooms":18.0,
+      "Children":29.0,
+      "Environmental Impact Gap":46,
+      "Household Income":26.0,
+      "Household Technology":40.0,
+      "Internet Usage":20.0,
+      "Mortgage Debt":24.0,
+      "Online Purchases (per month)":17.0,
+      "Online Video Viewing":39.0,
+      "Property Value":25.0,
+      "Residency":35.0,
+      "Social Network Usage":47.0,
+      "Urban":61.0
+    }
+  },
+  {
+    "group_type":"D15",
+    "group_name":"Local Focus",
+    "rankings":{
+      "Age":19.0,
+      "Bedrooms":34.0,
+      "Children":12.0,
+      "Environmental Impact Gap":38,
+      "Household Income":37.0,
+      "Household Technology":45.0,
+      "Internet Usage":23.0,
+      "Mortgage Debt":25.0,
+      "Online Purchases (per month)":16.0,
+      "Online Video Viewing":31.0,
+      "Property Value":46.0,
+      "Residency":46.0,
+      "Social Network Usage":16.0,
+      "Urban":59.0
+    }
+  },
+  {
+    "group_type":"D16",
+    "group_name":"Outlying Seniors",
+    "rankings":{
+      "Age":55.0,
+      "Bedrooms":40.0,
+      "Children":55.0,
+      "Environmental Impact Gap":59,
+      "Household Income":56.0,
+      "Household Technology":56.0,
+      "Internet Usage":57.0,
+      "Mortgage Debt":56.0,
+      "Online Purchases (per month)":25.0,
+      "Online Video Viewing":61.0,
+      "Property Value":45.0,
+      "Residency":18.0,
+      "Social Network Usage":54.0,
+      "Urban":60.0
+    }
+  },
+  {
+    "group_type":"D17",
+    "group_name":"Far-Flung Outposts",
+    "rankings":{
+      "Age":43.0,
+      "Bedrooms":28.0,
+      "Children":27.0,
+      "Environmental Impact Gap":65,
+      "Household Income":38.0,
+      "Household Technology":26.0,
+      "Internet Usage":15.0,
+      "Mortgage Debt":39.0,
+      "Online Purchases (per month)":1.0,
+      "Online Video Viewing":32.0,
+      "Property Value":49.0,
+      "Residency":32.0,
+      "Social Network Usage":51.0,
+      "Urban":63.0
+    }
+  },
+  {
+    "group_type":"E18",
+    "group_name":"Legacy Elders",
+    "rankings":{
+      "Age":64.0,
+      "Bedrooms":15.0,
+      "Children":65.0,
+      "Environmental Impact Gap":41,
+      "Household Income":41.0,
+      "Household Technology":62.0,
+      "Internet Usage":66.0,
+      "Mortgage Debt":60.0,
+      "Online Purchases (per month)":26.0,
+      "Online Video Viewing":64.0,
+      "Property Value":12.0,
+      "Residency":12.0,
+      "Social Network Usage":66.0,
+      "Urban":41.0
+    }
+  },
+  {
+    "group_type":"E19",
+    "group_name":"Bungalow Haven",
+    "rankings":{
+      "Age":60.0,
+      "Bedrooms":42.0,
+      "Children":62.0,
+      "Environmental Impact Gap":55,
+      "Household Income":51.0,
+      "Household Technology":65.0,
+      "Internet Usage":60.0,
+      "Mortgage Debt":57.0,
+      "Online Purchases (per month)":64.0,
+      "Online Video Viewing":62.0,
+      "Property Value":28.0,
+      "Residency":19.0,
+      "Social Network Usage":62.0,
+      "Urban":55.0
+    }
+  },
+  {
+    "group_type":"E20",
+    "group_name":"Classic Grandparents",
+    "rankings":{
+      "Age":62.0,
+      "Bedrooms":25.0,
+      "Children":61.0,
+      "Environmental Impact Gap":56,
+      "Household Income":42.0,
+      "Household Technology":60.0,
+      "Internet Usage":65.0,
+      "Mortgage Debt":61.0,
+      "Online Purchases (per month)":49.0,
+      "Online Video Viewing":66.0,
+      "Property Value":35.0,
+      "Residency":1.0,
+      "Social Network Usage":65.0,
+      "Urban":44.0
+    }
+  },
+  {
+    "group_type":"E21",
+    "group_name":"Solo Retirees",
+    "rankings":{
+      "Age":66.0,
+      "Bedrooms":32.0,
+      "Children":66.0,
+      "Environmental Impact Gap":57,
+      "Household Income":57.0,
+      "Household Technology":58.0,
+      "Internet Usage":61.0,
+      "Mortgage Debt":64.0,
+      "Online Purchases (per month)":65.0,
+      "Online Video Viewing":63.0,
+      "Property Value":38.0,
+      "Residency":9.0,
+      "Social Network Usage":49.0,
+      "Urban":40.0
+    }
+  },
+  {
+    "group_type":"F22",
+    "group_name":"Boomerang Boarders",
+    "rankings":{
+      "Age":39.0,
+      "Bedrooms":16.0,
+      "Children":53.0,
+      "Environmental Impact Gap":51,
+      "Household Income":25.0,
+      "Household Technology":27.0,
+      "Internet Usage":49.0,
+      "Mortgage Debt":29.0,
+      "Online Purchases (per month)":19.0,
+      "Online Video Viewing":45.0,
+      "Property Value":29.0,
+      "Residency":4.0,
+      "Social Network Usage":44.0,
+      "Urban":47.0
+    }
+  },
+  {
+    "group_type":"F23",
+    "group_name":"Family Ties",
+    "rankings":{
+      "Age":24.0,
+      "Bedrooms":14.0,
+      "Children":17.0,
+      "Environmental Impact Gap":40,
+      "Household Income":15.0,
+      "Household Technology":21.0,
+      "Internet Usage":38.0,
+      "Mortgage Debt":19.0,
+      "Online Purchases (per month)":54.0,
+      "Online Video Viewing":18.0,
+      "Property Value":30.0,
+      "Residency":15.0,
+      "Social Network Usage":6.0,
+      "Urban":42.0
+    }
+  },
+  {
+    "group_type":"F24",
+    "group_name":"Fledgling Free",
+    "rankings":{
+      "Age":48.0,
+      "Bedrooms":24.0,
+      "Children":46.0,
+      "Environmental Impact Gap":53,
+      "Household Income":31.0,
+      "Household Technology":39.0,
+      "Internet Usage":53.0,
+      "Mortgage Debt":38.0,
+      "Online Purchases (per month)":33.0,
+      "Online Video Viewing":53.0,
+      "Property Value":37.0,
+      "Residency":13.0,
+      "Social Network Usage":53.0,
+      "Urban":46.0
+    }
+  },
+  {
+    "group_type":"F25",
+    "group_name":"Dependable Me",
+    "rankings":{
+      "Age":47.0,
+      "Bedrooms":33.0,
+      "Children":48.0,
+      "Environmental Impact Gap":49,
+      "Household Income":44.0,
+      "Household Technology":46.0,
+      "Internet Usage":50.0,
+      "Mortgage Debt":37.0,
+      "Online Purchases (per month)":45.0,
+      "Online Video Viewing":44.0,
+      "Property Value":39.0,
+      "Residency":21.0,
+      "Social Network Usage":52.0,
+      "Urban":48.0
+    }
+  },
+  {
+    "group_type":"G26",
+    "group_name":"Caf\u00e9s and Catchments",
+    "rankings":{
+      "Age":30.0,
+      "Bedrooms":10.0,
+      "Children":5.0,
+      "Environmental Impact Gap":43,
+      "Household Income":4.0,
+      "Household Technology":16.0,
+      "Internet Usage":5.0,
+      "Mortgage Debt":2.0,
+      "Online Purchases (per month)":13.0,
+      "Online Video Viewing":19.0,
+      "Property Value":9.0,
+      "Residency":33.0,
+      "Social Network Usage":39.0,
+      "Urban":18.0
+    }
+  },
+  {
+    "group_type":"G27",
+    "group_name":"Thriving Independence",
+    "rankings":{
+      "Age":34.0,
+      "Bedrooms":20.0,
+      "Children":26.0,
+      "Environmental Impact Gap":34,
+      "Household Income":19.0,
+      "Household Technology":41.0,
+      "Internet Usage":9.0,
+      "Mortgage Debt":16.0,
+      "Online Purchases (per month)":20.0,
+      "Online Video Viewing":36.0,
+      "Property Value":15.0,
+      "Residency":38.0,
+      "Social Network Usage":41.0,
+      "Urban":32.0
+    }
+  },
+  {
+    "group_type":"G28",
+    "group_name":"Modern Parents",
+    "rankings":{
+      "Age":32.0,
+      "Bedrooms":6.0,
+      "Children":8.0,
+      "Environmental Impact Gap":18,
+      "Household Income":7.0,
+      "Household Technology":7.0,
+      "Internet Usage":27.0,
+      "Mortgage Debt":8.0,
+      "Online Purchases (per month)":18.0,
+      "Online Video Viewing":29.0,
+      "Property Value":23.0,
+      "Residency":31.0,
+      "Social Network Usage":8.0,
+      "Urban":56.0
+    }
+  },
+  {
+    "group_type":"G29",
+    "group_name":"Mid-Career Convention",
+    "rankings":{
+      "Age":27.0,
+      "Bedrooms":11.0,
+      "Children":1.0,
+      "Environmental Impact Gap":39,
+      "Household Income":9.0,
+      "Household Technology":10.0,
+      "Internet Usage":16.0,
+      "Mortgage Debt":6.0,
+      "Online Purchases (per month)":4.0,
+      "Online Video Viewing":30.0,
+      "Property Value":24.0,
+      "Residency":34.0,
+      "Social Network Usage":28.0,
+      "Urban":54.0
+    }
+  },
+  {
+    "group_type":"H30",
+    "group_name":"Primary Ambitions",
+    "rankings":{
+      "Age":15.0,
+      "Bedrooms":26.0,
+      "Children":4.0,
+      "Environmental Impact Gap":31,
+      "Household Income":14.0,
+      "Household Technology":9.0,
+      "Internet Usage":31.0,
+      "Mortgage Debt":7.0,
+      "Online Purchases (per month)":5.0,
+      "Online Video Viewing":17.0,
+      "Property Value":27.0,
+      "Residency":48.0,
+      "Social Network Usage":24.0,
+      "Urban":24.0
+    }
+  },
+  {
+    "group_type":"H31",
+    "group_name":"Affordable Fringe",
+    "rankings":{
+      "Age":28.0,
+      "Bedrooms":19.0,
+      "Children":2.0,
+      "Environmental Impact Gap":50,
+      "Household Income":20.0,
+      "Household Technology":22.0,
+      "Internet Usage":44.0,
+      "Mortgage Debt":17.0,
+      "Online Purchases (per month)":12.0,
+      "Online Video Viewing":33.0,
+      "Property Value":44.0,
+      "Residency":27.0,
+      "Social Network Usage":27.0,
+      "Urban":39.0
+    }
+  },
+  {
+    "group_type":"H32",
+    "group_name":"First-Rung Futures",
+    "rankings":{
+      "Age":6.0,
+      "Bedrooms":35.0,
+      "Children":15.0,
+      "Environmental Impact Gap":54,
+      "Household Income":21.0,
+      "Household Technology":13.0,
+      "Internet Usage":6.0,
+      "Mortgage Debt":13.0,
+      "Online Purchases (per month)":2.0,
+      "Online Video Viewing":26.0,
+      "Property Value":43.0,
+      "Residency":54.0,
+      "Social Network Usage":23.0,
+      "Urban":45.0
+    }
+  },
+  {
+    "group_type":"H33",
+    "group_name":"Contemporary Starts",
+    "rankings":{
+      "Age":7.0,
+      "Bedrooms":30.0,
+      "Children":14.0,
+      "Environmental Impact Gap":14,
+      "Household Income":17.0,
+      "Household Technology":38.0,
+      "Internet Usage":55.0,
+      "Mortgage Debt":10.0,
+      "Online Purchases (per month)":21.0,
+      "Online Video Viewing":5.0,
+      "Property Value":34.0,
+      "Residency":60.0,
+      "Social Network Usage":4.0,
+      "Urban":57.0
+    }
+  },
+  {
+    "group_type":"H34",
+    "group_name":"New Foundations",
+    "rankings":{
+      "Age":12.0,
+      "Bedrooms":39.0,
+      "Children":21.0,
+      "Environmental Impact Gap":3,
+      "Household Income":16.0,
+      "Household Technology":18.0,
+      "Internet Usage":30.0,
+      "Mortgage Debt":5.0,
+      "Online Purchases (per month)":11.0,
+      "Online Video Viewing":20.0,
+      "Property Value":22.0,
+      "Residency":66.0,
+      "Social Network Usage":22.0,
+      "Urban":22.0
+    }
+  },
+  {
+    "group_type":"H35",
+    "group_name":"Flying Solo",
+    "rankings":{
+      "Age":2.0,
+      "Bedrooms":45.0,
+      "Children":37.0,
+      "Environmental Impact Gap":24,
+      "Household Income":28.0,
+      "Household Technology":24.0,
+      "Internet Usage":3.0,
+      "Mortgage Debt":26.0,
+      "Online Purchases (per month)":51.0,
+      "Online Video Viewing":3.0,
+      "Property Value":36.0,
+      "Residency":64.0,
+      "Social Network Usage":15.0,
+      "Urban":38.0
+    }
+  },
+  {
+    "group_type":"I36",
+    "group_name":"Solid Economy",
+    "rankings":{
+      "Age":21.0,
+      "Bedrooms":37.0,
+      "Children":11.0,
+      "Environmental Impact Gap":21,
+      "Household Income":50.0,
+      "Household Technology":29.0,
+      "Internet Usage":18.0,
+      "Mortgage Debt":50.0,
+      "Online Purchases (per month)":35.0,
+      "Online Video Viewing":23.0,
+      "Property Value":33.0,
+      "Residency":29.0,
+      "Social Network Usage":7.0,
+      "Urban":25.0
+    }
+  },
+  {
+    "group_type":"I37",
+    "group_name":"Budget Generations",
+    "rankings":{
+      "Age":23.0,
+      "Bedrooms":22.0,
+      "Children":18.0,
+      "Environmental Impact Gap":42,
+      "Household Income":34.0,
+      "Household Technology":37.0,
+      "Internet Usage":39.0,
+      "Mortgage Debt":32.0,
+      "Online Purchases (per month)":30.0,
+      "Online Video Viewing":27.0,
+      "Property Value":52.0,
+      "Residency":14.0,
+      "Social Network Usage":14.0,
+      "Urban":34.0
+    }
+  },
+  {
+    "group_type":"I38",
+    "group_name":"Economical Families",
+    "rankings":{
+      "Age":11.0,
+      "Bedrooms":31.0,
+      "Children":3.0,
+      "Environmental Impact Gap":45,
+      "Household Income":32.0,
+      "Household Technology":20.0,
+      "Internet Usage":19.0,
+      "Mortgage Debt":22.0,
+      "Online Purchases (per month)":14.0,
+      "Online Video Viewing":13.0,
+      "Property Value":56.0,
+      "Residency":42.0,
+      "Social Network Usage":17.0,
+      "Urban":28.0
+    }
+  },
+  {
+    "group_type":"I39",
+    "group_name":"Families on a Budget",
+    "rankings":{
+      "Age":10.0,
+      "Bedrooms":38.0,
+      "Children":6.0,
+      "Environmental Impact Gap":23,
+      "Household Income":55.0,
+      "Household Technology":11.0,
+      "Internet Usage":13.0,
+      "Mortgage Debt":49.0,
+      "Online Purchases (per month)":23.0,
+      "Online Video Viewing":10.0,
+      "Property Value":61.0,
+      "Residency":44.0,
+      "Social Network Usage":13.0,
+      "Urban":27.0
+    }
+  },
+  {
+    "group_type":"J40",
+    "group_name":"Value Rentals",
+    "rankings":{
+      "Age":4.0,
+      "Bedrooms":48.0,
+      "Children":10.0,
+      "Environmental Impact Gap":35,
+      "Household Income":49.0,
+      "Household Technology":32.0,
+      "Internet Usage":26.0,
+      "Mortgage Debt":34.0,
+      "Online Purchases (per month)":22.0,
+      "Online Video Viewing":6.0,
+      "Property Value":63.0,
+      "Residency":56.0,
+      "Social Network Usage":2.0,
+      "Urban":43.0
+    }
+  },
+  {
+    "group_type":"J41",
+    "group_name":"Youthful Endeavours",
+    "rankings":{
+      "Age":1.0,
+      "Bedrooms":52.0,
+      "Children":23.0,
+      "Environmental Impact Gap":20,
+      "Household Income":52.0,
+      "Household Technology":42.0,
+      "Internet Usage":12.0,
+      "Mortgage Debt":43.0,
+      "Online Purchases (per month)":47.0,
+      "Online Video Viewing":11.0,
+      "Property Value":59.0,
+      "Residency":65.0,
+      "Social Network Usage":19.0,
+      "Urban":23.0
+    }
+  },
+  {
+    "group_type":"J42",
+    "group_name":"Midlife Renters",
+    "rankings":{
+      "Age":25.0,
+      "Bedrooms":51.0,
+      "Children":28.0,
+      "Environmental Impact Gap":29,
+      "Household Income":40.0,
+      "Household Technology":23.0,
+      "Internet Usage":22.0,
+      "Mortgage Debt":42.0,
+      "Online Purchases (per month)":41.0,
+      "Online Video Viewing":16.0,
+      "Property Value":51.0,
+      "Residency":53.0,
+      "Social Network Usage":34.0,
+      "Urban":30.0
+    }
+  },
+  {
+    "group_type":"J43",
+    "group_name":"Renting Rooms",
+    "rankings":{
+      "Age":13.0,
+      "Bedrooms":50.0,
+      "Children":24.0,
+      "Environmental Impact Gap":36,
+      "Household Income":47.0,
+      "Household Technology":12.0,
+      "Internet Usage":8.0,
+      "Mortgage Debt":46.0,
+      "Online Purchases (per month)":39.0,
+      "Online Video Viewing":8.0,
+      "Property Value":64.0,
+      "Residency":58.0,
+      "Social Network Usage":11.0,
+      "Urban":16.0
+    }
+  },
+  {
+    "group_type":"K44",
+    "group_name":"Inner City Stalwarts",
+    "rankings":{
+      "Age":50.0,
+      "Bedrooms":59.0,
+      "Children":47.0,
+      "Environmental Impact Gap":13,
+      "Household Income":60.0,
+      "Household Technology":51.0,
+      "Internet Usage":10.0,
+      "Mortgage Debt":53.0,
+      "Online Purchases (per month)":59.0,
+      "Online Video Viewing":42.0,
+      "Property Value":20.0,
+      "Residency":20.0,
+      "Social Network Usage":37.0,
+      "Urban":5.0
+    }
+  },
+  {
+    "group_type":"K45",
+    "group_name":"City Diversity",
+    "rankings":{
+      "Age":17.0,
+      "Bedrooms":53.0,
+      "Children":20.0,
+      "Environmental Impact Gap":10,
+      "Household Income":43.0,
+      "Household Technology":3.0,
+      "Internet Usage":21.0,
+      "Mortgage Debt":27.0,
+      "Online Purchases (per month)":50.0,
+      "Online Video Viewing":14.0,
+      "Property Value":17.0,
+      "Residency":43.0,
+      "Social Network Usage":18.0,
+      "Urban":3.0
+    }
+  },
+  {
+    "group_type":"K46",
+    "group_name":"High Rise Residents",
+    "rankings":{
+      "Age":35.0,
+      "Bedrooms":60.0,
+      "Children":35.0,
+      "Environmental Impact Gap":4,
+      "Household Income":61.0,
+      "Household Technology":53.0,
+      "Internet Usage":37.0,
+      "Mortgage Debt":51.0,
+      "Online Purchases (per month)":60.0,
+      "Online Video Viewing":34.0,
+      "Property Value":60.0,
+      "Residency":49.0,
+      "Social Network Usage":26.0,
+      "Urban":11.0
+    }
+  },
+  {
+    "group_type":"K47",
+    "group_name":"Single Essentials",
+    "rankings":{
+      "Age":31.0,
+      "Bedrooms":62.0,
+      "Children":34.0,
+      "Environmental Impact Gap":8,
+      "Household Income":59.0,
+      "Household Technology":33.0,
+      "Internet Usage":41.0,
+      "Mortgage Debt":54.0,
+      "Online Purchases (per month)":27.0,
+      "Online Video Viewing":22.0,
+      "Property Value":66.0,
+      "Residency":50.0,
+      "Social Network Usage":36.0,
+      "Urban":21.0
+    }
+  },
+  {
+    "group_type":"K48",
+    "group_name":"Mature Workers",
+    "rankings":{
+      "Age":44.0,
+      "Bedrooms":44.0,
+      "Children":44.0,
+      "Environmental Impact Gap":28,
+      "Household Income":58.0,
+      "Household Technology":31.0,
+      "Internet Usage":36.0,
+      "Mortgage Debt":59.0,
+      "Online Purchases (per month)":44.0,
+      "Online Video Viewing":48.0,
+      "Property Value":65.0,
+      "Residency":17.0,
+      "Social Network Usage":40.0,
+      "Urban":36.0
+    }
+  },
+  {
+    "group_type":"L49",
+    "group_name":"Flatlet Seniors",
+    "rankings":{
+      "Age":56.0,
+      "Bedrooms":65.0,
+      "Children":56.0,
+      "Environmental Impact Gap":7,
+      "Household Income":65.0,
+      "Household Technology":54.0,
+      "Internet Usage":33.0,
+      "Mortgage Debt":62.0,
+      "Online Purchases (per month)":56.0,
+      "Online Video Viewing":41.0,
+      "Property Value":62.0,
+      "Residency":41.0,
+      "Social Network Usage":45.0,
+      "Urban":19.0
+    }
+  },
+  {
+    "group_type":"L50",
+    "group_name":"Pocket Pensions",
+    "rankings":{
+      "Age":57.0,
+      "Bedrooms":61.0,
+      "Children":59.0,
+      "Environmental Impact Gap":19,
+      "Household Income":66.0,
+      "Household Technology":43.0,
+      "Internet Usage":51.0,
+      "Mortgage Debt":65.0,
+      "Online Purchases (per month)":46.0,
+      "Online Video Viewing":47.0,
+      "Property Value":48.0,
+      "Residency":40.0,
+      "Social Network Usage":56.0,
+      "Urban":49.0
+    }
+  },
+  {
+    "group_type":"L51",
+    "group_name":"Retirement Communities",
+    "rankings":{
+      "Age":65.0,
+      "Bedrooms":63.0,
+      "Children":60.0,
+      "Environmental Impact Gap":6,
+      "Household Income":62.0,
+      "Household Technology":64.0,
+      "Internet Usage":54.0,
+      "Mortgage Debt":55.0,
+      "Online Purchases (per month)":29.0,
+      "Online Video Viewing":65.0,
+      "Property Value":42.0,
+      "Residency":47.0,
+      "Social Network Usage":60.0,
+      "Urban":29.0
+    }
+  },
+  {
+    "group_type":"L52",
+    "group_name":"Estate Veterans",
+    "rankings":{
+      "Age":58.0,
+      "Bedrooms":46.0,
+      "Children":58.0,
+      "Environmental Impact Gap":25,
+      "Household Income":64.0,
+      "Household Technology":49.0,
+      "Internet Usage":48.0,
+      "Mortgage Debt":66.0,
+      "Online Purchases (per month)":63.0,
+      "Online Video Viewing":55.0,
+      "Property Value":50.0,
+      "Residency":8.0,
+      "Social Network Usage":58.0,
+      "Urban":35.0
+    }
+  },
+  {
+    "group_type":"L53",
+    "group_name":"Seasoned Survivors",
+    "rankings":{
+      "Age":63.0,
+      "Bedrooms":41.0,
+      "Children":63.0,
+      "Environmental Impact Gap":63,
+      "Household Income":63.0,
+      "Household Technology":55.0,
+      "Internet Usage":59.0,
+      "Mortgage Debt":63.0,
+      "Online Purchases (per month)":43.0,
+      "Online Video Viewing":60.0,
+      "Property Value":58.0,
+      "Residency":7.0,
+      "Social Network Usage":59.0,
+      "Urban":26.0
+    }
+  },
+  {
+    "group_type":"M54",
+    "group_name":"Down-to-Earth Owners",
+    "rankings":{
+      "Age":53.0,
+      "Bedrooms":36.0,
+      "Children":51.0,
+      "Environmental Impact Gap":61,
+      "Household Income":48.0,
+      "Household Technology":63.0,
+      "Internet Usage":62.0,
+      "Mortgage Debt":48.0,
+      "Online Purchases (per month)":48.0,
+      "Online Video Viewing":49.0,
+      "Property Value":55.0,
+      "Residency":3.0,
+      "Social Network Usage":57.0,
+      "Urban":37.0
+    }
+  },
+  {
+    "group_type":"M55",
+    "group_name":"Back with the Folks",
+    "rankings":{
+      "Age":37.0,
+      "Bedrooms":29.0,
+      "Children":50.0,
+      "Environmental Impact Gap":58,
+      "Household Income":35.0,
+      "Household Technology":36.0,
+      "Internet Usage":56.0,
+      "Mortgage Debt":36.0,
+      "Online Purchases (per month)":37.0,
+      "Online Video Viewing":40.0,
+      "Property Value":47.0,
+      "Residency":6.0,
+      "Social Network Usage":32.0,
+      "Urban":33.0
+    }
+  },
+  {
+    "group_type":"M56",
+    "group_name":"Self Supporters",
+    "rankings":{
+      "Age":45.0,
+      "Bedrooms":47.0,
+      "Children":45.0,
+      "Environmental Impact Gap":48,
+      "Household Income":54.0,
+      "Household Technology":35.0,
+      "Internet Usage":24.0,
+      "Mortgage Debt":35.0,
+      "Online Purchases (per month)":57.0,
+      "Online Video Viewing":46.0,
+      "Property Value":54.0,
+      "Residency":23.0,
+      "Social Network Usage":46.0,
+      "Urban":31.0
+    }
+  },
+  {
+    "group_type":"N57",
+    "group_name":"Community Elders",
+    "rankings":{
+      "Age":49.0,
+      "Bedrooms":23.0,
+      "Children":49.0,
+      "Environmental Impact Gap":60,
+      "Household Income":45.0,
+      "Household Technology":52.0,
+      "Internet Usage":42.0,
+      "Mortgage Debt":44.0,
+      "Online Purchases (per month)":40.0,
+      "Online Video Viewing":37.0,
+      "Property Value":14.0,
+      "Residency":2.0,
+      "Social Network Usage":43.0,
+      "Urban":13.0
+    }
+  },
+  {
+    "group_type":"N58",
+    "group_name":"Culture & Comfort",
+    "rankings":{
+      "Age":22.0,
+      "Bedrooms":21.0,
+      "Children":16.0,
+      "Environmental Impact Gap":44,
+      "Household Income":18.0,
+      "Household Technology":5.0,
+      "Internet Usage":17.0,
+      "Mortgage Debt":12.0,
+      "Online Purchases (per month)":34.0,
+      "Online Video Viewing":2.0,
+      "Property Value":11.0,
+      "Residency":36.0,
+      "Social Network Usage":10.0,
+      "Urban":9.0
+    }
+  },
+  {
+    "group_type":"N59",
+    "group_name":"Large Family Living",
+    "rankings":{
+      "Age":18.0,
+      "Bedrooms":27.0,
+      "Children":13.0,
+      "Environmental Impact Gap":64,
+      "Household Income":39.0,
+      "Household Technology":25.0,
+      "Internet Usage":40.0,
+      "Mortgage Debt":31.0,
+      "Online Purchases (per month)":8.0,
+      "Online Video Viewing":4.0,
+      "Property Value":57.0,
+      "Residency":37.0,
+      "Social Network Usage":21.0,
+      "Urban":14.0
+    }
+  },
+  {
+    "group_type":"N60",
+    "group_name":"Ageing Access",
+    "rankings":{
+      "Age":52.0,
+      "Bedrooms":54.0,
+      "Children":54.0,
+      "Environmental Impact Gap":17,
+      "Household Income":53.0,
+      "Household Technology":61.0,
+      "Internet Usage":46.0,
+      "Mortgage Debt":41.0,
+      "Online Purchases (per month)":62.0,
+      "Online Video Viewing":51.0,
+      "Property Value":32.0,
+      "Residency":26.0,
+      "Social Network Usage":55.0,
+      "Urban":15.0
+    }
+  },
+  {
+    "group_type":"O61",
+    "group_name":"Career Builders",
+    "rankings":{
+      "Age":8.0,
+      "Bedrooms":56.0,
+      "Children":33.0,
+      "Environmental Impact Gap":15,
+      "Household Income":24.0,
+      "Household Technology":30.0,
+      "Internet Usage":52.0,
+      "Mortgage Debt":20.0,
+      "Online Purchases (per month)":7.0,
+      "Online Video Viewing":15.0,
+      "Property Value":26.0,
+      "Residency":59.0,
+      "Social Network Usage":25.0,
+      "Urban":17.0
+    }
+  },
+  {
+    "group_type":"O62",
+    "group_name":"Central Pulse",
+    "rankings":{
+      "Age":5.0,
+      "Bedrooms":66.0,
+      "Children":43.0,
+      "Environmental Impact Gap":1,
+      "Household Income":27.0,
+      "Household Technology":47.0,
+      "Internet Usage":7.0,
+      "Mortgage Debt":28.0,
+      "Online Purchases (per month)":53.0,
+      "Online Video Viewing":9.0,
+      "Property Value":41.0,
+      "Residency":62.0,
+      "Social Network Usage":9.0,
+      "Urban":7.0
+    }
+  },
+  {
+    "group_type":"O63",
+    "group_name":"Flexible Workforce",
+    "rankings":{
+      "Age":9.0,
+      "Bedrooms":55.0,
+      "Children":31.0,
+      "Environmental Impact Gap":11,
+      "Household Income":22.0,
+      "Household Technology":1.0,
+      "Internet Usage":25.0,
+      "Mortgage Debt":18.0,
+      "Online Purchases (per month)":28.0,
+      "Online Video Viewing":1.0,
+      "Property Value":19.0,
+      "Residency":61.0,
+      "Social Network Usage":3.0,
+      "Urban":6.0
+    }
+  },
+  {
+    "group_type":"O64",
+    "group_name":"Bus-Route Renters",
+    "rankings":{
+      "Age":26.0,
+      "Bedrooms":64.0,
+      "Children":39.0,
+      "Environmental Impact Gap":9,
+      "Household Income":46.0,
+      "Household Technology":19.0,
+      "Internet Usage":35.0,
+      "Mortgage Debt":33.0,
+      "Online Purchases (per month)":32.0,
+      "Online Video Viewing":12.0,
+      "Property Value":53.0,
+      "Residency":55.0,
+      "Social Network Usage":29.0,
+      "Urban":20.0
+    }
+  },
+  {
+    "group_type":"O65",
+    "group_name":"Learners & Earners",
+    "rankings":{
+      "Age":16.0,
+      "Bedrooms":43.0,
+      "Children":32.0,
+      "Environmental Impact Gap":22,
+      "Household Income":33.0,
+      "Household Technology":6.0,
+      "Internet Usage":4.0,
+      "Mortgage Debt":30.0,
+      "Online Purchases (per month)":52.0,
+      "Online Video Viewing":25.0,
+      "Property Value":40.0,
+      "Residency":51.0,
+      "Social Network Usage":5.0,
+      "Urban":12.0
+    }
+  },
+  {
+    "group_type":"O66",
+    "group_name":"Student Scene",
+    "rankings":{
+      "Age":3.0,
+      "Bedrooms":49.0,
+      "Children":41.0,
+      "Environmental Impact Gap":2,
+      "Household Income":30.0,
+      "Household Technology":15.0,
+      "Internet Usage":1.0,
+      "Mortgage Debt":45.0,
+      "Online Purchases (per month)":58.0,
+      "Online Video Viewing":7.0,
+      "Property Value":31.0,
+      "Residency":63.0,
+      "Social Network Usage":1.0,
+      "Urban":10.0
+    }
+  },
+  {
+    "group_type":"Experian Public \u00a9 2024",
+    "group_name":null,
+    "rankings":{
+      "Age":null,
+      "Bedrooms":null,
+      "Children":null,
+      "Environmental Impact Gap":null,
+      "Household Income":null,
+      "Household Technology":null,
+      "Internet Usage":null,
+      "Mortgage Debt":null,
+      "Online Purchases (per month)":null,
+      "Online Video Viewing":null,
+      "Property Value":null,
+      "Residency":null,
+      "Social Network Usage":null,
+      "Urban":null
+    }
+  },
+  {
+    "group_type":"All rights reserved.",
+    "group_name":null,
+    "rankings":{
+      "Age":null,
+      "Bedrooms":null,
+      "Children":null,
+      "Environmental Impact Gap":"Document Version: 3.2",
+      "Household Income":null,
+      "Household Technology":null,
+      "Internet Usage":null,
+      "Mortgage Debt":null,
+      "Online Purchases (per month)":null,
+      "Online Video Viewing":null,
+      "Property Value":null,
+      "Residency":null,
+      "Social Network Usage":null,
+      "Urban":null
+    }
+  }
+]
