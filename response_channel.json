@@ -1,0 +1,632 @@
+{
+  "A - City Prosperity (15+)": [
+    {
+      "channel": "Telephone",
+      "index": 127,
+      "message": "Index of 127 for responding to ads via telephone as a preferred action."
+    },
+    {
+      "channel": "Telephone: Landline",
+      "index": 192,
+      "message": "Index of 192 for responding to ads via telephone: landline as a preferred action."
+    },
+    {
+      "channel": "Telephone: Mobile Phone",
+      "index": 113,
+      "message": "Index of 113 for responding to ads via telephone: mobile phone as a preferred action."
+    },
+    {
+      "channel": "Internet",
+      "index": 85,
+      "message": "Index of 85 for responding to ads via internet as a preferred action."
+    },
+    {
+      "channel": "Email",
+      "index": 123,
+      "message": "Index of 123 for responding to ads via email as a preferred action."
+    },
+    {
+      "channel": "Digital Television",
+      "index": 130,
+      "message": "Index of 130 for responding to ads via digital television as a preferred action."
+    },
+    {
+      "channel": "Post",
+      "index": 96,
+      "message": "Index of 96 for responding to ads via post as a preferred action."
+    },
+    {
+      "channel": "In-store",
+      "index": 97,
+      "message": "Index of 97 for responding to ads via in-store as a preferred action."
+    }
+  ],
+  "B - Prestige Positions (15+)": [
+    {
+      "channel": "Telephone",
+      "index": 76,
+      "message": "Index of 76 for responding to ads via telephone as a preferred action."
+    },
+    {
+      "channel": "Telephone: Landline",
+      "index": 122,
+      "message": "Index of 122 for responding to ads via telephone: landline as a preferred action."
+    },
+    {
+      "channel": "Telephone: Mobile Phone",
+      "index": 75,
+      "message": "Index of 75 for responding to ads via telephone: mobile phone as a preferred action."
+    },
+    {
+      "channel": "Internet",
+      "index": 111,
+      "message": "Index of 111 for responding to ads via internet as a preferred action."
+    },
+    {
+      "channel": "Email",
+      "index": 100,
+      "message": "Index of 100 for responding to ads via email as a preferred action."
+    },
+    {
+      "channel": "Digital Television",
+      "index": 84,
+      "message": "Index of 84 for responding to ads via digital television as a preferred action."
+    },
+    {
+      "channel": "Post",
+      "index": 67,
+      "message": "Index of 67 for responding to ads via post as a preferred action."
+    },
+    {
+      "channel": "In-store",
+      "index": 87,
+      "message": "Index of 87 for responding to ads via in-store as a preferred action."
+    }
+  ],
+  "C - Country Living (15+)": [
+    {
+      "channel": "Telephone",
+      "index": 92,
+      "message": "Index of 92 for responding to ads via telephone as a preferred action."
+    },
+    {
+      "channel": "Telephone: Landline",
+      "index": 179,
+      "message": "Index of 179 for responding to ads via telephone: landline as a preferred action."
+    },
+    {
+      "channel": "Telephone: Mobile Phone",
+      "index": 53,
+      "message": "Index of 53 for responding to ads via telephone: mobile phone as a preferred action."
+    },
+    {
+      "channel": "Internet",
+      "index": 122,
+      "message": "Index of 122 for responding to ads via internet as a preferred action."
+    },
+    {
+      "channel": "Email",
+      "index": 99,
+      "message": "Index of 99 for responding to ads via email as a preferred action."
+    },
+    {
+      "channel": "Digital Television",
+      "index": 147,
+      "message": "Index of 147 for responding to ads via digital television as a preferred action."
+    },
+    {
+      "channel": "Post",
+      "index": 95,
+      "message": "Index of 95 for responding to ads via post as a preferred action."
+    },
+    {
+      "channel": "In-store",
+      "index": 87,
+      "message": "Index of 87 for responding to ads via in-store as a preferred action."
+    }
+  ],
+  "D - Rural Reality (15+)": [
+    {
+      "channel": "Telephone",
+      "index": 69,
+      "message": "Index of 69 for responding to ads via telephone as a preferred action."
+    },
+    {
+      "channel": "Telephone: Landline",
+      "index": 110,
+      "message": "Index of 110 for responding to ads via telephone: landline as a preferred action."
+    },
+    {
+      "channel": "Telephone: Mobile Phone",
+      "index": 49,
+      "message": "Index of 49 for responding to ads via telephone: mobile phone as a preferred action."
+    },
+    {
+      "channel": "Internet",
+      "index": 112,
+      "message": "Index of 112 for responding to ads via internet as a preferred action."
+    },
+    {
+      "channel": "Email",
+      "index": 101,
+      "message": "Index of 101 for responding to ads via email as a preferred action."
+    },
+    {
+      "channel": "Digital Television",
+      "index": 63,
+      "message": "Index of 63 for responding to ads via digital television as a preferred action."
+    },
+    {
+      "channel": "Post",
+      "index": 67,
+      "message": "Index of 67 for responding to ads via post as a preferred action."
+    },
+    {
+      "channel": "In-store",
+      "index": 75,
+      "message": "Index of 75 for responding to ads via in-store as a preferred action."
+    }
+  ],
+  "E - Senior Security (15+)": [
+    {
+      "channel": "Telephone",
+      "index": 63,
+      "message": "Index of 63 for responding to ads via telephone as a preferred action."
+    },
+    {
+      "channel": "Telephone: Landline",
+      "index": 111,
+      "message": "Index of 111 for responding to ads via telephone: landline as a preferred action."
+    },
+    {
+      "channel": "Telephone: Mobile Phone",
+      "index": 42,
+      "message": "Index of 42 for responding to ads via telephone: mobile phone as a preferred action."
+    },
+    {
+      "channel": "Internet",
+      "index": 84,
+      "message": "Index of 84 for responding to ads via internet as a preferred action."
+    },
+    {
+      "channel": "Email",
+      "index": 50,
+      "message": "Index of 50 for responding to ads via email as a preferred action."
+    },
+    {
+      "channel": "Digital Television",
+      "index": 25,
+      "message": "Index of 25 for responding to ads via digital television as a preferred action."
+    },
+    {
+      "channel": "Post",
+      "index": 107,
+      "message": "Index of 107 for responding to ads via post as a preferred action."
+    },
+    {
+      "channel": "In-store",
+      "index": 75,
+      "message": "Index of 75 for responding to ads via in-store as a preferred action."
+    }
+  ],
+  "F - Suburban Stability (15+)": [
+    {
+      "channel": "Telephone",
+      "index": 100,
+      "message": "Index of 100 for responding to ads via telephone as a preferred action."
+    },
+    {
+      "channel": "Telephone: Landline",
+      "index": 125,
+      "message": "Index of 125 for responding to ads via telephone: landline as a preferred action."
+    },
+    {
+      "channel": "Telephone: Mobile Phone",
+      "index": 91,
+      "message": "Index of 91 for responding to ads via telephone: mobile phone as a preferred action."
+    },
+    {
+      "channel": "Internet",
+      "index": 108,
+      "message": "Index of 108 for responding to ads via internet as a preferred action."
+    },
+    {
+      "channel": "Email",
+      "index": 112,
+      "message": "Index of 112 for responding to ads via email as a preferred action."
+    },
+    {
+      "channel": "Digital Television",
+      "index": 34,
+      "message": "Index of 34 for responding to ads via digital television as a preferred action."
+    },
+    {
+      "channel": "Post",
+      "index": 80,
+      "message": "Index of 80 for responding to ads via post as a preferred action."
+    },
+    {
+      "channel": "In-store",
+      "index": 102,
+      "message": "Index of 102 for responding to ads via in-store as a preferred action."
+    }
+  ],
+  "G - Domestic Success (15+)": [
+    {
+      "channel": "Telephone",
+      "index": 84,
+      "message": "Index of 84 for responding to ads via telephone as a preferred action."
+    },
+    {
+      "channel": "Telephone: Landline",
+      "index": 68,
+      "message": "Index of 68 for responding to ads via telephone: landline as a preferred action."
+    },
+    {
+      "channel": "Telephone: Mobile Phone",
+      "index": 94,
+      "message": "Index of 94 for responding to ads via telephone: mobile phone as a preferred action."
+    },
+    {
+      "channel": "Internet",
+      "index": 96,
+      "message": "Index of 96 for responding to ads via internet as a preferred action."
+    },
+    {
+      "channel": "Email",
+      "index": 120,
+      "message": "Index of 120 for responding to ads via email as a preferred action."
+    },
+    {
+      "channel": "Digital Television",
+      "index": 123,
+      "message": "Index of 123 for responding to ads via digital television as a preferred action."
+    },
+    {
+      "channel": "Post",
+      "index": 119,
+      "message": "Index of 119 for responding to ads via post as a preferred action."
+    },
+    {
+      "channel": "In-store",
+      "index": 130,
+      "message": "Index of 130 for responding to ads via in-store as a preferred action."
+    }
+  ],
+  "H - Aspiring Homemakers (15+)": [
+    {
+      "channel": "Telephone",
+      "index": 87,
+      "message": "Index of 87 for responding to ads via telephone as a preferred action."
+    },
+    {
+      "channel": "Telephone: Landline",
+      "index": 98,
+      "message": "Index of 98 for responding to ads via telephone: landline as a preferred action."
+    },
+    {
+      "channel": "Telephone: Mobile Phone",
+      "index": 81,
+      "message": "Index of 81 for responding to ads via telephone: mobile phone as a preferred action."
+    },
+    {
+      "channel": "Internet",
+      "index": 97,
+      "message": "Index of 97 for responding to ads via internet as a preferred action."
+    },
+    {
+      "channel": "Email",
+      "index": 91,
+      "message": "Index of 91 for responding to ads via email as a preferred action."
+    },
+    {
+      "channel": "Digital Television",
+      "index": 122,
+      "message": "Index of 122 for responding to ads via digital television as a preferred action."
+    },
+    {
+      "channel": "Post",
+      "index": 79,
+      "message": "Index of 79 for responding to ads via post as a preferred action."
+    },
+    {
+      "channel": "In-store",
+      "index": 99,
+      "message": "Index of 99 for responding to ads via in-store as a preferred action."
+    }
+  ],
+  "I - Family Basics (15+)": [
+    {
+      "channel": "Telephone",
+      "index": 112,
+      "message": "Index of 112 for responding to ads via telephone as a preferred action."
+    },
+    {
+      "channel": "Telephone: Landline",
+      "index": 55,
+      "message": "Index of 55 for responding to ads via telephone: landline as a preferred action."
+    },
+    {
+      "channel": "Telephone: Mobile Phone",
+      "index": 132,
+      "message": "Index of 132 for responding to ads via telephone: mobile phone as a preferred action."
+    },
+    {
+      "channel": "Internet",
+      "index": 103,
+      "message": "Index of 103 for responding to ads via internet as a preferred action."
+    },
+    {
+      "channel": "Email",
+      "index": 96,
+      "message": "Index of 96 for responding to ads via email as a preferred action."
+    },
+    {
+      "channel": "Digital Television",
+      "index": 60,
+      "message": "Index of 60 for responding to ads via digital television as a preferred action."
+    },
+    {
+      "channel": "Post",
+      "index": 115,
+      "message": "Index of 115 for responding to ads via post as a preferred action."
+    },
+    {
+      "channel": "In-store",
+      "index": 97,
+      "message": "Index of 97 for responding to ads via in-store as a preferred action."
+    }
+  ],
+  "J - Transient Renters (15+)": [
+    {
+      "channel": "Telephone",
+      "index": 143,
+      "message": "Index of 143 for responding to ads via telephone as a preferred action."
+    },
+    {
+      "channel": "Telephone: Landline",
+      "index": 75,
+      "message": "Index of 75 for responding to ads via telephone: landline as a preferred action."
+    },
+    {
+      "channel": "Telephone: Mobile Phone",
+      "index": 167,
+      "message": "Index of 167 for responding to ads via telephone: mobile phone as a preferred action."
+    },
+    {
+      "channel": "Internet",
+      "index": 79,
+      "message": "Index of 79 for responding to ads via internet as a preferred action."
+    },
+    {
+      "channel": "Email",
+      "index": 96,
+      "message": "Index of 96 for responding to ads via email as a preferred action."
+    },
+    {
+      "channel": "Digital Television",
+      "index": 166,
+      "message": "Index of 166 for responding to ads via digital television as a preferred action."
+    },
+    {
+      "channel": "Post",
+      "index": 131,
+      "message": "Index of 131 for responding to ads via post as a preferred action."
+    },
+    {
+      "channel": "In-store",
+      "index": 120,
+      "message": "Index of 120 for responding to ads via in-store as a preferred action."
+    }
+  ],
+  "K - Municipal Tenants (15+)": [
+    {
+      "channel": "Telephone",
+      "index": 149,
+      "message": "Index of 149 for responding to ads via telephone as a preferred action."
+    },
+    {
+      "channel": "Telephone: Landline",
+      "index": 129,
+      "message": "Index of 129 for responding to ads via telephone: landline as a preferred action."
+    },
+    {
+      "channel": "Telephone: Mobile Phone",
+      "index": 154,
+      "message": "Index of 154 for responding to ads via telephone: mobile phone as a preferred action."
+    },
+    {
+      "channel": "Internet",
+      "index": 97,
+      "message": "Index of 97 for responding to ads via internet as a preferred action."
+    },
+    {
+      "channel": "Email",
+      "index": 84,
+      "message": "Index of 84 for responding to ads via email as a preferred action."
+    },
+    {
+      "channel": "Digital Television",
+      "index": 194,
+      "message": "Index of 194 for responding to ads via digital television as a preferred action."
+    },
+    {
+      "channel": "Post",
+      "index": 136,
+      "message": "Index of 136 for responding to ads via post as a preferred action."
+    },
+    {
+      "channel": "In-store",
+      "index": 101,
+      "message": "Index of 101 for responding to ads via in-store as a preferred action."
+    }
+  ],
+  "L - Vintage Values (15+)": [
+    {
+      "channel": "Telephone",
+      "index": 76,
+      "message": "Index of 76 for responding to ads via telephone as a preferred action."
+    },
+    {
+      "channel": "Telephone: Landline",
+      "index": 72,
+      "message": "Index of 72 for responding to ads via telephone: landline as a preferred action."
+    },
+    {
+      "channel": "Telephone: Mobile Phone",
+      "index": 73,
+      "message": "Index of 73 for responding to ads via telephone: mobile phone as a preferred action."
+    },
+    {
+      "channel": "Internet",
+      "index": 89,
+      "message": "Index of 89 for responding to ads via internet as a preferred action."
+    },
+    {
+      "channel": "Email",
+      "index": 77,
+      "message": "Index of 77 for responding to ads via email as a preferred action."
+    },
+    {
+      "channel": "Digital Television",
+      "index": 51,
+      "message": "Index of 51 for responding to ads via digital television as a preferred action."
+    },
+    {
+      "channel": "Post",
+      "index": 59,
+      "message": "Index of 59 for responding to ads via post as a preferred action."
+    },
+    {
+      "channel": "In-store",
+      "index": 97,
+      "message": "Index of 97 for responding to ads via in-store as a preferred action."
+    }
+  ],
+  "M - Modest Traditions (15+)": [
+    {
+      "channel": "Telephone",
+      "index": 74,
+      "message": "Index of 74 for responding to ads via telephone as a preferred action."
+    },
+    {
+      "channel": "Telephone: Landline",
+      "index": 58,
+      "message": "Index of 58 for responding to ads via telephone: landline as a preferred action."
+    },
+    {
+      "channel": "Telephone: Mobile Phone",
+      "index": 78,
+      "message": "Index of 78 for responding to ads via telephone: mobile phone as a preferred action."
+    },
+    {
+      "channel": "Internet",
+      "index": 94,
+      "message": "Index of 94 for responding to ads via internet as a preferred action."
+    },
+    {
+      "channel": "Email",
+      "index": 102,
+      "message": "Index of 102 for responding to ads via email as a preferred action."
+    },
+    {
+      "channel": "Digital Television",
+      "index": 101,
+      "message": "Index of 101 for responding to ads via digital television as a preferred action."
+    },
+    {
+      "channel": "Post",
+      "index": 76,
+      "message": "Index of 76 for responding to ads via post as a preferred action."
+    },
+    {
+      "channel": "In-store",
+      "index": 110,
+      "message": "Index of 110 for responding to ads via in-store as a preferred action."
+    }
+  ],
+  "N - Urban Cohesion (15+)": [
+    {
+      "channel": "Telephone",
+      "index": 161,
+      "message": "Index of 161 for responding to ads via telephone as a preferred action."
+    },
+    {
+      "channel": "Telephone: Landline",
+      "index": 113,
+      "message": "Index of 113 for responding to ads via telephone: landline as a preferred action."
+    },
+    {
+      "channel": "Telephone: Mobile Phone",
+      "index": 175,
+      "message": "Index of 175 for responding to ads via telephone: mobile phone as a preferred action."
+    },
+    {
+      "channel": "Internet",
+      "index": 105,
+      "message": "Index of 105 for responding to ads via internet as a preferred action."
+    },
+    {
+      "channel": "Email",
+      "index": 118,
+      "message": "Index of 118 for responding to ads via email as a preferred action."
+    },
+    {
+      "channel": "Digital Television",
+      "index": 111,
+      "message": "Index of 111 for responding to ads via digital television as a preferred action."
+    },
+    {
+      "channel": "Post",
+      "index": 152,
+      "message": "Index of 152 for responding to ads via post as a preferred action."
+    },
+    {
+      "channel": "In-store",
+      "index": 93,
+      "message": "Index of 93 for responding to ads via in-store as a preferred action."
+    }
+  ],
+  "O - Rental Hubs (15+)": [
+    {
+      "channel": "Telephone",
+      "index": 103,
+      "message": "Index of 103 for responding to ads via telephone as a preferred action."
+    },
+    {
+      "channel": "Telephone: Landline",
+      "index": 61,
+      "message": "Index of 61 for responding to ads via telephone: landline as a preferred action."
+    },
+    {
+      "channel": "Telephone: Mobile Phone",
+      "index": 117,
+      "message": "Index of 117 for responding to ads via telephone: mobile phone as a preferred action."
+    },
+    {
+      "channel": "Internet",
+      "index": 109,
+      "message": "Index of 109 for responding to ads via internet as a preferred action."
+    },
+    {
+      "channel": "Email",
+      "index": 151,
+      "message": "Index of 151 for responding to ads via email as a preferred action."
+    },
+    {
+      "channel": "Digital Television",
+      "index": 145,
+      "message": "Index of 145 for responding to ads via digital television as a preferred action."
+    },
+    {
+      "channel": "Post",
+      "index": 113,
+      "message": "Index of 113 for responding to ads via post as a preferred action."
+    },
+    {
+      "channel": "In-store",
+      "index": 126,
+      "message": "Index of 126 for responding to ads via in-store as a preferred action."
+    }
+  ]
+}
