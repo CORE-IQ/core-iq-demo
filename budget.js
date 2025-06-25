@@ -4,7 +4,7 @@ function calculateBudgetDistribution(entries, media, totalBudget) {
     const segMedia = media[seg.type];
     if (segMedia) {
       segMedia.forEach((item) => {
-        if (item.index > 300) {
+        if (item.index > 90) {
           const key = item.channel;
           const weight = item.index * seg.count;
           weights[key] = (weights[key] || 0) + weight;
