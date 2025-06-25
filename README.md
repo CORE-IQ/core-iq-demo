@@ -3,9 +3,10 @@
 This is a lightweight demo that displays audience insights by UK postcode or US ZIP code. Enter a code to see the relevant Experian Mosaic groups and media consumption indices.
 
 ## Usage
-1. Open `index.html` in a browser.
-2. Enter a postcode or ZIP code.
-3. Review the Mosaic groups and media index information.
+1. Install Node.js if you have not already.
+2. Run `npm start` from the project root to launch a small local server.
+3. Open `http://localhost:8000` in your browser.
+4. Enter a postcode or search term to view the Mosaic groups and weighted media budget.
 
 The application is static and loads JSON data client-side, so it can be embedded in other pages (for example, within a HubSpot iframe).
 

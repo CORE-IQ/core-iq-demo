@@ -4,7 +4,8 @@
   "description": "Demo for CORE-IQ audience insights",
   "main": "index.html",
   "scripts": {
-    "test": "node budget.test.js"
+    "test": "node budget.test.js",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
