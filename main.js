@@ -2,7 +2,8 @@
 
 document.getElementById("submitButton").addEventListener("click", () => {
   const rawInput = document.getElementById("postcodeInput").value;
-  const postcode = rawInput.toUpperCase().replace(/\s+/g, "");
+  const query = rawInput.toUpperCase().trim();
+  const postcode = query.replace(/\s+/g, "");
   const batchFile = determineBatchFile(postcode);
 
   const postcodeData = fetch(`${batchFile}.json`).then((r) => {
@@ -21,10 +22,7 @@ document.getElementById("submitButton").addEventListener("click", () => {
       resultContainer.innerHTML = "";
 
       if (!data[postcode]) {
-        resultContainer.innerHTML = `
-          <div class="centered-card">
-            <p>No data found for postcode <strong>${postcode}</strong>.</p>
-          </div>`;
+        searchVariable(query, resultContainer);
         return;
       }
 
@@ -87,7 +85,7 @@ document.getElementById("submitButton").addEventListener("click", () => {
         .join("");
 
       // Area 3: Summary CTA
-      html += `</div><button id="resetButton" class="reset-btn">Try another postcode</button>`;
+      html += `</div><button id="resetButton" class="reset-btn">Try another search</button>`;
       resultContainer.innerHTML = html;
 
       document.getElementById("resetButton").addEventListener("click", () => {
@@ -105,6 +103,58 @@ document.getElementById("submitButton").addEventListener("click", () => {
       document.getElementById("resultContainer").innerHTML = `<p>There was an error loading insights.</p>`;
     });
 });
+
+function searchVariable(query, container) {
+  fetch("primary_content.json")
+    .then((r) => {
+      if (!r.ok) throw new Error("Variable file not found");
+      return r.json();
+    })
+    .then((data) => {
+      const results = data.filter((entry) =>
+        Object.values(entry).some(
+          (v) => typeof v === "string" && v.toUpperCase().includes(query)
+        )
+      );
+
+      if (results.length === 0) {
+        container.innerHTML = `
+          <div class="centered-card">
+            <p>No results found for <strong>${query}</strong>.</p>
+          </div>`;
+        return;
+      }
+
+      let html = `<h2 class="result-heading">Results for ${query}</h2><div class='card-wrap'>`;
+      html += results
+        .slice(0, 5)
+        .map(
+          (e) => `
+        <div class="insight-card">
+          <div class="insight-title">${e["Unnamed: 1"] ?? ""} ${e["Unnamed: 2"] ?? ""}</div>
+          <div class="insight-message">${e["Unnamed: 3"] ?? ""}</div>
+        </div>`
+        )
+        .join("");
+      html += `</div><button id="resetButton" class="reset-btn">Try another search</button>`;
+
+      container.innerHTML = html;
+
+      document.getElementById("resetButton").addEventListener("click", () => {
+        document.getElementById("postcodeInput").value = "";
+        container.classList.add("hidden");
+        container.innerHTML = "";
+        document.getElementById("postcodeInput").focus();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      window.scrollTo({ top: container.offsetTop - 50, behavior: 'smooth' });
+    })
+    .catch((error) => {
+      console.error("Variable search error:", error);
+      container.innerHTML = `<p>There was an error searching data.</p>`;
+    });
+}
 
 function determineBatchFile(postcode) {
   const firstLetter = postcode[0].toUpperCase();
