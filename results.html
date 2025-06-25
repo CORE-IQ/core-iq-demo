@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CORE-IQ™ | Results</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    #resultContainer {
+      margin-top: 2rem;
+      animation: fadeIn 0.8s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <section style="background: linear-gradient(to bottom, #000, #0a0a0a); min-height: 100vh; padding: 40px 20px;">
+    <div id="resultContainer" class="hidden"></div>
+  </section>
+
+  <script src="results.js"></script>
+</body>
+</html>
