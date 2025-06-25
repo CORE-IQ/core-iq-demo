@@ -100,9 +100,15 @@ function applyIndexStyles(container) {
   });
 }
 
-// Example usage loading JSON
-fetch('sample_result.json')
-  .then((r) => r.json())
-  .then((data) => {
-    renderAudienceResults(data);
-  });
+const stored = localStorage.getItem('audienceResult');
+if (stored) {
+  const data = JSON.parse(stored);
+  renderAudienceResults(data);
+} else {
+  // Fallback to sample data when no stored result exists
+  fetch('sample_result.json')
+    .then((r) => r.json())
+    .then((data) => {
+      renderAudienceResults(data);
+    });
+}
