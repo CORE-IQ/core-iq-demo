@@ -29,11 +29,18 @@ document.getElementById("submitButton").addEventListener("click", () => {
       }
 
       const entries = data[postcode];
-      const highSegments = entries.filter((e) => e.type && e.count >= 900);
-      let html = `<h2 class="result-heading">Insights for ${postcode}</h2><div class='card-wrap'>`;
+      const topSegments = entries
+        .filter((e) => e.type)
+        .sort((a, b) => b.count - a.count)
+        .slice(0, 3);
+      const budget = parseFloat(document.getElementById("budgetInput").value) || 0;
+
+      let html = `<h2 class="result-heading">Insights for ${postcode}</h2>`;
+      html += `<div class="summary-card">Total Media Budget: £${budget.toFixed(2)}</div>`;
+      html += `<div class='card-wrap'>`;
 
       // Area 1: Mosaic Segments
-      html += highSegments
+      html += topSegments
         .map(
           (entry) => `
         <div class="insight-card">
@@ -45,7 +52,7 @@ document.getElementById("submitButton").addEventListener("click", () => {
         .join("");
 
       // Area 2: Media Weighting from separate file
-      highSegments.forEach((segment) => {
+      topSegments.forEach((segment) => {
         const items = media[segment.type];
         if (items) {
           html += `<h3 class='insight-subtitle'>Media Index for ${segment.type}</h3>`;
@@ -66,8 +73,7 @@ document.getElementById("submitButton").addEventListener("click", () => {
         }
       });
 
-      const budget = parseFloat(document.getElementById("budgetInput").value) || 0;
-      const { totalIndex, distribution } = calculateBudgetDistribution(entries, media, budget);
+      const { totalIndex, distribution } = calculateBudgetDistribution(topSegments, media, budget);
       html += `<h3 class='insight-subtitle'>Total Media Index: ${totalIndex}</h3>`;
       html += Object.entries(distribution)
         .map(
