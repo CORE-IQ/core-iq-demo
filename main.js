@@ -50,15 +50,17 @@ document.getElementById("submitButton").addEventListener("click", () => {
         if (items) {
           html += `<h3 class='insight-subtitle'>Media Index for ${segment.type}</h3>`;
           html += items
-            .filter((it) => it.index >= 200)
             .map(
-              (it) => `
-          <div class="insight-card" data-aos="fade-up">
+              (it) => {
+                const indexClass = it.index > 300 ? 'high-index' : 'low-index';
+                return `
+          <div class="insight-card ${indexClass}" data-aos="fade-up">
             <div class="insight-title">${it.channel}</div>
             <div class="insight-index">Index = ${it.index ?? "—"}</div>
             <div class="insight-message">${it.message ?? ""}</div>
           </div>
-        `
+        `;
+              }
             )
             .join("");
         }
