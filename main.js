@@ -11,7 +11,7 @@ document.getElementById("submitButton").addEventListener("click", () => {
     return r.json();
   });
 
-  const mediaData = fetch("media.json").then((r) => {
+  const mediaData = fetch("noticed_adverts.json").then((r) => {
     if (!r.ok) throw new Error("Media file not found");
     return r.json();
   });
@@ -51,7 +51,7 @@ document.getElementById("submitButton").addEventListener("click", () => {
 
       // Area 2: Media Weighting from separate file
       topSegments.forEach((segment) => {
-        const items = media[segment.type];
+        const items = findMediaItems(segment.type, media);
         if (items) {
           html += `<h3 class='insight-subtitle'>Media Index for ${segment.type}</h3>`;
           html += items
@@ -100,7 +100,9 @@ document.getElementById("submitButton").addEventListener("click", () => {
     })
     .catch((error) => {
       console.error("Error loading data:", error);
-      document.getElementById("resultContainer").innerHTML = `<p>There was an error loading insights.</p>`;
+      const resultContainer = document.getElementById("resultContainer");
+      resultContainer.classList.remove("hidden");
+      resultContainer.innerHTML = `<p>There was an error loading insights.</p>`;
     });
 });
 
@@ -165,5 +167,12 @@ function determineBatchFile(postcode) {
     S: "9", T: "9", U: "9", V: "9", W: "9", X: "9", Y: "9", Z: "9"
   };
   return map[firstLetter] || "1";
+}
+
+function findMediaItems(segmentType, mediaData) {
+  if (mediaData[segmentType]) return mediaData[segmentType];
+  const code = segmentType[0];
+  const matchKey = Object.keys(mediaData).find((k) => k.startsWith(code));
+  return mediaData[matchKey];
 }
 
