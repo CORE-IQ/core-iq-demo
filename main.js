@@ -15,7 +15,12 @@ document.getElementById("submitButton").addEventListener("click", () => {
     return r.json();
   });
 
-  Promise.all([postcodeData, mediaData]).then(([data, media]) => {
+  const subgroupData = fetch("subgroups.json").then((r) => {
+    if (!r.ok) throw new Error("Subgroup file not found");
+    return r.json();
+  });
+
+  Promise.all([postcodeData, mediaData, subgroupData]).then(([data, media, subgroups]) => {
       const resultContainer = document.getElementById("resultContainer");
       resultContainer.classList.remove("hidden");
       resultContainer.innerHTML = "";
@@ -30,7 +35,16 @@ document.getElementById("submitButton").addEventListener("click", () => {
 
       const entries = data[postcode];
       const highSegments = entries.filter((e) => e.type && e.count >= 900);
+      const audienceText = document.getElementById("audienceInput").value.toLowerCase();
+      const bestGroup = findBestSubgroup(subgroups, audienceText);
       let html = `<h2 class="result-heading">Insights for ${postcode}</h2><div class='card-wrap'>`;
+      if (bestGroup) {
+        html += `
+        <div class="insight-card" data-aos="fade-up">
+          <div class="insight-title">Top Mosaic Match: ${bestGroup.group}</div>
+          <div class="insight-index">Index = ${bestGroup.index}</div>
+        </div>`;
+      }
 
       // Area 1: Mosaic Segments
       html += highSegments
@@ -50,19 +64,36 @@ document.getElementById("submitButton").addEventListener("click", () => {
         if (items) {
           html += `<h3 class='insight-subtitle'>Media Index for ${segment.type}</h3>`;
           html += items
-            .filter((it) => it.index >= 900)
+            .filter((it) => it.index >= 50)
             .map(
-              (it) => `
-          <div class="insight-card" data-aos="fade-up">
+              (it) => {
+                const cardClass = it.index < 100 ? "insight-card low-index" : "insight-card";
+                return `
+          <div class="${cardClass}" data-aos="fade-up">
             <div class="insight-title">${it.channel}</div>
             <div class="insight-index">Index = ${it.index ?? "—"}</div>
             <div class="insight-message">${it.message ?? ""}</div>
           </div>
-        `
+        `;
+              }
             )
             .join("");
         }
       });
+
+      const budget = parseFloat(document.getElementById("budgetInput").value) || 0;
+      const { totalIndex, distribution } = calculateBudgetDistribution(entries, media, budget);
+      html += `<h3 class='insight-subtitle'>Total Media Index: ${totalIndex}</h3>`;
+      html += Object.entries(distribution)
+        .map(
+          ([channel, info]) => `
+          <div class="insight-card" data-aos="fade-up">
+            <div class="insight-title">${channel}</div>
+            <div class="insight-index">Budget £${info.budget.toFixed(2)}</div>
+          </div>
+        `
+        )
+        .join("");
 
       // Area 3: Summary CTA
       html += `</div><button id="resetButton" class="reset-btn">Try another postcode</button>`;
@@ -93,5 +124,27 @@ function determineBatchFile(postcode) {
     S: "9", T: "9", U: "9", V: "9", W: "9", X: "9", Y: "9", Z: "9"
   };
   return map[firstLetter] || "1";
+}
+
+function findBestSubgroup(subgroups, text) {
+  let best = null;
+  let bestScore = -1;
+  subgroups.forEach((group) => {
+    let score = 0;
+    if (group.gender && text.includes(group.gender)) score++;
+    if (group.location && text.includes(group.location.toLowerCase())) score++;
+    if (group.occupation && text.includes(group.occupation.toLowerCase())) score++;
+    if (group.card && text.includes(group.card.toLowerCase())) score++;
+    if (group.interests) {
+      group.interests.forEach((i) => {
+        if (text.includes(i)) score++;
+      });
+    }
+    if (score > bestScore) {
+      bestScore = score;
+      best = group;
+    }
+  });
+  return best;
 }
 
