@@ -1,0 +1,1496 @@
+[
+  {
+    "group_type": "A",
+    "group_name": "City Prosperity",
+    "distribution": {
+      "East": 1.1,
+      "East Midlands": 0.15,
+      "London": 27.42,
+      "North East": 0.17,
+      "North West": 0.48,
+      "Northern Ireland": 0.12,
+      "Scotland": 1.6,
+      "South East": 1.53,
+      "South West": 1.25,
+      "Wales": 0.37,
+      "West Midlands": 0.38,
+      "Yorkshire and the Humber": 0.34
+    }
+  },
+  {
+    "group_type": "B",
+    "group_name": "Prestige Positions",
+    "distribution": {
+      "East": 9.459999999999999,
+      "East Midlands": 5.76,
+      "London": 4.71,
+      "North East": 4.27,
+      "North West": 6.79,
+      "Northern Ireland": 5.2299999999999995,
+      "Scotland": 7.95,
+      "South East": 14.59,
+      "South West": 7.0,
+      "Wales": 6.54,
+      "West Midlands": 6.77,
+      "Yorkshire and the Humber": 5.47
+    }
+  },
+  {
+    "group_type": "C",
+    "group_name": "Country Living",
+    "distribution": {
+      "East": 8.54,
+      "East Midlands": 7.52,
+      "London": 0.05,
+      "North East": 2.82,
+      "North West": 3.42,
+      "Northern Ireland": 15.51,
+      "Scotland": 6.7,
+      "South East": 7.01,
+      "South West": 12.77,
+      "Wales": 10.9,
+      "West Midlands": 6.33,
+      "Yorkshire and the Humber": 4.96
+    }
+  },
+  {
+    "group_type": "D",
+    "group_name": "Rural Reality",
+    "distribution": {
+      "East": 9.69,
+      "East Midlands": 8.48,
+      "London": 0.02,
+      "North East": 4.45,
+      "North West": 2.7699999999999996,
+      "Northern Ireland": 20.25,
+      "Scotland": 13.86,
+      "South East": 4.42,
+      "South West": 10.91,
+      "Wales": 13.42,
+      "West Midlands": 3.7199999999999998,
+      "Yorkshire and the Humber": 5.21
+    }
+  },
+  {
+    "group_type": "E",
+    "group_name": "Senior Security",
+    "distribution": {
+      "East": 10.61,
+      "East Midlands": 10.87,
+      "London": 3.02,
+      "North East": 9.36,
+      "North West": 10.22,
+      "Northern Ireland": 4.66,
+      "Scotland": 5.31,
+      "South East": 10.88,
+      "South West": 11.25,
+      "Wales": 8.85,
+      "West Midlands": 9.98,
+      "Yorkshire and the Humber": 10.5
+    }
+  },
+  {
+    "group_type": "F",
+    "group_name": "Suburban Stability",
+    "distribution": {
+      "East": 6.7,
+      "East Midlands": 8.54,
+      "London": 1.22,
+      "North East": 8.01,
+      "North West": 8.56,
+      "Northern Ireland": 6.55,
+      "Scotland": 4.56,
+      "South East": 6.77,
+      "South West": 7.2299999999999995,
+      "Wales": 6.43,
+      "West Midlands": 8.07,
+      "Yorkshire and the Humber": 7.77
+    }
+  },
+  {
+    "group_type": "G",
+    "group_name": "Domestic Success",
+    "distribution": {
+      "East": 9.14,
+      "East Midlands": 6.84,
+      "London": 6.88,
+      "North East": 5.64,
+      "North West": 6.31,
+      "Northern Ireland": 5.68,
+      "Scotland": 6.88,
+      "South East": 10.39,
+      "South West": 6.92,
+      "Wales": 5.24,
+      "West Midlands": 5.97,
+      "Yorkshire and the Humber": 5.68
+    }
+  },
+  {
+    "group_type": "H",
+    "group_name": "Aspiring Homemakers",
+    "distribution": {
+      "East": 12.08,
+      "East Midlands": 12.15,
+      "London": 3.14,
+      "North East": 8.959999999999999,
+      "North West": 9.97,
+      "Northern Ireland": 8.54,
+      "Scotland": 6.17,
+      "South East": 12.12,
+      "South West": 11.85,
+      "Wales": 8.7,
+      "West Midlands": 10.87,
+      "Yorkshire and the Humber": 10.16
+    }
+  },
+  {
+    "group_type": "I",
+    "group_name": "Family Basics",
+    "distribution": {
+      "East": 6.62,
+      "East Midlands": 8.24,
+      "London": 2.62,
+      "North East": 11.12,
+      "North West": 10.6,
+      "Northern Ireland": 8.43,
+      "Scotland": 5.55,
+      "South East": 6.0,
+      "South West": 5.1899999999999995,
+      "Wales": 7.87,
+      "West Midlands": 10.58,
+      "Yorkshire and the Humber": 9.91
+    }
+  },
+  {
+    "group_type": "J",
+    "group_name": "Transient Renters",
+    "distribution": {
+      "East": 3.8499999999999996,
+      "East Midlands": 7.49,
+      "London": 0.39,
+      "North East": 10.54,
+      "North West": 8.89,
+      "Northern Ireland": 6.04,
+      "Scotland": 4.14,
+      "South East": 2.7699999999999996,
+      "South West": 3.85,
+      "Wales": 5.63,
+      "West Midlands": 6.569999999999999,
+      "Yorkshire and the Humber": 8.62
+    }
+  },
+  {
+    "group_type": "K",
+    "group_name": "Municipal Tenants",
+    "distribution": {
+      "East": 2.46,
+      "East Midlands": 3.92,
+      "London": 15.83,
+      "North East": 9.31,
+      "North West": 6.55,
+      "Northern Ireland": 5.7,
+      "Scotland": 11.99,
+      "South East": 2.01,
+      "South West": 2.0799999999999996,
+      "Wales": 4.52,
+      "West Midlands": 5.54,
+      "Yorkshire and the Humber": 6.319999999999999
+    }
+  },
+  {
+    "group_type": "L",
+    "group_name": "Vintage Value",
+    "distribution": {
+      "East": 5.24,
+      "East Midlands": 6.72,
+      "London": 1.18,
+      "North East": 10.74,
+      "North West": 8.58,
+      "Northern Ireland": 4.9,
+      "Scotland": 8.53,
+      "South East": 5.22,
+      "South West": 6.12,
+      "Wales": 7.83,
+      "West Midlands": 7.83,
+      "Yorkshire and the Humber": 8.7
+    }
+  },
+  {
+    "group_type": "M",
+    "group_name": "Modest Traditions",
+    "distribution": {
+      "East": 3.26,
+      "East Midlands": 6.74,
+      "London": 0.22,
+      "North East": 9.31,
+      "North West": 8.15,
+      "Northern Ireland": 5.3,
+      "Scotland": 6.05,
+      "South East": 2.8,
+      "South West": 3.92,
+      "Wales": 8.01,
+      "West Midlands": 7.19,
+      "Yorkshire and the Humber": 7.77
+    }
+  },
+  {
+    "group_type": "N",
+    "group_name": "Urban Cohesion",
+    "distribution": {
+      "East": 4.11,
+      "East Midlands": 2.03,
+      "London": 19.78,
+      "North East": 0.99,
+      "North West": 3.01,
+      "Northern Ireland": 0.58,
+      "Scotland": 1.76,
+      "South East": 4.48,
+      "South West": 2.52,
+      "Wales": 1.26,
+      "West Midlands": 5.26,
+      "Yorkshire and the Humber": 3.15
+    }
+  },
+  {
+    "group_type": "O",
+    "group_name": "Rental Hubs",
+    "distribution": {
+      "East": 7.14,
+      "East Midlands": 4.55,
+      "London": 13.52,
+      "North East": 4.31,
+      "North West": 5.7,
+      "Northern Ireland": 2.51,
+      "Scotland": 8.95,
+      "South East": 9.01,
+      "South West": 7.14,
+      "Wales": 4.43,
+      "West Midlands": 4.94,
+      "Yorkshire and the Humber": 5.4399999999999995
+    }
+  },
+  {
+    "group_type": "A01",
+    "group_name": "World-Class Wealth",
+    "distribution": {
+      "East": 0.06999999999999999,
+      "East Midlands": 0.01,
+      "London": 4.069999999999999,
+      "North East": 0.01,
+      "North West": 0.01,
+      "Northern Ireland": 0.0,
+      "Scotland": 0.19,
+      "South East": 0.09,
+      "South West": 0.08,
+      "Wales": 0.0,
+      "West Midlands": 0.01,
+      "Yorkshire and the Humber": 0.02
+    }
+  },
+  {
+    "group_type": "A02",
+    "group_name": "Uptown Elite",
+    "distribution": {
+      "East": 0.75,
+      "East Midlands": 0.13,
+      "London": 7.49,
+      "North East": 0.15,
+      "North West": 0.28,
+      "Northern Ireland": 0.11,
+      "Scotland": 0.84,
+      "South East": 1.0,
+      "South West": 0.81,
+      "Wales": 0.32,
+      "West Midlands": 0.28,
+      "Yorkshire and the Humber": 0.29000000000000004
+    }
+  },
+  {
+    "group_type": "A03",
+    "group_name": "Penthouse Chic",
+    "distribution": {
+      "East": 0.0,
+      "East Midlands": 0.0,
+      "London": 4.84,
+      "North East": 0.0,
+      "North West": 0.01,
+      "Northern Ireland": 0.0,
+      "Scotland": 0.08,
+      "South East": 0.0,
+      "South West": 0.02,
+      "Wales": 0.0,
+      "West Midlands": 0.01,
+      "Yorkshire and the Humber": 0.01
+    }
+  },
+  {
+    "group_type": "A04",
+    "group_name": "Metro High-Flyers",
+    "distribution": {
+      "East": 0.27,
+      "East Midlands": 0.02,
+      "London": 11.02,
+      "North East": 0.01,
+      "North West": 0.17,
+      "Northern Ireland": 0.01,
+      "Scotland": 0.5,
+      "South East": 0.44,
+      "South West": 0.34,
+      "Wales": 0.05,
+      "West Midlands": 0.07,
+      "Yorkshire and the Humber": 0.03
+    }
+  },
+  {
+    "group_type": "B05",
+    "group_name": "Premium Fortunes",
+    "distribution": {
+      "East": 1.61,
+      "East Midlands": 0.25,
+      "London": 1.7,
+      "North East": 0.31,
+      "North West": 0.77,
+      "Northern Ireland": 0.47000000000000003,
+      "Scotland": 1.17,
+      "South East": 2.8099999999999996,
+      "South West": 0.48,
+      "Wales": 0.38,
+      "West Midlands": 0.65,
+      "Yorkshire and the Humber": 0.51
+    }
+  },
+  {
+    "group_type": "B06",
+    "group_name": "Diamond Days",
+    "distribution": {
+      "East": 1.65,
+      "East Midlands": 0.64,
+      "London": 1.13,
+      "North East": 0.58,
+      "North West": 1.1300000000000001,
+      "Northern Ireland": 0.55,
+      "Scotland": 1.51,
+      "South East": 2.98,
+      "South West": 1.31,
+      "Wales": 1.18,
+      "West Midlands": 1.06,
+      "Yorkshire and the Humber": 0.85
+    }
+  },
+  {
+    "group_type": "B07",
+    "group_name": "Alpha Families",
+    "distribution": {
+      "East": 2.2199999999999998,
+      "East Midlands": 1.39,
+      "London": 0.41000000000000003,
+      "North East": 0.78,
+      "North West": 1.5,
+      "Northern Ireland": 1.13,
+      "Scotland": 1.87,
+      "South East": 3.53,
+      "South West": 1.54,
+      "Wales": 1.59,
+      "West Midlands": 1.55,
+      "Yorkshire and the Humber": 1.24
+    }
+  },
+  {
+    "group_type": "B08",
+    "group_name": "Bank of Mum and Dad",
+    "distribution": {
+      "East": 1.79,
+      "East Midlands": 1.23,
+      "London": 0.97,
+      "North East": 0.75,
+      "North West": 1.3,
+      "Northern Ireland": 1.39,
+      "Scotland": 1.18,
+      "South East": 2.38,
+      "South West": 1.32,
+      "Wales": 1.25,
+      "West Midlands": 1.29,
+      "Yorkshire and the Humber": 0.98
+    }
+  },
+  {
+    "group_type": "B09",
+    "group_name": "Empty-Nest Adventure",
+    "distribution": {
+      "East": 2.18,
+      "East Midlands": 2.25,
+      "London": 0.5,
+      "North East": 1.84,
+      "North West": 2.0999999999999996,
+      "Northern Ireland": 1.69,
+      "Scotland": 2.22,
+      "South East": 2.89,
+      "South West": 2.35,
+      "Wales": 2.14,
+      "West Midlands": 2.2199999999999998,
+      "Yorkshire and the Humber": 1.89
+    }
+  },
+  {
+    "group_type": "C10",
+    "group_name": "Wealthy Landowners",
+    "distribution": {
+      "East": 1.84,
+      "East Midlands": 1.66,
+      "London": 0.03,
+      "North East": 0.45,
+      "North West": 0.89,
+      "Northern Ireland": 0.66,
+      "Scotland": 0.9,
+      "South East": 3.15,
+      "South West": 2.8099999999999996,
+      "Wales": 1.44,
+      "West Midlands": 1.72,
+      "Yorkshire and the Humber": 1.02
+    }
+  },
+  {
+    "group_type": "C11",
+    "group_name": "Rural Vogue",
+    "distribution": {
+      "East": 1.97,
+      "East Midlands": 1.64,
+      "London": 0.01,
+      "North East": 0.5700000000000001,
+      "North West": 0.67,
+      "Northern Ireland": 8.68,
+      "Scotland": 1.69,
+      "South East": 1.17,
+      "South West": 2.6599999999999997,
+      "Wales": 2.06,
+      "West Midlands": 1.3800000000000001,
+      "Yorkshire and the Humber": 1.03
+    }
+  },
+  {
+    "group_type": "C12",
+    "group_name": "Scattered Homesteads",
+    "distribution": {
+      "East": 1.51,
+      "East Midlands": 1.46,
+      "London": 0.0,
+      "North East": 0.93,
+      "North West": 0.8200000000000001,
+      "Northern Ireland": 3.76,
+      "Scotland": 2.34,
+      "South East": 0.42,
+      "South West": 3.23,
+      "Wales": 4.86,
+      "West Midlands": 1.47,
+      "Yorkshire and the Humber": 1.17
+    }
+  },
+  {
+    "group_type": "C13",
+    "group_name": "Village Retirement",
+    "distribution": {
+      "East": 3.2199999999999998,
+      "East Midlands": 2.75,
+      "London": 0.02,
+      "North East": 0.88,
+      "North West": 1.03,
+      "Northern Ireland": 2.42,
+      "Scotland": 1.76,
+      "South East": 2.2699999999999996,
+      "South West": 4.08,
+      "Wales": 2.53,
+      "West Midlands": 1.77,
+      "Yorkshire and the Humber": 1.75
+    }
+  },
+  {
+    "group_type": "D14",
+    "group_name": "Satellite Settlers",
+    "distribution": {
+      "East": 4.02,
+      "East Midlands": 3.3099999999999996,
+      "London": 0.02,
+      "North East": 1.05,
+      "North West": 1.17,
+      "Northern Ireland": 2.6199999999999997,
+      "Scotland": 1.85,
+      "South East": 2.55,
+      "South West": 4.1899999999999995,
+      "Wales": 2.28,
+      "West Midlands": 1.68,
+      "Yorkshire and the Humber": 2.09
+    }
+  },
+  {
+    "group_type": "D15",
+    "group_name": "Local Focus",
+    "distribution": {
+      "East": 2.84,
+      "East Midlands": 2.53,
+      "London": 0.0,
+      "North East": 1.48,
+      "North West": 0.76,
+      "Northern Ireland": 10.7,
+      "Scotland": 3.8,
+      "South East": 0.93,
+      "South West": 3.43,
+      "Wales": 5.1499999999999995,
+      "West Midlands": 1.04,
+      "Yorkshire and the Humber": 1.39
+    }
+  },
+  {
+    "group_type": "D16",
+    "group_name": "Outlying Seniors",
+    "distribution": {
+      "East": 2.8299999999999996,
+      "East Midlands": 2.64,
+      "London": 0.0,
+      "North East": 1.64,
+      "North West": 0.82,
+      "Northern Ireland": 6.1499999999999995,
+      "Scotland": 3.5,
+      "South East": 0.93,
+      "South West": 3.25,
+      "Wales": 4.75,
+      "West Midlands": 0.99,
+      "Yorkshire and the Humber": 1.73
+    }
+  },
+  {
+    "group_type": "D17",
+    "group_name": "Far-Flung Outposts",
+    "distribution": {
+      "East": 0.0,
+      "East Midlands": 0.0,
+      "London": 0.0,
+      "North East": 0.28,
+      "North West": 0.02,
+      "Northern Ireland": 0.78,
+      "Scotland": 4.7,
+      "South East": 0.0,
+      "South West": 0.05,
+      "Wales": 1.24,
+      "West Midlands": 0.0,
+      "Yorkshire and the Humber": 0.01
+    }
+  },
+  {
+    "group_type": "E18",
+    "group_name": "Legacy Elders",
+    "distribution": {
+      "East": 2.6799999999999997,
+      "East Midlands": 1.29,
+      "London": 2.18,
+      "North East": 1.1300000000000001,
+      "North West": 1.89,
+      "Northern Ireland": 0.9400000000000001,
+      "Scotland": 1.39,
+      "South East": 3.73,
+      "South West": 2.23,
+      "Wales": 1.59,
+      "West Midlands": 1.72,
+      "Yorkshire and the Humber": 1.44
+    }
+  },
+  {
+    "group_type": "E19",
+    "group_name": "Bungalow Haven",
+    "distribution": {
+      "East": 3.19,
+      "East Midlands": 3.52,
+      "London": 0.060000000000000005,
+      "North East": 2.53,
+      "North West": 2.15,
+      "Northern Ireland": 0.6,
+      "Scotland": 1.06,
+      "South East": 2.4499999999999997,
+      "South West": 3.8299999999999996,
+      "Wales": 2.41,
+      "West Midlands": 2.0599999999999996,
+      "Yorkshire and the Humber": 3.04
+    }
+  },
+  {
+    "group_type": "E20",
+    "group_name": "Classic Grandparents",
+    "distribution": {
+      "East": 2.0799999999999996,
+      "East Midlands": 2.81,
+      "London": 0.36,
+      "North East": 2.8,
+      "North West": 2.7899999999999996,
+      "Northern Ireland": 1.39,
+      "Scotland": 1.38,
+      "South East": 2.0999999999999996,
+      "South West": 2.34,
+      "Wales": 2.3299999999999996,
+      "West Midlands": 2.9,
+      "Yorkshire and the Humber": 2.9299999999999997
+    }
+  },
+  {
+    "group_type": "E21",
+    "group_name": "Solo Retirees",
+    "distribution": {
+      "East": 2.67,
+      "East Midlands": 3.25,
+      "London": 0.42,
+      "North East": 2.9,
+      "North West": 3.39,
+      "Northern Ireland": 1.73,
+      "Scotland": 1.47,
+      "South East": 2.61,
+      "South West": 2.85,
+      "Wales": 2.53,
+      "West Midlands": 3.3099999999999996,
+      "Yorkshire and the Humber": 3.09
+    }
+  },
+  {
+    "group_type": "F22",
+    "group_name": "Boomerang Boarders",
+    "distribution": {
+      "East": 1.89,
+      "East Midlands": 2.1,
+      "London": 0.51,
+      "North East": 2.05,
+      "North West": 2.29,
+      "Northern Ireland": 2.06,
+      "Scotland": 1.25,
+      "South East": 1.92,
+      "South West": 1.89,
+      "Wales": 1.76,
+      "West Midlands": 2.09,
+      "Yorkshire and the Humber": 1.92
+    }
+  },
+  {
+    "group_type": "F23",
+    "group_name": "Family Ties",
+    "distribution": {
+      "East": 1.26,
+      "East Midlands": 1.16,
+      "London": 0.3,
+      "North East": 0.87,
+      "North West": 1.2,
+      "Northern Ireland": 1.2,
+      "Scotland": 0.49,
+      "South East": 1.31,
+      "South West": 1.14,
+      "Wales": 0.86,
+      "West Midlands": 1.22,
+      "Yorkshire and the Humber": 0.9400000000000001
+    }
+  },
+  {
+    "group_type": "F24",
+    "group_name": "Fledgling Free",
+    "distribution": {
+      "East": 1.34,
+      "East Midlands": 2.0199999999999996,
+      "London": 0.18,
+      "North East": 2.1999999999999997,
+      "North West": 1.9,
+      "Northern Ireland": 1.04,
+      "Scotland": 1.14,
+      "South East": 1.32,
+      "South West": 1.61,
+      "Wales": 1.46,
+      "West Midlands": 1.85,
+      "Yorkshire and the Humber": 2.0599999999999996
+    }
+  },
+  {
+    "group_type": "F25",
+    "group_name": "Dependable Me",
+    "distribution": {
+      "East": 2.21,
+      "East Midlands": 3.26,
+      "London": 0.22,
+      "North East": 2.9,
+      "North West": 3.17,
+      "Northern Ireland": 2.24,
+      "Scotland": 1.69,
+      "South East": 2.22,
+      "South West": 2.58,
+      "Wales": 2.3499999999999996,
+      "West Midlands": 2.91,
+      "Yorkshire and the Humber": 2.8499999999999996
+    }
+  },
+  {
+    "group_type": "G26",
+    "group_name": "Caf\u00e9s and Catchments",
+    "distribution": {
+      "East": 2.33,
+      "East Midlands": 0.32,
+      "London": 4.97,
+      "North East": 0.47000000000000003,
+      "North West": 0.93,
+      "Northern Ireland": 0.4,
+      "Scotland": 0.58,
+      "South East": 2.77,
+      "South West": 0.9,
+      "Wales": 0.56,
+      "West Midlands": 0.67,
+      "Yorkshire and the Humber": 0.63
+    }
+  },
+  {
+    "group_type": "G27",
+    "group_name": "Thriving Independence",
+    "distribution": {
+      "East": 2.3099999999999996,
+      "East Midlands": 0.73,
+      "London": 1.77,
+      "North East": 0.54,
+      "North West": 1.1,
+      "Northern Ireland": 0.47,
+      "Scotland": 0.59,
+      "South East": 3.26,
+      "South West": 1.52,
+      "Wales": 0.69,
+      "West Midlands": 1.09,
+      "Yorkshire and the Humber": 0.87
+    }
+  },
+  {
+    "group_type": "G28",
+    "group_name": "Modern Parents",
+    "distribution": {
+      "East": 1.31,
+      "East Midlands": 2.3099999999999996,
+      "London": 0.01,
+      "North East": 2.02,
+      "North West": 1.38,
+      "Northern Ireland": 2.62,
+      "Scotland": 3.99,
+      "South East": 1.21,
+      "South West": 1.12,
+      "Wales": 1.73,
+      "West Midlands": 1.29,
+      "Yorkshire and the Humber": 1.37
+    }
+  },
+  {
+    "group_type": "G29",
+    "group_name": "Mid-Career Convention",
+    "distribution": {
+      "East": 3.1999999999999997,
+      "East Midlands": 3.48,
+      "London": 0.12,
+      "North East": 2.61,
+      "North West": 2.9,
+      "Northern Ireland": 2.19,
+      "Scotland": 1.71,
+      "South East": 3.15,
+      "South West": 3.37,
+      "Wales": 2.25,
+      "West Midlands": 2.9099999999999997,
+      "Yorkshire and the Humber": 2.81
+    }
+  },
+  {
+    "group_type": "H30",
+    "group_name": "Primary Ambitions",
+    "distribution": {
+      "East": 4.33,
+      "East Midlands": 1.54,
+      "London": 1.74,
+      "North East": 0.9400000000000001,
+      "North West": 1.84,
+      "Northern Ireland": 1.03,
+      "Scotland": 0.75,
+      "South East": 5.0,
+      "South West": 3.23,
+      "Wales": 1.09,
+      "West Midlands": 2.12,
+      "Yorkshire and the Humber": 1.59
+    }
+  },
+  {
+    "group_type": "H31",
+    "group_name": "Affordable Fringe",
+    "distribution": {
+      "East": 1.02,
+      "East Midlands": 2.67,
+      "London": 0.04,
+      "North East": 2.4499999999999997,
+      "North West": 2.53,
+      "Northern Ireland": 2.42,
+      "Scotland": 1.33,
+      "South East": 0.81,
+      "South West": 1.56,
+      "Wales": 2.13,
+      "West Midlands": 2.65,
+      "Yorkshire and the Humber": 2.52
+    }
+  },
+  {
+    "group_type": "H32",
+    "group_name": "First-Rung Futures",
+    "distribution": {
+      "East": 1.84,
+      "East Midlands": 3.41,
+      "London": 0.15,
+      "North East": 2.86,
+      "North West": 3.34,
+      "Northern Ireland": 1.92,
+      "Scotland": 1.52,
+      "South East": 1.55,
+      "South West": 2.32,
+      "Wales": 2.7399999999999998,
+      "West Midlands": 3.25,
+      "Yorkshire and the Humber": 3.28
+    }
+  },
+  {
+    "group_type": "H33",
+    "group_name": "Contemporary Starts",
+    "distribution": {
+      "East": 3.33,
+      "East Midlands": 3.11,
+      "London": 0.08,
+      "North East": 1.82,
+      "North West": 1.21,
+      "Northern Ireland": 2.4499999999999997,
+      "Scotland": 1.61,
+      "South East": 3.23,
+      "South West": 3.26,
+      "Wales": 1.75,
+      "West Midlands": 1.63,
+      "Yorkshire and the Humber": 1.7
+    }
+  },
+  {
+    "group_type": "H34",
+    "group_name": "New Foundations",
+    "distribution": {
+      "East": 0.53,
+      "East Midlands": 0.51,
+      "London": 0.58,
+      "North East": 0.38,
+      "North West": 0.45,
+      "Northern Ireland": 0.26,
+      "Scotland": 0.49,
+      "South East": 0.51,
+      "South West": 0.45,
+      "Wales": 0.25,
+      "West Midlands": 0.43,
+      "Yorkshire and the Humber": 0.36
+    }
+  },
+  {
+    "group_type": "H35",
+    "group_name": "Flying Solo",
+    "distribution": {
+      "East": 1.03,
+      "East Midlands": 0.9,
+      "London": 0.56,
+      "North East": 0.51,
+      "North West": 0.61,
+      "Northern Ireland": 0.47000000000000003,
+      "Scotland": 0.47,
+      "South East": 1.02,
+      "South West": 1.03,
+      "Wales": 0.74,
+      "West Midlands": 0.78,
+      "Yorkshire and the Humber": 0.7
+    }
+  },
+  {
+    "group_type": "I36",
+    "group_name": "Solid Economy",
+    "distribution": {
+      "East": 3.87,
+      "East Midlands": 0.76,
+      "London": 2.51,
+      "North East": 0.29000000000000004,
+      "North West": 1.0,
+      "Northern Ireland": 0.25,
+      "Scotland": 0.54,
+      "South East": 4.0,
+      "South West": 2.23,
+      "Wales": 0.93,
+      "West Midlands": 1.56,
+      "Yorkshire and the Humber": 0.59
+    }
+  },
+  {
+    "group_type": "I37",
+    "group_name": "Budget Generations",
+    "distribution": {
+      "East": 0.7,
+      "East Midlands": 1.26,
+      "London": 0.04,
+      "North East": 1.11,
+      "North West": 1.1,
+      "Northern Ireland": 0.96,
+      "Scotland": 0.86,
+      "South East": 0.57,
+      "South West": 0.75,
+      "Wales": 1.24,
+      "West Midlands": 1.66,
+      "Yorkshire and the Humber": 1.11
+    }
+  },
+  {
+    "group_type": "I38",
+    "group_name": "Economical Families",
+    "distribution": {
+      "East": 1.17,
+      "East Midlands": 3.3699999999999997,
+      "London": 0.03,
+      "North East": 4.12,
+      "North West": 4.1,
+      "Northern Ireland": 3.09,
+      "Scotland": 2.0999999999999996,
+      "South East": 0.88,
+      "South West": 1.28,
+      "Wales": 2.94,
+      "West Midlands": 4.029999999999999,
+      "Yorkshire and the Humber": 3.97
+    }
+  },
+  {
+    "group_type": "I39",
+    "group_name": "Families on a Budget",
+    "distribution": {
+      "East": 0.88,
+      "East Midlands": 2.86,
+      "London": 0.05,
+      "North East": 5.6,
+      "North West": 4.41,
+      "Northern Ireland": 4.13,
+      "Scotland": 2.06,
+      "South East": 0.54,
+      "South West": 0.93,
+      "Wales": 2.77,
+      "West Midlands": 3.33,
+      "Yorkshire and the Humber": 4.23
+    }
+  },
+  {
+    "group_type": "J40",
+    "group_name": "Value Rentals",
+    "distribution": {
+      "East": 0.69,
+      "East Midlands": 2.39,
+      "London": 0.01,
+      "North East": 5.41,
+      "North West": 3.03,
+      "Northern Ireland": 3.2,
+      "Scotland": 2.64,
+      "South East": 0.32,
+      "South West": 0.77,
+      "Wales": 3.2399999999999998,
+      "West Midlands": 2.01,
+      "Yorkshire and the Humber": 3.12
+    }
+  },
+  {
+    "group_type": "J41",
+    "group_name": "Youthful Endeavours",
+    "distribution": {
+      "East": 0.56,
+      "East Midlands": 0.81,
+      "London": 0.24000000000000002,
+      "North East": 1.14,
+      "North West": 0.92,
+      "Northern Ireland": 0.77,
+      "Scotland": 0.93,
+      "South East": 0.4,
+      "South West": 0.48,
+      "Wales": 0.78,
+      "West Midlands": 0.93,
+      "Yorkshire and the Humber": 0.87
+    }
+  },
+  {
+    "group_type": "J42",
+    "group_name": "Midlife Renters",
+    "distribution": {
+      "East": 1.78,
+      "East Midlands": 2.31,
+      "London": 0.13,
+      "North East": 1.44,
+      "North West": 2.19,
+      "Northern Ireland": 0.83,
+      "Scotland": 0.42,
+      "South East": 1.63,
+      "South West": 2.09,
+      "Wales": 1.22,
+      "West Midlands": 2.08,
+      "Yorkshire and the Humber": 2.0399999999999996
+    }
+  },
+  {
+    "group_type": "J43",
+    "group_name": "Renting Rooms",
+    "distribution": {
+      "East": 0.82,
+      "East Midlands": 1.98,
+      "London": 0.01,
+      "North East": 2.54,
+      "North West": 2.75,
+      "Northern Ireland": 1.23,
+      "Scotland": 0.14,
+      "South East": 0.42,
+      "South West": 0.52,
+      "Wales": 0.4,
+      "West Midlands": 1.55,
+      "Yorkshire and the Humber": 2.59
+    }
+  },
+  {
+    "group_type": "K44",
+    "group_name": "Inner City Stalwarts",
+    "distribution": {
+      "East": 0.31,
+      "East Midlands": 0.09,
+      "London": 5.09,
+      "North East": 0.08,
+      "North West": 0.26,
+      "Northern Ireland": 0.05,
+      "Scotland": 0.54,
+      "South East": 0.37,
+      "South West": 0.22,
+      "Wales": 0.16,
+      "West Midlands": 0.26,
+      "Yorkshire and the Humber": 0.15000000000000002
+    }
+  },
+  {
+    "group_type": "K45",
+    "group_name": "City Diversity",
+    "distribution": {
+      "East": 0.12,
+      "East Midlands": 0.02,
+      "London": 9.91,
+      "North East": 0.01,
+      "North West": 0.09,
+      "Northern Ireland": 0.01,
+      "Scotland": 0.2,
+      "South East": 0.18000000000000002,
+      "South West": 0.11,
+      "Wales": 0.04,
+      "West Midlands": 0.19,
+      "Yorkshire and the Humber": 0.04
+    }
+  },
+  {
+    "group_type": "K46",
+    "group_name": "High Rise Residents",
+    "distribution": {
+      "East": 0.15,
+      "East Midlands": 0.12,
+      "London": 0.61,
+      "North East": 0.53,
+      "North West": 0.43,
+      "Northern Ireland": 0.1,
+      "Scotland": 1.27,
+      "South East": 0.21,
+      "South West": 0.15,
+      "Wales": 0.08,
+      "West Midlands": 0.63,
+      "Yorkshire and the Humber": 0.56
+    }
+  },
+  {
+    "group_type": "K47",
+    "group_name": "Single Essentials",
+    "distribution": {
+      "East": 1.23,
+      "East Midlands": 1.5,
+      "London": 0.2,
+      "North East": 2.4499999999999997,
+      "North West": 2.02,
+      "Northern Ireland": 1.02,
+      "Scotland": 6.79,
+      "South East": 0.92,
+      "South West": 0.87,
+      "Wales": 1.3,
+      "West Midlands": 1.99,
+      "Yorkshire and the Humber": 1.96
+    }
+  },
+  {
+    "group_type": "K48",
+    "group_name": "Mature Workers",
+    "distribution": {
+      "East": 0.65,
+      "East Midlands": 2.1999999999999997,
+      "London": 0.01,
+      "North East": 6.25,
+      "North West": 3.73,
+      "Northern Ireland": 4.52,
+      "Scotland": 3.21,
+      "South East": 0.33,
+      "South West": 0.72,
+      "Wales": 2.93,
+      "West Midlands": 2.4699999999999998,
+      "Yorkshire and the Humber": 3.61
+    }
+  },
+  {
+    "group_type": "L49",
+    "group_name": "Flatlet Seniors",
+    "distribution": {
+      "East": 0.61,
+      "East Midlands": 0.9,
+      "London": 0.16,
+      "North East": 1.62,
+      "North West": 1.7,
+      "Northern Ireland": 0.74,
+      "Scotland": 2.71,
+      "South East": 0.59,
+      "South West": 0.6900000000000001,
+      "Wales": 0.93,
+      "West Midlands": 1.1,
+      "Yorkshire and the Humber": 1.51
+    }
+  },
+  {
+    "group_type": "L50",
+    "group_name": "Pocket Pensions",
+    "distribution": {
+      "East": 1.32,
+      "East Midlands": 1.86,
+      "London": 0.1,
+      "North East": 2.92,
+      "North West": 1.31,
+      "Northern Ireland": 0.5,
+      "Scotland": 1.13,
+      "South East": 0.9,
+      "South West": 1.37,
+      "Wales": 1.63,
+      "West Midlands": 1.34,
+      "Yorkshire and the Humber": 2.15
+    }
+  },
+  {
+    "group_type": "L51",
+    "group_name": "Retirement Communities",
+    "distribution": {
+      "East": 1.02,
+      "East Midlands": 0.46,
+      "London": 0.62,
+      "North East": 0.56,
+      "North West": 0.83,
+      "Northern Ireland": 0.43,
+      "Scotland": 0.96,
+      "South East": 1.8,
+      "South West": 1.75,
+      "Wales": 0.71,
+      "West Midlands": 0.78,
+      "Yorkshire and the Humber": 0.72
+    }
+  },
+  {
+    "group_type": "L52",
+    "group_name": "Estate Veterans",
+    "distribution": {
+      "East": 1.34,
+      "East Midlands": 1.26,
+      "London": 0.26,
+      "North East": 1.96,
+      "North West": 1.58,
+      "Northern Ireland": 1.36,
+      "Scotland": 1.99,
+      "South East": 1.21,
+      "South West": 1.23,
+      "Wales": 1.74,
+      "West Midlands": 1.94,
+      "Yorkshire and the Humber": 1.44
+    }
+  },
+  {
+    "group_type": "L53",
+    "group_name": "Seasoned Survivors",
+    "distribution": {
+      "East": 0.96,
+      "East Midlands": 2.23,
+      "London": 0.04,
+      "North East": 3.67,
+      "North West": 3.16,
+      "Northern Ireland": 1.89,
+      "Scotland": 1.74,
+      "South East": 0.73,
+      "South West": 1.08,
+      "Wales": 2.81,
+      "West Midlands": 2.68,
+      "Yorkshire and the Humber": 2.88
+    }
+  },
+  {
+    "group_type": "M54",
+    "group_name": "Down-to-Earth Owners",
+    "distribution": {
+      "East": 0.7,
+      "East Midlands": 1.87,
+      "London": 0.02,
+      "North East": 3.46,
+      "North West": 2.0799999999999996,
+      "Northern Ireland": 1.12,
+      "Scotland": 2.15,
+      "South East": 0.55,
+      "South West": 0.9,
+      "Wales": 2.75,
+      "West Midlands": 1.91,
+      "Yorkshire and the Humber": 2.46
+    }
+  },
+  {
+    "group_type": "M55",
+    "group_name": "Back with the Folks",
+    "distribution": {
+      "East": 1.1300000000000001,
+      "East Midlands": 1.92,
+      "London": 0.09,
+      "North East": 2.34,
+      "North West": 2.4,
+      "Northern Ireland": 1.9,
+      "Scotland": 1.7,
+      "South East": 1.08,
+      "South West": 1.33,
+      "Wales": 2.39,
+      "West Midlands": 2.33,
+      "Yorkshire and the Humber": 2.13
+    }
+  },
+  {
+    "group_type": "M56",
+    "group_name": "Self Supporters",
+    "distribution": {
+      "East": 1.43,
+      "East Midlands": 2.9499999999999997,
+      "London": 0.1,
+      "North East": 3.51,
+      "North West": 3.67,
+      "Northern Ireland": 2.27,
+      "Scotland": 2.2,
+      "South East": 1.17,
+      "South West": 1.69,
+      "Wales": 2.8699999999999997,
+      "West Midlands": 2.95,
+      "Yorkshire and the Humber": 3.18
+    }
+  },
+  {
+    "group_type": "N57",
+    "group_name": "Community Elders",
+    "distribution": {
+      "East": 1.38,
+      "East Midlands": 0.26,
+      "London": 6.28,
+      "North East": 0.09,
+      "North West": 0.32,
+      "Northern Ireland": 0.06,
+      "Scotland": 0.07,
+      "South East": 1.44,
+      "South West": 0.53,
+      "Wales": 0.31,
+      "West Midlands": 0.6900000000000001,
+      "Yorkshire and the Humber": 0.23
+    }
+  },
+  {
+    "group_type": "N58",
+    "group_name": "Culture & Comfort",
+    "distribution": {
+      "East": 0.71,
+      "East Midlands": 0.08,
+      "London": 10.95,
+      "North East": 0.05,
+      "North West": 0.19,
+      "Northern Ireland": 0.01,
+      "Scotland": 0.04,
+      "South East": 0.81,
+      "South West": 0.18000000000000002,
+      "Wales": 0.18000000000000002,
+      "West Midlands": 0.34,
+      "Yorkshire and the Humber": 0.08
+    }
+  },
+  {
+    "group_type": "N59",
+    "group_name": "Large Family Living",
+    "distribution": {
+      "East": 0.49,
+      "East Midlands": 1.06,
+      "London": 0.03,
+      "North East": 0.17,
+      "North West": 1.6300000000000001,
+      "Northern Ireland": 0.1,
+      "Scotland": 0.01,
+      "South East": 0.12,
+      "South West": 0.07,
+      "Wales": 0.11,
+      "West Midlands": 3.31,
+      "Yorkshire and the Humber": 1.92
+    }
+  },
+  {
+    "group_type": "N60",
+    "group_name": "Ageing Access",
+    "distribution": {
+      "East": 1.53,
+      "East Midlands": 0.63,
+      "London": 2.5199999999999996,
+      "North East": 0.6900000000000001,
+      "North West": 0.88,
+      "Northern Ireland": 0.41000000000000003,
+      "Scotland": 1.63,
+      "South East": 2.11,
+      "South West": 1.75,
+      "Wales": 0.66,
+      "West Midlands": 0.92,
+      "Yorkshire and the Humber": 0.92
+    }
+  },
+  {
+    "group_type": "O61",
+    "group_name": "Career Builders",
+    "distribution": {
+      "East": 2.7399999999999998,
+      "East Midlands": 0.64,
+      "London": 3.4299999999999997,
+      "North East": 0.59,
+      "North West": 0.98,
+      "Northern Ireland": 0.51,
+      "Scotland": 1.2,
+      "South East": 3.28,
+      "South West": 1.81,
+      "Wales": 0.5700000000000001,
+      "West Midlands": 1.02,
+      "Yorkshire and the Humber": 1.06
+    }
+  },
+  {
+    "group_type": "O62",
+    "group_name": "Central Pulse",
+    "distribution": {
+      "East": 0.47,
+      "East Midlands": 0.69,
+      "London": 0.82,
+      "North East": 0.48,
+      "North West": 1.58,
+      "Northern Ireland": 0.21,
+      "Scotland": 3.28,
+      "South East": 0.72,
+      "South West": 0.86,
+      "Wales": 0.73,
+      "West Midlands": 0.8,
+      "Yorkshire and the Humber": 1.04
+    }
+  },
+  {
+    "group_type": "O63",
+    "group_name": "Flexible Workforce",
+    "distribution": {
+      "East": 0.65,
+      "East Midlands": 0.15,
+      "London": 8.25,
+      "North East": 0.09,
+      "North West": 0.24000000000000002,
+      "Northern Ireland": 0.06,
+      "Scotland": 0.18000000000000002,
+      "South East": 0.78,
+      "South West": 0.45,
+      "Wales": 0.21,
+      "West Midlands": 0.24000000000000002,
+      "Yorkshire and the Humber": 0.09
+    }
+  },
+  {
+    "group_type": "O64",
+    "group_name": "Bus-Route Renters",
+    "distribution": {
+      "East": 2.84,
+      "East Midlands": 1.18,
+      "London": 0.72,
+      "North East": 1.33,
+      "North West": 1.46,
+      "Northern Ireland": 0.71,
+      "Scotland": 3.54,
+      "South East": 3.17,
+      "South West": 2.76,
+      "Wales": 0.99,
+      "West Midlands": 1.68,
+      "Yorkshire and the Humber": 1.16
+    }
+  },
+  {
+    "group_type": "O65",
+    "group_name": "Learners & Earners",
+    "distribution": {
+      "East": 0.3,
+      "East Midlands": 1.18,
+      "London": 0.04,
+      "North East": 0.94,
+      "North West": 0.91,
+      "Northern Ireland": 0.59,
+      "Scotland": 0.31,
+      "South East": 0.78,
+      "South West": 0.83,
+      "Wales": 1.16,
+      "West Midlands": 0.66,
+      "Yorkshire and the Humber": 1.07
+    }
+  },
+  {
+    "group_type": "O66",
+    "group_name": "Student Scene",
+    "distribution": {
+      "East": 0.13,
+      "East Midlands": 0.71,
+      "London": 0.27,
+      "North East": 0.87,
+      "North West": 0.53,
+      "Northern Ireland": 0.42,
+      "Scotland": 0.45,
+      "South East": 0.28,
+      "South West": 0.42,
+      "Wales": 0.78,
+      "West Midlands": 0.55,
+      "Yorkshire and the Humber": 1.01
+    }
+  },
+  {
+    "group_type": "Experian Public \u00a9 2024",
+    "group_name": NaN,
+    "distribution": {
+      "East": NaN,
+      "East Midlands": NaN,
+      "London": NaN,
+      "North East": NaN,
+      "North West": NaN,
+      "Northern Ireland": NaN,
+      "Scotland": NaN,
+      "South East": NaN,
+      "South West": NaN,
+      "Wales": NaN,
+      "West Midlands": NaN,
+      "Yorkshire and the Humber": NaN
+    }
+  },
+  {
+    "group_type": "All rights reserved.",
+    "group_name": NaN,
+    "distribution": {
+      "East": NaN,
+      "East Midlands": NaN,
+      "London": NaN,
+      "North East": NaN,
+      "North West": NaN,
+      "Northern Ireland": NaN,
+      "Scotland": NaN,
+      "South East": NaN,
+      "South West": NaN,
+      "Wales": NaN,
+      "West Midlands": NaN,
+      "Yorkshire and the Humber": "Document Version: 3.2"
+    }
+  }
+]
