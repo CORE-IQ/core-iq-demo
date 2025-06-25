@@ -1,0 +1,224 @@
+{
+  "A01 - WORLD CLASS WEALTH (15+)": [
+    {
+      "channel": "NEWSPAPERS",
+      "index": 65,
+      "message": ""
+    },
+    {
+      "channel": "MAGAZINES",
+      "index": 129,
+      "message": ""
+    },
+    {
+      "channel": "RADIO",
+      "index": 9,
+      "message": ""
+    },
+    {
+      "channel": "TELEVISION",
+      "index": 60,
+      "message": ""
+    },
+    {
+      "channel": "CINEMA",
+      "index": 519,
+      "message": ""
+    },
+    {
+      "channel": "INTERNET",
+      "index": 66,
+      "message": ""
+    },
+    {
+      "channel": "OUTDOOR",
+      "index": 201,
+      "message": ""
+    }
+  ],
+  "A02- UPTOWN ELITE (15+)": [
+    {
+      "channel": "NEWSPAPERS",
+      "index": 198,
+      "message": ""
+    },
+    {
+      "channel": "MAGAZINES",
+      "index": 111,
+      "message": ""
+    },
+    {
+      "channel": "RADIO",
+      "index": 35,
+      "message": ""
+    },
+    {
+      "channel": "TELEVISION",
+      "index": 76,
+      "message": ""
+    },
+    {
+      "channel": "CINEMA",
+      "index": 148,
+      "message": ""
+    },
+    {
+      "channel": "INTERNET",
+      "index": 92,
+      "message": ""
+    },
+    {
+      "channel": "OUTDOOR",
+      "index": 105,
+      "message": ""
+    }
+  ],
+  "A03- PENTHOUSE CHIC (15+)": [
+    {
+      "channel": "NEWSPAPERS",
+      "index": 185,
+      "message": ""
+    },
+    {
+      "channel": "MAGAZINES",
+      "index": 245,
+      "message": ""
+    },
+    {
+      "channel": "RADIO",
+      "index": 78,
+      "message": ""
+    },
+    {
+      "channel": "TELEVISION",
+      "index": 25,
+      "message": ""
+    },
+    {
+      "channel": "CINEMA",
+      "index": 19,
+      "message": ""
+    },
+    {
+      "channel": "INTERNET",
+      "index": 115,
+      "message": ""
+    },
+    {
+      "channel": "OUTDOOR",
+      "index": 142,
+      "message": ""
+    }
+  ],
+  "A04- METRO HIGH- FLYERS (15+)": [
+    {
+      "channel": "NEWSPAPERS",
+      "index": 114,
+      "message": ""
+    },
+    {
+      "channel": "MAGAZINES",
+      "index": 55,
+      "message": ""
+    },
+    {
+      "channel": "RADIO",
+      "index": 38,
+      "message": ""
+    },
+    {
+      "channel": "TELEVISION",
+      "index": 66,
+      "message": ""
+    },
+    {
+      "channel": "CINEMA",
+      "index": 269,
+      "message": ""
+    },
+    {
+      "channel": "INTERNET",
+      "index": 120,
+      "message": ""
+    },
+    {
+      "channel": "OUTDOOR",
+      "index": 336,
+      "message": ""
+    }
+  ],
+  "B05- PREMIUM FORTUNES (15+)": [
+    {
+      "channel": "NEWSPAPERS",
+      "index": 148,
+      "message": ""
+    },
+    {
+      "channel": "MAGAZINES",
+      "index": 254,
+      "message": ""
+    },
+    {
+      "channel": "RADIO",
+      "index": 206,
+      "message": ""
+    },
+    {
+      "channel": "TELEVISION",
+      "index": 46,
+      "message": ""
+    },
+    {
+      "channel": "CINEMA",
+      "index": 42,
+      "message": ""
+    },
+    {
+      "channel": "INTERNET",
+      "index": 68,
+      "message": ""
+    },
+    {
+      "channel": "OUTDOOR",
+      "index": 115,
+      "message": ""
+    }
+  ],
+  "BO6-DIAMOND DAYS (15+)": [
+    {
+      "channel": "NEWSPAPERS",
+      "index": 236,
+      "message": ""
+    },
+    {
+      "channel": "MAGAZINES",
+      "index": 214,
+      "message": ""
+    },
+    {
+      "channel": "RADIO",
+      "index": 9,
+      "message": ""
+    },
+    {
+      "channel": "TELEVISION",
+      "index": 92,
+      "message": ""
+    },
+    {
+      "channel": "CINEMA",
+      "index": 122,
+      "message": ""
+    },
+    {
+      "channel": "INTERNET",
+      "index": 72,
+      "message": ""
+    },
+    {
+      "channel": "OUTDOOR",
+      "index": 11,
+      "message": ""
+    }
+  ]
+}

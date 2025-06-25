@@ -1,0 +1,2444 @@
+{
+  "A01 - World Class Wealth": [
+    {
+      "channel": "Newspapers",
+      "index": 7,
+      "message": "Index of 7 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 172,
+      "message": "Index of 172 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 4,
+      "message": "Index of 4 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 94,
+      "message": "Index of 94 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 247,
+      "message": "Index of 247 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 44,
+      "message": "Index of 44 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 85,
+      "message": "Index of 85 for noticing adverts via outdoor media."
+    }
+  ],
+  "A02 - Uptown Elite": [
+    {
+      "channel": "Newspapers",
+      "index": 150,
+      "message": "Index of 150 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 180,
+      "message": "Index of 180 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 81,
+      "message": "Index of 81 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 89,
+      "message": "Index of 89 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 153,
+      "message": "Index of 153 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 68,
+      "message": "Index of 68 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 98,
+      "message": "Index of 98 for noticing adverts via outdoor media."
+    }
+  ],
+  "A03 - Penthouse Chic": [
+    {
+      "channel": "Newspapers",
+      "index": 68,
+      "message": "Index of 68 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 103,
+      "message": "Index of 103 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 10,
+      "message": "Index of 10 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 33,
+      "message": "Index of 33 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 250,
+      "message": "Index of 250 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 195,
+      "message": "Index of 195 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 301,
+      "message": "Index of 301 for noticing adverts via outdoor media."
+    }
+  ],
+  "A04 - Metro High-Flyers": [
+    {
+      "channel": "Newspapers",
+      "index": 54,
+      "message": "Index of 54 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 102,
+      "message": "Index of 102 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 116,
+      "message": "Index of 116 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 57,
+      "message": "Index of 57 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 108,
+      "message": "Index of 108 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 183,
+      "message": "Index of 183 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 181,
+      "message": "Index of 181 for noticing adverts via outdoor media."
+    }
+  ],
+  "B05 - Premium Fortunes": [
+    {
+      "channel": "Newspapers",
+      "index": 119,
+      "message": "Index of 119 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 101,
+      "message": "Index of 101 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 128,
+      "message": "Index of 128 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 79,
+      "message": "Index of 79 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 141,
+      "message": "Index of 141 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 78,
+      "message": "Index of 78 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 44,
+      "message": "Index of 44 for noticing adverts via outdoor media."
+    }
+  ],
+  "B06 - Diamond Days": [
+    {
+      "channel": "Newspapers",
+      "index": 230,
+      "message": "Index of 230 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 91,
+      "message": "Index of 91 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 98,
+      "message": "Index of 98 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 115,
+      "message": "Index of 115 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 74,
+      "message": "Index of 74 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 45,
+      "message": "Index of 45 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 127,
+      "message": "Index of 127 for noticing adverts via outdoor media."
+    }
+  ],
+  "B07 - Alpha Families": [
+    {
+      "channel": "Newspapers",
+      "index": 98,
+      "message": "Index of 98 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 28,
+      "message": "Index of 28 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 122,
+      "message": "Index of 122 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 103,
+      "message": "Index of 103 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 185,
+      "message": "Index of 185 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 121,
+      "message": "Index of 121 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 100,
+      "message": "Index of 100 for noticing adverts via outdoor media."
+    }
+  ],
+  "B08 - Bank of Mum and Dad": [
+    {
+      "channel": "Newspapers",
+      "index": 141,
+      "message": "Index of 141 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 93,
+      "message": "Index of 93 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 83,
+      "message": "Index of 83 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 98,
+      "message": "Index of 98 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 121,
+      "message": "Index of 121 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 111,
+      "message": "Index of 111 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 54,
+      "message": "Index of 54 for noticing adverts via outdoor media."
+    }
+  ],
+  "B09 - Empty-Nest Adventure": [
+    {
+      "channel": "Newspapers",
+      "index": 161,
+      "message": "Index of 161 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 201,
+      "message": "Index of 201 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 21,
+      "message": "Index of 21 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 91,
+      "message": "Index of 91 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 93,
+      "message": "Index of 93 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 56,
+      "message": "Index of 56 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 77,
+      "message": "Index of 77 for noticing adverts via outdoor media."
+    }
+  ],
+  "C10 - Wealthy Landowners": [
+    {
+      "channel": "Newspapers",
+      "index": 117,
+      "message": "Index of 117 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 193,
+      "message": "Index of 193 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 125,
+      "message": "Index of 125 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 137,
+      "message": "Index of 137 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 102,
+      "message": "Index of 102 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 70,
+      "message": "Index of 70 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 46,
+      "message": "Index of 46 for noticing adverts via outdoor media."
+    }
+  ],
+  "C11 - Rural Vogue": [
+    {
+      "channel": "Newspapers",
+      "index": 11,
+      "message": "Index of 11 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 221,
+      "message": "Index of 221 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 153,
+      "message": "Index of 153 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 93,
+      "message": "Index of 93 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 117,
+      "message": "Index of 117 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 114,
+      "message": "Index of 114 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 55,
+      "message": "Index of 55 for noticing adverts via outdoor media."
+    }
+  ],
+  "C12 - Scattered Homesteads": [
+    {
+      "channel": "Newspapers",
+      "index": 50,
+      "message": "Index of 50 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 147,
+      "message": "Index of 147 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 104,
+      "message": "Index of 104 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 102,
+      "message": "Index of 102 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 36,
+      "message": "Index of 36 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 91,
+      "message": "Index of 91 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 105,
+      "message": "Index of 105 for noticing adverts via outdoor media."
+    }
+  ],
+  "C13 - Village Retirement": [
+    {
+      "channel": "Newspapers",
+      "index": 198,
+      "message": "Index of 198 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 172,
+      "message": "Index of 172 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 38,
+      "message": "Index of 38 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 100,
+      "message": "Index of 100 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 48,
+      "message": "Index of 48 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 23,
+      "message": "Index of 23 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 5,
+      "message": "Index of 5 for noticing adverts via outdoor media."
+    }
+  ],
+  "D14 - Satellite Settlers": [
+    {
+      "channel": "Newspapers",
+      "index": 46,
+      "message": "Index of 46 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 75,
+      "message": "Index of 75 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 182,
+      "message": "Index of 182 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 117,
+      "message": "Index of 117 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 97,
+      "message": "Index of 97 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 100,
+      "message": "Index of 100 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 78,
+      "message": "Index of 78 for noticing adverts via outdoor media."
+    }
+  ],
+  "D15 - Local Focus": [
+    {
+      "channel": "Newspapers",
+      "index": 23,
+      "message": "Index of 23 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 97,
+      "message": "Index of 97 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 306,
+      "message": "Index of 306 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 103,
+      "message": "Index of 103 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 92,
+      "message": "Index of 92 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 115,
+      "message": "Index of 115 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 37,
+      "message": "Index of 37 for noticing adverts via outdoor media."
+    }
+  ],
+  "D16 - Outlying Seniors": [
+    {
+      "channel": "Newspapers",
+      "index": 202,
+      "message": "Index of 202 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 109,
+      "message": "Index of 109 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 74,
+      "message": "Index of 74 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 94,
+      "message": "Index of 94 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 29,
+      "message": "Index of 29 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 56,
+      "message": "Index of 56 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 19,
+      "message": "Index of 19 for noticing adverts via outdoor media."
+    }
+  ],
+  "D17 - Far-Flung Outposts": [
+    {
+      "channel": "Newspapers",
+      "index": 122,
+      "message": "Index of 122 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 34,
+      "message": "Index of 34 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 29,
+      "message": "Index of 29 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 122,
+      "message": "Index of 122 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 83,
+      "message": "Index of 83 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 119,
+      "message": "Index of 119 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 30,
+      "message": "Index of 30 for noticing adverts via outdoor media."
+    }
+  ],
+  "E18 - Legacy Elders": [
+    {
+      "channel": "Newspapers",
+      "index": 244,
+      "message": "Index of 244 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 144,
+      "message": "Index of 144 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 54,
+      "message": "Index of 54 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 84,
+      "message": "Index of 84 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 48,
+      "message": "Index of 48 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 41,
+      "message": "Index of 41 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 80,
+      "message": "Index of 80 for noticing adverts via outdoor media."
+    }
+  ],
+  "E19 - Bungalow Haven": [
+    {
+      "channel": "Newspapers",
+      "index": 129,
+      "message": "Index of 129 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 118,
+      "message": "Index of 118 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 29,
+      "message": "Index of 29 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 126,
+      "message": "Index of 126 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 45,
+      "message": "Index of 45 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 20,
+      "message": "Index of 20 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 49,
+      "message": "Index of 49 for noticing adverts via outdoor media."
+    }
+  ],
+  "E20 - Classic Grandparents": [
+    {
+      "channel": "Newspapers",
+      "index": 268,
+      "message": "Index of 268 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 137,
+      "message": "Index of 137 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 22,
+      "message": "Index of 22 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 111,
+      "message": "Index of 111 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 53,
+      "message": "Index of 53 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 33,
+      "message": "Index of 33 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 16,
+      "message": "Index of 16 for noticing adverts via outdoor media."
+    }
+  ],
+  "E21 - Solo Retirees": [
+    {
+      "channel": "Newspapers",
+      "index": 167,
+      "message": "Index of 167 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 140,
+      "message": "Index of 140 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 68,
+      "message": "Index of 68 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 111,
+      "message": "Index of 111 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 29,
+      "message": "Index of 29 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 21,
+      "message": "Index of 21 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 70,
+      "message": "Index of 70 for noticing adverts via outdoor media."
+    }
+  ],
+  "F22 - Boomerang Boarders": [
+    {
+      "channel": "Newspapers",
+      "index": 66,
+      "message": "Index of 66 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 83,
+      "message": "Index of 83 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 132,
+      "message": "Index of 132 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 137,
+      "message": "Index of 137 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 87,
+      "message": "Index of 87 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 78,
+      "message": "Index of 78 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 74,
+      "message": "Index of 74 for noticing adverts via outdoor media."
+    }
+  ],
+  "F23 - Family Ties": [
+    {
+      "channel": "Newspapers",
+      "index": 62,
+      "message": "Index of 62 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 70,
+      "message": "Index of 70 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 152,
+      "message": "Index of 152 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 83,
+      "message": "Index of 83 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 92,
+      "message": "Index of 92 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 160,
+      "message": "Index of 160 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 165,
+      "message": "Index of 165 for noticing adverts via outdoor media."
+    }
+  ],
+  "F24 - Fledging Free": [
+    {
+      "channel": "Newspapers",
+      "index": 95,
+      "message": "Index of 95 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 67,
+      "message": "Index of 67 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 120,
+      "message": "Index of 120 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 130,
+      "message": "Index of 130 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 80,
+      "message": "Index of 80 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 61,
+      "message": "Index of 61 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 31,
+      "message": "Index of 31 for noticing adverts via outdoor media."
+    }
+  ],
+  "F25 - Dependable Me": [
+    {
+      "channel": "Newspapers",
+      "index": 99,
+      "message": "Index of 99 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 88,
+      "message": "Index of 88 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 32,
+      "message": "Index of 32 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 122,
+      "message": "Index of 122 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 53,
+      "message": "Index of 53 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 73,
+      "message": "Index of 73 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 118,
+      "message": "Index of 118 for noticing adverts via outdoor media."
+    }
+  ],
+  "G26 - Cafes and Catchments": [
+    {
+      "channel": "Newspapers",
+      "index": 107,
+      "message": "Index of 107 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 67,
+      "message": "Index of 67 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 76,
+      "message": "Index of 76 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 94,
+      "message": "Index of 94 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 147,
+      "message": "Index of 147 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 126,
+      "message": "Index of 126 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 173,
+      "message": "Index of 173 for noticing adverts via outdoor media."
+    }
+  ],
+  "G27 - Thriving Independence": [
+    {
+      "channel": "Newspapers",
+      "index": 104,
+      "message": "Index of 104 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 134,
+      "message": "Index of 134 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 104,
+      "message": "Index of 104 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 113,
+      "message": "Index of 113 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 149,
+      "message": "Index of 149 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 90,
+      "message": "Index of 90 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 87,
+      "message": "Index of 87 for noticing adverts via outdoor media."
+    }
+  ],
+  "G28 - Modern Parents": [
+    {
+      "channel": "Newspapers",
+      "index": 56,
+      "message": "Index of 56 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 63,
+      "message": "Index of 63 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 227,
+      "message": "Index of 227 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 105,
+      "message": "Index of 105 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 98,
+      "message": "Index of 98 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 103,
+      "message": "Index of 103 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 148,
+      "message": "Index of 148 for noticing adverts via outdoor media."
+    }
+  ],
+  "G29 - Mid Career Convention": [
+    {
+      "channel": "Newspapers",
+      "index": 86,
+      "message": "Index of 86 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 142,
+      "message": "Index of 142 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 101,
+      "message": "Index of 101 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 115,
+      "message": "Index of 115 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 117,
+      "message": "Index of 117 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 107,
+      "message": "Index of 107 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 79,
+      "message": "Index of 79 for noticing adverts via outdoor media."
+    }
+  ],
+  "H30 - Primary Ambitions": [
+    {
+      "channel": "Newspapers",
+      "index": 86,
+      "message": "Index of 86 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 70,
+      "message": "Index of 70 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 166,
+      "message": "Index of 166 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 82,
+      "message": "Index of 82 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 126,
+      "message": "Index of 126 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 127,
+      "message": "Index of 127 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 112,
+      "message": "Index of 112 for noticing adverts via outdoor media."
+    }
+  ],
+  "H31 - Affordable Fringe": [
+    {
+      "channel": "Newspapers",
+      "index": 39,
+      "message": "Index of 39 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 83,
+      "message": "Index of 83 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 95,
+      "message": "Index of 95 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 106,
+      "message": "Index of 106 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 184,
+      "message": "Index of 184 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 103,
+      "message": "Index of 103 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 119,
+      "message": "Index of 119 for noticing adverts via outdoor media."
+    }
+  ],
+  "H32 - First-Rung Futures": [
+    {
+      "channel": "Newspapers",
+      "index": 71,
+      "message": "Index of 71 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 90,
+      "message": "Index of 90 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 165,
+      "message": "Index of 165 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 106,
+      "message": "Index of 106 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 151,
+      "message": "Index of 151 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 125,
+      "message": "Index of 125 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 85,
+      "message": "Index of 85 for noticing adverts via outdoor media."
+    }
+  ],
+  "H33 - Contemporary Starts": [
+    {
+      "channel": "Newspapers",
+      "index": 60,
+      "message": "Index of 60 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 114,
+      "message": "Index of 114 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 164,
+      "message": "Index of 164 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 84,
+      "message": "Index of 84 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 198,
+      "message": "Index of 198 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 118,
+      "message": "Index of 118 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 81,
+      "message": "Index of 81 for noticing adverts via outdoor media."
+    }
+  ],
+  "H34 - New Foundations": [
+    {
+      "channel": "Newspapers",
+      "index": 62,
+      "message": "Index of 62 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 90,
+      "message": "Index of 90 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 143,
+      "message": "Index of 143 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 92,
+      "message": "Index of 92 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 163,
+      "message": "Index of 163 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 117,
+      "message": "Index of 117 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 107,
+      "message": "Index of 107 for noticing adverts via outdoor media."
+    }
+  ],
+  "H35 - Flying Solo": [
+    {
+      "channel": "Newspapers",
+      "index": 38,
+      "message": "Index of 38 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 147,
+      "message": "Index of 147 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 146,
+      "message": "Index of 146 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 68,
+      "message": "Index of 68 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 189,
+      "message": "Index of 189 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 114,
+      "message": "Index of 114 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 137,
+      "message": "Index of 137 for noticing adverts via outdoor media."
+    }
+  ],
+  "I36 - Solid Economy": [
+    {
+      "channel": "Newspapers",
+      "index": 63,
+      "message": "Index of 63 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 66,
+      "message": "Index of 66 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 115,
+      "message": "Index of 115 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 91,
+      "message": "Index of 91 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 148,
+      "message": "Index of 148 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 126,
+      "message": "Index of 126 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 131,
+      "message": "Index of 131 for noticing adverts via outdoor media."
+    }
+  ],
+  "I37 - Budget": [
+    {
+      "channel": "Newspapers",
+      "index": 29,
+      "message": "Index of 29 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 52,
+      "message": "Index of 52 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 87,
+      "message": "Index of 87 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 122,
+      "message": "Index of 122 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 114,
+      "message": "Index of 114 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 107,
+      "message": "Index of 107 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 91,
+      "message": "Index of 91 for noticing adverts via outdoor media."
+    }
+  ],
+  "I38 - Economical Families": [
+    {
+      "channel": "Newspapers",
+      "index": 48,
+      "message": "Index of 48 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 5,
+      "message": "Index of 5 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 83,
+      "message": "Index of 83 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 86,
+      "message": "Index of 86 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 119,
+      "message": "Index of 119 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 161,
+      "message": "Index of 161 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 150,
+      "message": "Index of 150 for noticing adverts via outdoor media."
+    }
+  ],
+  "I39 - Families on a Budget": [
+    {
+      "channel": "Newspapers",
+      "index": 56,
+      "message": "Index of 56 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 47,
+      "message": "Index of 47 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 94,
+      "message": "Index of 94 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 74,
+      "message": "Index of 74 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 102,
+      "message": "Index of 102 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 175,
+      "message": "Index of 175 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 101,
+      "message": "Index of 101 for noticing adverts via outdoor media."
+    }
+  ],
+  "J40 - Value Rentals": [
+    {
+      "channel": "Newspapers",
+      "index": 147,
+      "message": "Index of 147 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 38,
+      "message": "Index of 38 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 208,
+      "message": "Index of 208 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 64,
+      "message": "Index of 64 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 72,
+      "message": "Index of 72 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 161,
+      "message": "Index of 161 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 137,
+      "message": "Index of 137 for noticing adverts via outdoor media."
+    }
+  ],
+  "J41 - Youthful Endeavours": [
+    {
+      "channel": "Newspapers",
+      "index": 48,
+      "message": "Index of 48 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 44,
+      "message": "Index of 44 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 60,
+      "message": "Index of 60 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 98,
+      "message": "Index of 98 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 101,
+      "message": "Index of 101 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 88,
+      "message": "Index of 88 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 271,
+      "message": "Index of 271 for noticing adverts via outdoor media."
+    }
+  ],
+  "J42 - Midlife Renters": [
+    {
+      "channel": "Newspapers",
+      "index": 120,
+      "message": "Index of 120 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 35,
+      "message": "Index of 35 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 90,
+      "message": "Index of 90 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 88,
+      "message": "Index of 88 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 87,
+      "message": "Index of 87 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 140,
+      "message": "Index of 140 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 125,
+      "message": "Index of 125 for noticing adverts via outdoor media."
+    }
+  ],
+  "J43 - Renting Rooms": [
+    {
+      "channel": "Newspapers",
+      "index": 78,
+      "message": "Index of 78 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 76,
+      "message": "Index of 76 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 108,
+      "message": "Index of 108 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 82,
+      "message": "Index of 82 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 54,
+      "message": "Index of 54 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 86,
+      "message": "Index of 86 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 183,
+      "message": "Index of 183 for noticing adverts via outdoor media."
+    }
+  ],
+  "K44 - Inner City Stalwarts": [
+    {
+      "channel": "Newspapers",
+      "index": 88,
+      "message": "Index of 88 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 60,
+      "message": "Index of 60 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 112,
+      "message": "Index of 112 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 72,
+      "message": "Index of 72 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 89,
+      "message": "Index of 89 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 168,
+      "message": "Index of 168 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 131,
+      "message": "Index of 131 for noticing adverts via outdoor media."
+    }
+  ],
+  "K45 - City Diversity": [
+    {
+      "channel": "Newspapers",
+      "index": 55,
+      "message": "Index of 55 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 149,
+      "message": "Index of 149 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 116,
+      "message": "Index of 116 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 105,
+      "message": "Index of 105 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 50,
+      "message": "Index of 50 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 59,
+      "message": "Index of 59 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 158,
+      "message": "Index of 158 for noticing adverts via outdoor media."
+    }
+  ],
+  "K46 - High Rise Residents": [
+    {
+      "channel": "Newspapers",
+      "index": 147,
+      "message": "Index of 147 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 108,
+      "message": "Index of 108 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 112,
+      "message": "Index of 112 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 84,
+      "message": "Index of 84 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 66,
+      "message": "Index of 66 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 90,
+      "message": "Index of 90 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 184,
+      "message": "Index of 184 for noticing adverts via outdoor media."
+    }
+  ],
+  "K47 - Single Essentials": [
+    {
+      "channel": "Newspapers",
+      "index": 94,
+      "message": "Index of 94 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 92,
+      "message": "Index of 92 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 82,
+      "message": "Index of 82 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 108,
+      "message": "Index of 108 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 79,
+      "message": "Index of 79 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 109,
+      "message": "Index of 109 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 81,
+      "message": "Index of 81 for noticing adverts via outdoor media."
+    }
+  ],
+  "K48 - Mature Workers": [
+    {
+      "channel": "Newspapers",
+      "index": 91,
+      "message": "Index of 91 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 123,
+      "message": "Index of 123 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 105,
+      "message": "Index of 105 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 105,
+      "message": "Index of 105 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 62,
+      "message": "Index of 62 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 54,
+      "message": "Index of 54 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 59,
+      "message": "Index of 59 for noticing adverts via outdoor media."
+    }
+  ],
+  "L49 - Flatlet Seniors": [
+    {
+      "channel": "Newspapers",
+      "index": 119,
+      "message": "Index of 119 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 134,
+      "message": "Index of 134 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 105,
+      "message": "Index of 105 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 113,
+      "message": "Index of 113 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 17,
+      "message": "Index of 17 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 77,
+      "message": "Index of 77 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 31,
+      "message": "Index of 31 for noticing adverts via outdoor media."
+    }
+  ],
+  "L50 - Pocket Pensions": [
+    {
+      "channel": "Newspapers",
+      "index": 211,
+      "message": "Index of 211 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 57,
+      "message": "Index of 57 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 0,
+      "message": "Index of 0 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 147,
+      "message": "Index of 147 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 99,
+      "message": "Index of 99 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 27,
+      "message": "Index of 27 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 21,
+      "message": "Index of 21 for noticing adverts via outdoor media."
+    }
+  ],
+  "L51 - Retirement Communities": [
+    {
+      "channel": "Newspapers",
+      "index": 103,
+      "message": "Index of 103 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 49,
+      "message": "Index of 49 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 134,
+      "message": "Index of 134 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 108,
+      "message": "Index of 108 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 1,
+      "message": "Index of 1 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 48,
+      "message": "Index of 48 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 7,
+      "message": "Index of 7 for noticing adverts via outdoor media."
+    }
+  ],
+  "L52 - Estate Veterans": [
+    {
+      "channel": "Newspapers",
+      "index": 137,
+      "message": "Index of 137 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 277,
+      "message": "Index of 277 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 72,
+      "message": "Index of 72 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 101,
+      "message": "Index of 101 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 14,
+      "message": "Index of 14 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 23,
+      "message": "Index of 23 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 33,
+      "message": "Index of 33 for noticing adverts via outdoor media."
+    }
+  ],
+  "L53 - Seasoned Survivors": [
+    {
+      "channel": "Newspapers",
+      "index": 141,
+      "message": "Index of 141 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 103,
+      "message": "Index of 103 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 30,
+      "message": "Index of 30 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 105,
+      "message": "Index of 105 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 47,
+      "message": "Index of 47 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 71,
+      "message": "Index of 71 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 88,
+      "message": "Index of 88 for noticing adverts via outdoor media."
+    }
+  ],
+  "M54 - Down to Earth Owners": [
+    {
+      "channel": "Newspapers",
+      "index": 77,
+      "message": "Index of 77 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 118,
+      "message": "Index of 118 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 76,
+      "message": "Index of 76 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 113,
+      "message": "Index of 113 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 46,
+      "message": "Index of 46 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 126,
+      "message": "Index of 126 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 101,
+      "message": "Index of 101 for noticing adverts via outdoor media."
+    }
+  ],
+  "M55 - Back with the Folks": [
+    {
+      "channel": "Newspapers",
+      "index": 95,
+      "message": "Index of 95 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 92,
+      "message": "Index of 92 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 84,
+      "message": "Index of 84 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 127,
+      "message": "Index of 127 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 77,
+      "message": "Index of 77 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 77,
+      "message": "Index of 77 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 63,
+      "message": "Index of 63 for noticing adverts via outdoor media."
+    }
+  ],
+  "M56 - Self Supporters": [
+    {
+      "channel": "Newspapers",
+      "index": 119,
+      "message": "Index of 119 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 103,
+      "message": "Index of 103 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 70,
+      "message": "Index of 70 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 137,
+      "message": "Index of 137 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 98,
+      "message": "Index of 98 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 49,
+      "message": "Index of 49 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 82,
+      "message": "Index of 82 for noticing adverts via outdoor media."
+    }
+  ],
+  "N57 - Community Elders": [
+    {
+      "channel": "Newspapers",
+      "index": 121,
+      "message": "Index of 121 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 59,
+      "message": "Index of 59 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 78,
+      "message": "Index of 78 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 68,
+      "message": "Index of 68 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 127,
+      "message": "Index of 127 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 157,
+      "message": "Index of 157 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 199,
+      "message": "Index of 199 for noticing adverts via outdoor media."
+    }
+  ],
+  "N58 - Culture and Comfort": [
+    {
+      "channel": "Newspapers",
+      "index": 92,
+      "message": "Index of 92 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 67,
+      "message": "Index of 67 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 74,
+      "message": "Index of 74 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 72,
+      "message": "Index of 72 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 89,
+      "message": "Index of 89 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 159,
+      "message": "Index of 159 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 115,
+      "message": "Index of 115 for noticing adverts via outdoor media."
+    }
+  ],
+  "N59 - Large Family Living": [
+    {
+      "channel": "Newspapers",
+      "index": 161,
+      "message": "Index of 161 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 173,
+      "message": "Index of 173 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 77,
+      "message": "Index of 77 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 90,
+      "message": "Index of 90 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 114,
+      "message": "Index of 114 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 68,
+      "message": "Index of 68 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 33,
+      "message": "Index of 33 for noticing adverts via outdoor media."
+    }
+  ],
+  "N60 - Ageing Access": [
+    {
+      "channel": "Newspapers",
+      "index": 48,
+      "message": "Index of 48 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 149,
+      "message": "Index of 149 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 86,
+      "message": "Index of 86 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 95,
+      "message": "Index of 95 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 168,
+      "message": "Index of 168 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 122,
+      "message": "Index of 122 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 107,
+      "message": "Index of 107 for noticing adverts via outdoor media."
+    }
+  ],
+  "O61 - Career Builders": [
+    {
+      "channel": "Newspapers",
+      "index": 44,
+      "message": "Index of 44 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 121,
+      "message": "Index of 121 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 108,
+      "message": "Index of 108 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 72,
+      "message": "Index of 72 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 190,
+      "message": "Index of 190 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 129,
+      "message": "Index of 129 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 211,
+      "message": "Index of 211 for noticing adverts via outdoor media."
+    }
+  ],
+  "O62 - Central Pulse": [
+    {
+      "channel": "Newspapers",
+      "index": 68,
+      "message": "Index of 68 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 52,
+      "message": "Index of 52 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 171,
+      "message": "Index of 171 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 99,
+      "message": "Index of 99 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 135,
+      "message": "Index of 135 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 152,
+      "message": "Index of 152 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 212,
+      "message": "Index of 212 for noticing adverts via outdoor media."
+    }
+  ],
+  "O63 - Flexible Workforce": [
+    {
+      "channel": "Newspapers",
+      "index": 74,
+      "message": "Index of 74 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 105,
+      "message": "Index of 105 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 84,
+      "message": "Index of 84 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 97,
+      "message": "Index of 97 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 100,
+      "message": "Index of 100 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 134,
+      "message": "Index of 134 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 69,
+      "message": "Index of 69 for noticing adverts via outdoor media."
+    }
+  ],
+  "O64 - Bus-Route Renters": [
+    {
+      "channel": "Newspapers",
+      "index": 60,
+      "message": "Index of 60 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 36,
+      "message": "Index of 36 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 105,
+      "message": "Index of 105 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 97,
+      "message": "Index of 97 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 168,
+      "message": "Index of 168 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 144,
+      "message": "Index of 144 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 87,
+      "message": "Index of 87 for noticing adverts via outdoor media."
+    }
+  ],
+  "O65 - Learners & Earners": [
+    {
+      "channel": "Newspapers",
+      "index": 56,
+      "message": "Index of 56 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 55,
+      "message": "Index of 55 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 105,
+      "message": "Index of 105 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 98,
+      "message": "Index of 98 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 174,
+      "message": "Index of 174 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 162,
+      "message": "Index of 162 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 137,
+      "message": "Index of 137 for noticing adverts via outdoor media."
+    }
+  ],
+  "O66 - Student Scene": [
+    {
+      "channel": "Newspapers",
+      "index": 56,
+      "message": "Index of 56 for noticing adverts via newspapers media."
+    },
+    {
+      "channel": "Magazines",
+      "index": 55,
+      "message": "Index of 55 for noticing adverts via magazines media."
+    },
+    {
+      "channel": "Radio",
+      "index": 105,
+      "message": "Index of 105 for noticing adverts via radio media."
+    },
+    {
+      "channel": "Television",
+      "index": 68,
+      "message": "Index of 68 for noticing adverts via television media."
+    },
+    {
+      "channel": "Cinema",
+      "index": 174,
+      "message": "Index of 174 for noticing adverts via cinema media."
+    },
+    {
+      "channel": "Internet",
+      "index": 162,
+      "message": "Index of 162 for noticing adverts via internet media."
+    },
+    {
+      "channel": "Outdoor",
+      "index": 137,
+      "message": "Index of 137 for noticing adverts via outdoor media."
+    }
+  ]
+}
