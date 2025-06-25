@@ -1,9 +1,10 @@
 // main.js
 
 document.getElementById("submitButton").addEventListener("click", () => {
-  const rawInput = document.getElementById("postcodeInput").value;
-  const query = rawInput.toUpperCase().trim();
-  const postcode = query.replace(/\s+/g, "");
+  const postcodeRaw = document.getElementById("postcodeInput").value;
+  const audienceRaw = document.getElementById("audienceInput").value;
+  const query = (postcodeRaw || audienceRaw).toUpperCase().trim();
+  const postcode = postcodeRaw.toUpperCase().replace(/\s+/g, "");
   const batchFile = determineBatchFile(postcode);
 
   const postcodeData = fetch(`${batchFile}.json`).then((r) => {
