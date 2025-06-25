@@ -1,6 +1,8 @@
 // main.js
 
 document.getElementById("submitButton").addEventListener("click", () => {
+  // start a fresh search and clear any stored result
+  localStorage.removeItem('audienceResult');
   const rawInput = document.getElementById("postcodeInput").value;
   const query = rawInput.toUpperCase().trim();
   const postcode = query.replace(/\s+/g, "");
@@ -16,7 +18,17 @@ document.getElementById("submitButton").addEventListener("click", () => {
     return r.json();
   });
 
-  Promise.all([postcodeData, mediaData]).then(([data, media]) => {
+  const featureData = fetch("key_features.json").then((r) => {
+    if (!r.ok) throw new Error("Feature file not found");
+    return r.json();
+  });
+
+  const groupData = fetch("primary_content.json").then((r) => {
+    if (!r.ok) throw new Error("Group file not found");
+    return r.json();
+  });
+
+  Promise.all([postcodeData, mediaData, featureData, groupData]).then(([data, media, features, groups]) => {
       const resultContainer = document.getElementById("resultContainer");
       resultContainer.classList.remove("hidden");
       resultContainer.innerHTML = "";
@@ -93,10 +105,37 @@ document.getElementById("submitButton").addEventListener("click", () => {
         resultContainer.classList.add("hidden");
         resultContainer.innerHTML = "";
         document.getElementById("postcodeInput").focus();
+        localStorage.removeItem('audienceResult');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       });
 
       window.scrollTo({ top: document.getElementById("resultContainer").offsetTop - 50, behavior: 'smooth' });
+
+      // Build detailed result object for results.html
+      const groupCode = topSegments[0].type[0];
+      const groupInfo = groups.find((g) => g.group_code === groupCode) || {};
+      const featureInfo = features.find((f) => f.group_code === groupCode) || {};
+      const mainMedia = findMediaItems(topSegments[0].type, media) || [];
+
+      const totalCount = entries.reduce((sum, e) => sum + (e.count || 0), 0);
+      const plan = Object.entries(distribution).map(([channel, info]) => ({
+        channel,
+        index: totalCount ? Math.round(info.weight / totalCount) : 0,
+        budget: parseFloat(info.budget.toFixed(2)),
+      }));
+
+      const resultObj = {
+        mosaic_group: `${groupInfo.group_name || topSegments[0].type} (Group ${groupCode})`,
+        description: groupInfo.description || '',
+        demographics: [],
+        key_features: featureInfo.features || [],
+        media_channels: mainMedia.map((m) => ({ label: m.channel, index: m.index })),
+        top_postcodes: [{ code: postcode, count: totalCount }],
+        media_plan_allocation: plan,
+      };
+
+      localStorage.setItem('audienceResult', JSON.stringify(resultObj));
+      window.location.href = 'results.html';
     })
     .catch((error) => {
       console.error("Error loading data:", error);
@@ -147,6 +186,7 @@ function searchVariable(query, container) {
         container.classList.add("hidden");
         container.innerHTML = "";
         document.getElementById("postcodeInput").focus();
+        localStorage.removeItem('audienceResult');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       });
 
