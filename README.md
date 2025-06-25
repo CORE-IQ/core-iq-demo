@@ -8,3 +8,13 @@ This is a lightweight demo that displays audience insights by UK postcode or US 
 3. Review the Mosaic groups and media index information.
 
 The application is static and loads JSON data client-side, so it can be embedded in other pages (for example, within a HubSpot iframe).
+
+## Requirements
+This project requires **Node.js** and **npm** to run the automated tests.
+
+## Running Tests
+Install the dependencies and execute the test suite using:
+
+```bash
+npm test
+```
