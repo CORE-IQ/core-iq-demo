@@ -156,7 +156,7 @@ function searchVariable(query, container) {
         </div>`
         )
         .join("");
-      const mosaicTypes = Array.from(
+      let mosaicTypes = Array.from(
         new Set(
           results
             .map((e) =>
@@ -167,6 +167,42 @@ function searchVariable(query, container) {
             .filter(Boolean)
         )
       );
+
+      if (mosaicTypes.length === 0) {
+        const groupMap = {};
+        const nameToGroup = {};
+        Object.keys(media).forEach((key) => {
+          const match = key.match(/^[A-Z](\d{2})?\s*([^\(]+)/);
+          if (match) {
+            const group = key[0];
+            groupMap[group] = groupMap[group] || [];
+            groupMap[group].push(key);
+            nameToGroup[match[2].trim().toUpperCase()] = group;
+          }
+        });
+
+        const groups = Array.from(
+          new Set(
+            results.flatMap((e) =>
+              Object.values(e)
+                .filter((v) => typeof v === "string")
+                .map((v) => {
+                  const val = v.toUpperCase().trim();
+                  if (groupMap[val]) return val;
+                  if (nameToGroup[val]) return nameToGroup[val];
+                  return null;
+                })
+                .filter(Boolean)
+            )
+          )
+        );
+
+        groups.forEach((g) => {
+          if (groupMap[g]) mosaicTypes.push(...groupMap[g]);
+        });
+
+        mosaicTypes = Array.from(new Set(mosaicTypes));
+      }
 
       if (mosaicTypes.length) {
         const budget = parseFloat(document.getElementById("budgetInput").value) || 0;
