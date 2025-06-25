@@ -11,7 +11,7 @@ document.getElementById("submitButton").addEventListener("click", () => {
     return r.json();
   });
 
-  const mediaData = fetch("media.json").then((r) => {
+  const mediaData = fetch("noticed_adverts.json").then((r) => {
     if (!r.ok) throw new Error("Media file not found");
     return r.json();
   });
@@ -100,7 +100,9 @@ document.getElementById("submitButton").addEventListener("click", () => {
     })
     .catch((error) => {
       console.error("Error loading data:", error);
-      document.getElementById("resultContainer").innerHTML = `<p>There was an error loading insights.</p>`;
+      const resultContainer = document.getElementById("resultContainer");
+      resultContainer.classList.remove("hidden");
+      resultContainer.innerHTML = `<p>There was an error loading insights.</p>`;
     });
 });
 
