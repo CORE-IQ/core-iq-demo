@@ -8,6 +8,7 @@ This is a lightweight demo that displays audience insights by UK postcode or US 
 3. Review the Mosaic groups and media index information.
 4. The results highlight the top three Mosaic segments and calculate budget distribution based only on these groups.
 5. Media items with an index above 300 contribute to the weighting and appear in green, while lower-index items appear in red.
+6. A summary card shows the total media budget above the insights for quick reference.
 
 The application is static and loads JSON data client-side, so it can be embedded in other pages (for example, within a HubSpot iframe).
 
