@@ -9,6 +9,8 @@ This is a lightweight demo that displays audience insights by UK postcode or US 
 
 The application is static and loads JSON data client-side, so it can be embedded in other pages (for example, within a HubSpot iframe).
 
+Animations rely on simple CSS transitions, so no external libraries such as AOS are required.
+
 ## Requirements
 This project requires **Node.js** and **npm** to run the automated tests.
 
