@@ -1,0 +1,27 @@
+{
+  "Group": "Rental Hubs",
+  "Key Features": [
+    "Young singles and homemakers",
+    "Rent flats",
+    "Very high internet use",
+    "Internet via smartphone",
+    "Watch videos online",
+    "Don\u2019t use landlines"
+  ],
+  "Who We Are": {
+    "Age": "25\u201334 (39.5%)",
+    "Household Income": "\u00a330K\u2013\u00a339.9K (24.8%)",
+    "Household Composition": "Single (56.2%)",
+    "Number of Children": "No children (87.4%)",
+    "Tenure": "Rented (93.9%)",
+    "Residency Type": "Flat (91.9%)"
+  },
+  "Advert Response Channel Index": {
+    "TV": 145,
+    "Online Display": 109,
+    "Social Media": 151,
+    "Direct Mail": 113,
+    "Email": 126
+  },
+  "Household Technology": "Very High"
+}

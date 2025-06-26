@@ -1,0 +1,27 @@
+{
+  "Group": "Urban Cohesion",
+  "Key Features": [
+    "Homesharers in terraces",
+    "Uber passengers",
+    "Free mobile phone apps",
+    "Read news and watch online",
+    "Visual arts and design sites",
+    "Watch TV"
+  ],
+  "Who We Are": {
+    "Age": "36\u201345 (19.8%)",
+    "Household Income": "\u00a320K\u2013\u00a329.9K (24.9%)",
+    "Household Composition": "Homesharers + others (19.3%)",
+    "Number of Children": "No children (71.4%)",
+    "Tenure": "Owned (67.0%)",
+    "Residency Type": "Terraced (51.2%)"
+  },
+  "Advert Response Channel Index": {
+    "TV": 161,
+    "Online Display": 105,
+    "Social Media": 118,
+    "Direct Mail": 152,
+    "Email": 93
+  },
+  "Household Technology": "Medium"
+}

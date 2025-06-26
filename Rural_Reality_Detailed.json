@@ -1,0 +1,27 @@
+{
+  "Group": "Rural Reality",
+  "Key Features": [
+    "Rural areas",
+    "Oil/solid fuel central heating",
+    "Internet at home",
+    "Free mobile phone apps",
+    "Watch TV",
+    "Comprehensive car insurance"
+  ],
+  "Who We Are": {
+    "Age": "56\u201365 (20.6%)",
+    "Household Income": "\u00a320K\u2013\u00a329.9K (34.3%)",
+    "Household Composition": "Single (40.1%)",
+    "Number of Children": "No children (93.9%)",
+    "Tenure": "Owned (66.0%)",
+    "Residency Type": "Semi-detached (30.8%)"
+  },
+  "Advert Response Channel Index": {
+    "TV": 63,
+    "Online Display": 67,
+    "Social Media": 101,
+    "Direct Mail": 67,
+    "Email": 75
+  },
+  "Household Technology": "Low"
+}

@@ -1,0 +1,27 @@
+{
+  "Group": "Municipal Tenants",
+  "Key Features": [
+    "Council/HA flats",
+    "Densely populated",
+    "No qualifications",
+    "Low discretionary income",
+    "Low environmental impact gap",
+    "Fuel poverty"
+  ],
+  "Who We Are": {
+    "Age": "56\u201365 (22.3%)",
+    "Household Income": "<\u00a315K (51.1%)",
+    "Household Composition": "Single (54.7%)",
+    "Number of Children": "No children (84.2%)",
+    "Tenure": "Council/HA (76.7%)",
+    "Residency Type": "Flat (65.2%)"
+  },
+  "Advert Response Channel Index": {
+    "TV": 194,
+    "Online Display": 97,
+    "Social Media": 84,
+    "Direct Mail": 136,
+    "Email": 101
+  },
+  "Household Technology": "Medium"
+}

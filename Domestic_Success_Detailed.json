@@ -1,0 +1,27 @@
+{
+  "Group": "Domestic Success",
+  "Key Features": [
+    "Families with children",
+    "Mid to high household income",
+    "Monthly discretionary income under \u00a31000",
+    "Very high mortgage debt",
+    "Internet via smartphone",
+    "Online shoppers"
+  ],
+  "Who We Are": {
+    "Age": "36\u201345 (31.6%)",
+    "Household Income": "\u00a330K\u2013\u00a339.9K (42.8%)",
+    "Household Composition": "Family (44.2%)",
+    "Number of Children": "2-3 children (36.2%)",
+    "Tenure": "Owned (81.8%)",
+    "Residency Type": "Detached (81.0%)"
+  },
+  "Advert Response Channel Index": {
+    "TV": 123,
+    "Online Display": 95,
+    "Social Media": 120,
+    "Direct Mail": 119,
+    "Email": 130
+  },
+  "Household Technology": "Very High"
+}

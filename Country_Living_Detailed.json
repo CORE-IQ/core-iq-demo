@@ -1,0 +1,27 @@
+{
+  "Group": "Country Living",
+  "Key Features": [
+    "Rural locations",
+    "Own old, detached houses",
+    "Electronic money transfers",
+    "Garden or allotment",
+    "Oil central heating",
+    "High environmental impact gap"
+  ],
+  "Who We Are": {
+    "Age": "56\u201365 (32.5%)",
+    "Household Income": "\u00a370K\u2013\u00a399.9K (40.7%)",
+    "Household Composition": "Family (38.2%)",
+    "Number of Children": "No children (76.6%)",
+    "Tenure": "Owned (84.5%)",
+    "Residency Type": "Detached (64.9%)"
+  },
+  "Advert Response Channel Index": {
+    "TV": 147,
+    "Online Display": 95,
+    "Social Media": 99,
+    "Direct Mail": 95,
+    "Email": 87
+  },
+  "Household Technology": "Very Low"
+}

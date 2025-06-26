@@ -1,0 +1,27 @@
+{
+  "Group": "Family Basics",
+  "Key Features": [
+    "Families with children",
+    "Council/HA tenants",
+    "Low discretionary income",
+    "Low affluence",
+    "Internet via smartphone",
+    "Games consoles"
+  ],
+  "Who We Are": {
+    "Age": "26\u201335 (29.2%)",
+    "Household Income": "\u00a320K\u2013\u00a329.9K (31.5%)",
+    "Household Composition": "Family + other adults (24.3%)",
+    "Number of Children": "2-3 children (51.5%)",
+    "Tenure": "Council/HA (51.9%)",
+    "Residency Type": "Terraced (49.9%)"
+  },
+  "Advert Response Channel Index": {
+    "TV": 115,
+    "Online Display": 103,
+    "Social Media": 96,
+    "Direct Mail": 115,
+    "Email": 97
+  },
+  "Household Technology": "High"
+}

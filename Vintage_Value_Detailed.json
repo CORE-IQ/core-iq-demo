@@ -1,0 +1,27 @@
+{
+  "Group": "Vintage Value",
+  "Key Features": [
+    "Retired singles",
+    "Council/HA tenants",
+    "No qualifications",
+    "Low discretionary income",
+    "Very low-tech households",
+    "Fuel and water poverty"
+  ],
+  "Who We Are": {
+    "Age": "75+ (75.6%)",
+    "Household Income": "<\u00a315K (76.7%)",
+    "Household Composition": "Single (74.5%)",
+    "Number of Children": "No children (89.8%)",
+    "Tenure": "Council/HA (56.2%)",
+    "Residency Type": "Flat (42.7%)"
+  },
+  "Advert Response Channel Index": {
+    "TV": 51,
+    "Online Display": 89,
+    "Social Media": 77,
+    "Direct Mail": 59,
+    "Email": 97
+  },
+  "Household Technology": "Very Low"
+}
