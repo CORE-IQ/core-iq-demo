@@ -159,10 +159,7 @@ function searchVariable(query, container) {
       );
 
       if (results.length === 0) {
-        container.innerHTML = `
-          <div class="centered-card">
-            <p>No results found for <strong>${query}</strong>.</p>
-          </div>`;
+        queryOpenAI(query, container);
         return;
       }
 
@@ -214,5 +211,21 @@ function findMediaItems(segmentType, mediaData) {
   const code = segmentType[0];
   const matchKey = Object.keys(mediaData).find((k) => k.startsWith(code));
   return mediaData[matchKey];
+}
+
+function queryOpenAI(query, container) {
+  fetch('/api/openai', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ query })
+  })
+    .then(r => r.json())
+    .then(data => {
+      container.innerHTML = `<div class="insight-card">${data.answer}</div>`;
+    })
+    .catch(err => {
+      console.error('OpenAI request failed', err);
+      container.innerHTML = `<p>There was an error processing your query.</p>`;
+    });
 }
 
