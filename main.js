@@ -6,12 +6,7 @@ document.getElementById("submitButton").addEventListener("click", () => {
   const rawInput = document.getElementById("postcodeInput").value;
   const query = rawInput.toUpperCase().trim();
   const postcode = query.replace(/\s+/g, "");
-  const batchFile = determineBatchFile(postcode);
-
-  const postcodeData = fetch(`${batchFile}.json`).then((r) => {
-    if (!r.ok) throw new Error("File not found");
-    return r.json();
-  });
+  const postcodeData = loadPostcodeData(postcode);
 
   const mediaData = fetch("noticed_adverts.json").then((r) => {
     if (!r.ok) throw new Error("Media file not found");
@@ -204,6 +199,33 @@ function determineBatchFile(postcode) {
     S: "9", T: "9", U: "9", V: "9", W: "9", X: "9", Y: "9", Z: "9"
   };
   return map[firstLetter] || "1";
+}
+
+async function loadPostcodeData(postcode) {
+  const primary = `${determineBatchFile(postcode)}.json`;
+  try {
+    const r = await fetch(primary);
+    if (r.ok) {
+      const data = await r.json();
+      if (data[postcode]) return data;
+    }
+  } catch (e) {
+    console.warn('Primary file failed', e);
+  }
+
+  for (let i = 1; i <= 9; i++) {
+    const file = `${i}.json`;
+    if (file === primary) continue;
+    try {
+      const r = await fetch(file);
+      if (!r.ok) continue;
+      const json = await r.json();
+      if (json[postcode]) return json;
+    } catch (_) {
+      // ignore errors
+    }
+  }
+  return {};
 }
 
 function findMediaItems(segmentType, mediaData) {
