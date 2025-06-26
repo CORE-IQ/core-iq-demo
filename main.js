@@ -113,11 +113,14 @@ document.getElementById("submitButton").addEventListener("click", () => {
       const mainMedia = findMediaItems(topSegments[0].type, media) || [];
 
       const totalCount = entries.reduce((sum, e) => sum + (e.count || 0), 0);
-      const plan = Object.entries(distribution).map(([channel, info]) => ({
-        channel,
-        index: totalCount ? Math.round(info.weight / totalCount) : 0,
-        budget: parseFloat(info.budget.toFixed(2)),
-      }));
+      const plan = mainMedia.map((m) => {
+        const dist = distribution[m.channel];
+        return {
+          channel: m.channel,
+          index: m.index,
+          budget: dist ? parseFloat(dist.budget.toFixed(2)) : 0,
+        };
+      });
 
       const resultObj = {
         mosaic_group: `${groupInfo.group_name || topSegments[0].type} (Group ${groupCode})`,
