@@ -8,6 +8,16 @@ This is a lightweight demo that displays audience insights by UK postcode or US 
 3. Open `http://localhost:8000` in your browser.
 4. Enter a postcode or search term to view the Mosaic groups and weighted media budget.
 
+### OpenAI integration
+To enable natural language queries processed via OpenAI, set an environment variable `OPENAI_API_KEY` before starting the server:
+
+```bash
+export OPENAI_API_KEY=your-key-here
+npm start
+```
+
+When a search term does not match local data, the server will forward the query and a snippet of the JSON files to OpenAI and display the response.
+
 The application is static and loads JSON data client-side, so it can be embedded in other pages (for example, within a HubSpot iframe).
 
 Animations rely on simple CSS transitions, so no external libraries such as AOS are required.

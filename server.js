@@ -2,9 +2,60 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
+const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
+
 const port = process.env.PORT || 8000;
 
+async function handleOpenAIRequest(req, res) {
+  if (!OPENAI_API_KEY) {
+    res.writeHead(500, { 'Content-Type': 'text/plain' });
+    res.end('OpenAI API key not configured');
+    return;
+  }
+  let body = '';
+  req.on('data', chunk => body += chunk);
+  req.on('end', async () => {
+    try {
+      const { query } = JSON.parse(body || '{}');
+      const files = fs.readdirSync(__dirname).filter(f => f.endsWith('.json'));
+      const dataSnippets = files.map(f => {
+        const content = fs.readFileSync(path.join(__dirname, f), 'utf8');
+        return `File: ${f}\n${content.substring(0, 1000)}`;
+      }).join('\n');
+
+      const prompt = `${query}\n\nUse the following JSON data to answer:`;
+      const response = await fetch('https://api.openai.com/v1/chat/completions', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${OPENAI_API_KEY}`
+        },
+        body: JSON.stringify({
+          model: 'gpt-3.5-turbo',
+          messages: [
+            { role: 'system', content: 'You are a helpful assistant that answers questions about the provided JSON.' },
+            { role: 'user', content: `${prompt}\n${dataSnippets}` }
+          ]
+        })
+      });
+      const result = await response.json();
+      const answer = result.choices?.[0]?.message?.content || 'No answer';
+      res.writeHead(200, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({ answer }));
+    } catch (err) {
+      console.error(err);
+      res.writeHead(500, { 'Content-Type': 'text/plain' });
+      res.end('OpenAI request failed');
+    }
+  });
+}
+
 const server = http.createServer((req, res) => {
+  if (req.method === 'POST' && req.url === '/api/openai') {
+    handleOpenAIRequest(req, res);
+    return;
+  }
+
   const safePath = path.normalize(req.url).replace(/^\/+/, '');
   const filePath = path.join(__dirname, safePath || 'index.html');
   const ext = path.extname(filePath).toLowerCase();
