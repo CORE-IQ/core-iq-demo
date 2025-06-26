@@ -17,5 +17,6 @@
   "media_plan_allocation": [
     { "channel": "Paid Social", "index": 143, "budget": 6820 },
     { "channel": "Radio", "index": 84, "budget": 0 }
-  ]
+  ],
+  "total_budget": 6820
 }

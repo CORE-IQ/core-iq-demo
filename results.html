@@ -26,10 +26,21 @@
   </style>
 </head>
 <body>
+  <section style="background: linear-gradient(to bottom, #000, #0a0a0a); padding: 40px 20px; text-align: center;">
+    <div style="width:100%; max-width:540px; margin:auto; display:flex; flex-direction:column; gap:16px;">
+      <input type="text" id="postcodeInput" placeholder="Enter postcode, ZIP or search term" style="padding:16px; border-radius:12px; border:none; font-size:1rem; background:#111; color:#fff; box-shadow: inset 0 0 6px rgba(0,255,174,0.2);" />
+      <input type="number" id="budgetInput" placeholder="Budget (£)" style="padding:16px; border-radius:12px; border:none; font-size:1rem; background:#111; color:#fff; box-shadow: inset 0 0 6px rgba(0,255,174,0.2);" />
+      <button id="submitButton" type="button" style="background:#00ffae; color:#000; font-weight:bold; font-size:1rem; padding:14px; border-radius:12px; border:none; transition:background 0.3s;">GET INSIGHTS</button>
+    </div>
+    <div id="resultContainer" class="hidden"></div>
+  </section>
+
   <section id="resultsSection" style="background: linear-gradient(to bottom, #000, #0a0a0a); min-height: 100vh; padding: 60px 20px;">
     <div id="resultsRoot" style="max-width: 1200px; margin: auto; display: flex; flex-direction: column; gap: 40px;"></div>
   </section>
 
   <script src="results.js"></script>
+  <script src="budget.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
