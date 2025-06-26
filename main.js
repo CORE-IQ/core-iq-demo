@@ -23,7 +23,7 @@ document.getElementById("submitButton").addEventListener("click", () => {
     return r.json();
   });
 
-  Promise.all([postcodeData, mediaData, featureData, groupData]).then(([data, media, features, groups]) => {
+  Promise.all([postcodeData, mediaData, featureData, groupData]).then(async ([data, media, features, groups]) => {
       const resultContainer = document.getElementById("resultContainer");
       resultContainer.classList.remove("hidden");
       resultContainer.innerHTML = "";
@@ -122,14 +122,30 @@ document.getElementById("submitButton").addEventListener("click", () => {
         };
       });
 
+      const groupName = groupInfo.group_name || topSegments[0].type;
+      let detailedFeatures = featureInfo.features || [];
+      try {
+        const detailFile = `${groupName.replace(/ /g, '_')}_Detailed.json`;
+        const r = await fetch(detailFile);
+        if (r.ok) {
+          const detail = await r.json();
+          if (Array.isArray(detail["Key Features"])) {
+            detailedFeatures = detail["Key Features"];
+          }
+        }
+      } catch (_) {
+        // ignore missing detailed features
+      }
+
       const resultObj = {
-        mosaic_group: `${groupInfo.group_name || topSegments[0].type} (Group ${groupCode})`,
+        mosaic_group: `${groupName} (Group ${groupCode})`,
         description: groupInfo.description || '',
         demographics: [],
-        key_features: featureInfo.features || [],
+        key_features: detailedFeatures,
         media_channels: mainMedia.map((m) => ({ label: m.channel, index: m.index })),
         top_postcodes: [{ code: postcode, count: totalCount }],
         media_plan_allocation: plan,
+        total_budget: budget,
       };
 
       localStorage.setItem('audienceResult', JSON.stringify(resultObj));
