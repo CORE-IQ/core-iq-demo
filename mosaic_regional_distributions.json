@@ -1456,41 +1456,5 @@
       "West Midlands": 0.55,
       "Yorkshire and the Humber": 1.01
     }
-  },
-  {
-    "group_type": "Experian Public \u00a9 2024",
-    "group_name": NaN,
-    "distribution": {
-      "East": NaN,
-      "East Midlands": NaN,
-      "London": NaN,
-      "North East": NaN,
-      "North West": NaN,
-      "Northern Ireland": NaN,
-      "Scotland": NaN,
-      "South East": NaN,
-      "South West": NaN,
-      "Wales": NaN,
-      "West Midlands": NaN,
-      "Yorkshire and the Humber": NaN
-    }
-  },
-  {
-    "group_type": "All rights reserved.",
-    "group_name": NaN,
-    "distribution": {
-      "East": NaN,
-      "East Midlands": NaN,
-      "London": NaN,
-      "North East": NaN,
-      "North West": NaN,
-      "Northern Ireland": NaN,
-      "Scotland": NaN,
-      "South East": NaN,
-      "South West": NaN,
-      "Wales": NaN,
-      "West Midlands": NaN,
-      "Yorkshire and the Humber": "Document Version: 3.2"
-    }
   }
 ]
