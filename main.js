@@ -124,6 +124,9 @@ document.getElementById("submitButton").addEventListener("click", () => {
 
       const groupName = groupInfo.group_name || topSegments[0].type;
       let detailedFeatures = featureInfo.features || [];
+      let whoWeAre = [];
+      let responseChannels = [];
+      let householdTech = '';
       try {
         const detailFile = `${groupName.replace(/ /g, '_')}_Detailed.json`;
         const r = await fetch(detailFile);
@@ -131,6 +134,15 @@ document.getElementById("submitButton").addEventListener("click", () => {
           const detail = await r.json();
           if (Array.isArray(detail["Key Features"])) {
             detailedFeatures = detail["Key Features"];
+          }
+          if (detail["Who We Are"] && typeof detail["Who We Are"] === 'object') {
+            whoWeAre = Object.entries(detail["Who We Are"]).map(([label, value]) => ({ label, value }));
+          }
+          if (detail["Advert Response Channel Index"] && typeof detail["Advert Response Channel Index"] === 'object') {
+            responseChannels = Object.entries(detail["Advert Response Channel Index"]).map(([channel, index]) => ({ channel, index }));
+          }
+          if (typeof detail["Household Technology"] === 'string') {
+            householdTech = detail["Household Technology"];
           }
         }
       } catch (_) {
@@ -140,9 +152,11 @@ document.getElementById("submitButton").addEventListener("click", () => {
       const resultObj = {
         mosaic_group: `${groupName} (Group ${groupCode})`,
         description: groupInfo.description || '',
-        demographics: [],
+        demographics: whoWeAre,
         key_features: detailedFeatures,
         media_channels: mainMedia.map((m) => ({ label: m.channel, index: m.index })),
+        response_channels: responseChannels,
+        household_technology: householdTech,
         top_postcodes: [{ code: postcode, count: totalCount }],
         media_plan_allocation: plan,
         total_budget: budget,
