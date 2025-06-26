@@ -225,7 +225,59 @@ function queryOpenAI(query, container) {
     })
     .catch(err => {
       console.error('OpenAI request failed', err);
-      container.innerHTML = `<p>There was an error processing your query.</p>`;
+      const budget = parseFloat(document.getElementById("budgetInput").value) || 0;
+      Promise.all([
+        fetch('/api/groupcounts').then(r => r.json()),
+        fetch('noticed_adverts.json').then(r => r.json())
+      ]).then(([counts, media]) => {
+        displayGroupCounts(counts, media, budget, container);
+      }).catch(() => {
+        container.innerHTML = `<p>There was an error processing your query.</p>`;
+      });
     });
+}
+
+function displayGroupCounts(data, media, budget, container) {
+  const groupsSorted = Object.entries(data)
+    .sort((a, b) => b[1].total - a[1].total)
+    .slice(0, 3)
+    .map(([code, info]) => ({
+      type: `${code} - ${info.name} (15+)`,
+      count: info.total
+    }));
+
+  let html = `<h2 class="result-heading">Top Mosaic Groups</h2>`;
+  html += `<div class="summary-card">Total Media Budget: £${budget.toFixed(2)}</div>`;
+  html += `<div class='card-wrap'>`;
+  html += groupsSorted
+    .map(e => `<div class="insight-card"><div class="insight-title">${e.type}</div><div class="insight-index">Count = ${e.count}</div></div>`)
+    .join('');
+
+  groupsSorted.forEach(seg => {
+    const items = findMediaItems(seg.type, media);
+    if (items) {
+      html += `<h3 class='insight-subtitle'>Media Index for ${seg.type}</h3>`;
+      html += items.map(it => `<div class="insight-card"><div class="insight-title">${it.channel}</div><div class="insight-index">Index = ${it.index}</div><div class="insight-message">${it.message ?? ''}</div></div>`).join('');
+    }
+  });
+
+  const { totalIndex, distribution } = calculateBudgetDistribution(groupsSorted, media, budget);
+  html += `<h3 class='insight-subtitle'>Total Media Index: ${totalIndex}</h3>`;
+  html += Object.entries(distribution)
+    .map(([channel, info]) => `<div class="insight-card"><div class="insight-title">${channel}</div><div class="insight-index">Budget £${info.budget.toFixed(2)}</div></div>`)
+    .join('');
+  html += `</div><button id="resetButton" class="reset-btn">Try another search</button>`;
+
+  container.innerHTML = html;
+  document.getElementById("resetButton").addEventListener("click", () => {
+    document.getElementById("postcodeInput").value = "";
+    container.classList.add("hidden");
+    container.innerHTML = "";
+    document.getElementById("postcodeInput").focus();
+    localStorage.removeItem('audienceResult');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  window.scrollTo({ top: container.offsetTop - 50, behavior: 'smooth' });
 }
 

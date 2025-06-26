@@ -1,10 +1,12 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
+const { loadCounts } = require('./groupCounts');
 
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 
 const port = process.env.PORT || 8000;
+const GROUP_COUNTS = loadCounts();
 
 async function handleOpenAIRequest(req, res) {
   if (!OPENAI_API_KEY) {
@@ -53,6 +55,11 @@ async function handleOpenAIRequest(req, res) {
 const server = http.createServer((req, res) => {
   if (req.method === 'POST' && req.url === '/api/openai') {
     handleOpenAIRequest(req, res);
+    return;
+  }
+  if (req.method === 'GET' && req.url === '/api/groupcounts') {
+    res.writeHead(200, { 'Content-Type': 'application/json' });
+    res.end(JSON.stringify(GROUP_COUNTS));
     return;
   }
 
