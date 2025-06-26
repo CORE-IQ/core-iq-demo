@@ -1,10 +1,16 @@
 function calculateBudgetDistribution(entries, media, totalBudget) {
   const weights = {};
   entries.forEach((seg) => {
-    const segMedia = media[seg.type];
+    let segMedia = media[seg.type];
+    if (!segMedia) {
+      const prefix = seg.type[0];
+      const matchKey = Object.keys(media).find((k) => k.startsWith(prefix));
+      segMedia = media[matchKey];
+    }
     if (segMedia) {
       segMedia.forEach((item) => {
-        if (item.index > 90) {
+        // Only allocate budget to channels with an index over 100
+        if (item.index > 100) {
           const key = item.channel;
           const weight = item.index * seg.count;
           weights[key] = (weights[key] || 0) + weight;

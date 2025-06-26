@@ -6,12 +6,7 @@ document.getElementById("submitButton").addEventListener("click", () => {
   const rawInput = document.getElementById("postcodeInput").value;
   const query = rawInput.toUpperCase().trim();
   const postcode = query.replace(/\s+/g, "");
-  const batchFile = determineBatchFile(postcode);
-
-  const postcodeData = fetch(`${batchFile}.json`).then((r) => {
-    if (!r.ok) throw new Error("File not found");
-    return r.json();
-  });
+  const postcodeData = loadPostcodeData(postcode);
 
   const mediaData = fetch("noticed_adverts.json").then((r) => {
     if (!r.ok) throw new Error("Media file not found");
@@ -118,11 +113,14 @@ document.getElementById("submitButton").addEventListener("click", () => {
       const mainMedia = findMediaItems(topSegments[0].type, media) || [];
 
       const totalCount = entries.reduce((sum, e) => sum + (e.count || 0), 0);
-      const plan = Object.entries(distribution).map(([channel, info]) => ({
-        channel,
-        index: totalCount ? Math.round(info.weight / totalCount) : 0,
-        budget: parseFloat(info.budget.toFixed(2)),
-      }));
+      const plan = mainMedia.map((m) => {
+        const dist = distribution[m.channel];
+        return {
+          channel: m.channel,
+          index: m.index,
+          budget: dist ? parseFloat(dist.budget.toFixed(2)) : 0,
+        };
+      });
 
       const resultObj = {
         mosaic_group: `${groupInfo.group_name || topSegments[0].type} (Group ${groupCode})`,
@@ -204,6 +202,33 @@ function determineBatchFile(postcode) {
     S: "9", T: "9", U: "9", V: "9", W: "9", X: "9", Y: "9", Z: "9"
   };
   return map[firstLetter] || "1";
+}
+
+async function loadPostcodeData(postcode) {
+  const primary = `${determineBatchFile(postcode)}.json`;
+  try {
+    const r = await fetch(primary);
+    if (r.ok) {
+      const data = await r.json();
+      if (data[postcode]) return data;
+    }
+  } catch (e) {
+    console.warn('Primary file failed', e);
+  }
+
+  for (let i = 1; i <= 9; i++) {
+    const file = `${i}.json`;
+    if (file === primary) continue;
+    try {
+      const r = await fetch(file);
+      if (!r.ok) continue;
+      const json = await r.json();
+      if (json[postcode]) return json;
+    } catch (_) {
+      // ignore errors
+    }
+  }
+  return {};
 }
 
 function findMediaItems(segmentType, mediaData) {
