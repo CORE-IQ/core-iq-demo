@@ -3,13 +3,24 @@
 document.getElementById("submitButton").addEventListener("click", () => {
   // start a fresh search and clear any stored result
   localStorage.removeItem('audienceResult');
-  const rawInput = document.getElementById("postcodeInput").value;
+  const rawInput = document.getElementById("targetAreaInput").value;
   const query = rawInput.toUpperCase().trim();
   const postcode = query.replace(/\s+/g, "");
   const postcodeData = loadPostcodeData(postcode);
+  const areaData = loadAreaMapping(query);
 
-  const mediaData = fetch("noticed_adverts.json").then((r) => {
+  const noticedData = fetch("noticed_adverts.json").then((r) => {
     if (!r.ok) throw new Error("Media file not found");
+    return r.json();
+  });
+
+  const helpfulData = fetch("helpful_adverts.json").then((r) => {
+    if (!r.ok) throw new Error("Helpful file not found");
+    return r.json();
+  });
+
+  const responseData = fetch("response_channel.json").then((r) => {
+    if (!r.ok) throw new Error("Response file not found");
     return r.json();
   });
 
@@ -23,17 +34,19 @@ document.getElementById("submitButton").addEventListener("click", () => {
     return r.json();
   });
 
-  Promise.all([postcodeData, mediaData, featureData, groupData]).then(async ([data, media, features, groups]) => {
+  Promise.all([postcodeData, areaData, noticedData, helpfulData, responseData, featureData, groupData]).then(async ([data, area, noticed, helpful, response, features, groups]) => {
       const resultContainer = document.getElementById("resultContainer");
       resultContainer.classList.remove("hidden");
       resultContainer.innerHTML = "";
 
-      if (!data[postcode]) {
+      let entries = data[postcode];
+      if (!entries && Array.isArray(area)) {
+        entries = area;
+      }
+      if (!entries) {
         searchVariable(query, resultContainer);
         return;
       }
-
-      const entries = data[postcode];
       const topSegments = entries
         .filter((e) => e.type)
         .sort((a, b) => b.count - a.count)
@@ -58,7 +71,7 @@ document.getElementById("submitButton").addEventListener("click", () => {
 
       // Area 2: Media Weighting from separate file
       topSegments.forEach((segment) => {
-        const items = findMediaItems(segment.type, media);
+        const items = findMediaItems(segment.type, noticed);
         if (items) {
           html += `<h3 class='insight-subtitle'>Media Index for ${segment.type}</h3>`;
           html += items
@@ -78,7 +91,7 @@ document.getElementById("submitButton").addEventListener("click", () => {
         }
       });
 
-      const { totalIndex, distribution } = calculateBudgetDistribution(topSegments, media, budget);
+      const { totalIndex, distribution } = calculateBudgetDistribution(topSegments, noticed, budget);
       html += `<h3 class='insight-subtitle'>Total Media Index: ${totalIndex}</h3>`;
       html += Object.entries(distribution)
         .map(
@@ -96,10 +109,10 @@ document.getElementById("submitButton").addEventListener("click", () => {
       resultContainer.innerHTML = html;
 
       document.getElementById("resetButton").addEventListener("click", () => {
-        document.getElementById("postcodeInput").value = "";
+        document.getElementById("targetAreaInput").value = "";
         resultContainer.classList.add("hidden");
         resultContainer.innerHTML = "";
-        document.getElementById("postcodeInput").focus();
+        document.getElementById("targetAreaInput").focus();
         localStorage.removeItem('audienceResult');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       });
@@ -110,7 +123,9 @@ document.getElementById("submitButton").addEventListener("click", () => {
       const groupCode = topSegments[0].type[0];
       const groupInfo = groups.find((g) => g.group_code === groupCode) || {};
       const featureInfo = features.find((f) => f.group_code === groupCode) || {};
-      const mainMedia = findMediaItems(topSegments[0].type, media) || [];
+      const mainMedia = findMediaItems(topSegments[0].type, noticed) || [];
+      const helpfulMedia = findMediaItems(topSegments[0].type, helpful) || [];
+      let responseChannels = findMediaItems(topSegments[0].type, response) || [];
 
       const totalCount = entries.reduce((sum, e) => sum + (e.count || 0), 0);
       const plan = mainMedia.map((m) => {
@@ -125,7 +140,6 @@ document.getElementById("submitButton").addEventListener("click", () => {
       const groupName = groupInfo.group_name || topSegments[0].type;
       let detailedFeatures = featureInfo.features || [];
       let whoWeAre = [];
-      let responseChannels = [];
       let householdTech = '';
       try {
         const detailFile = `${groupName.replace(/ /g, '_')}_Detailed.json`;
@@ -155,9 +169,12 @@ document.getElementById("submitButton").addEventListener("click", () => {
         demographics: whoWeAre,
         key_features: detailedFeatures,
         media_channels: mainMedia.map((m) => ({ label: m.channel, index: m.index })),
+        noticed_channels: mainMedia.map((m) => ({ channel: m.channel, index: m.index })),
+        helpful_channels: helpfulMedia.map((m) => ({ channel: m.channel, index: m.index })),
         response_channels: responseChannels,
         household_technology: householdTech,
-        top_postcodes: [{ code: postcode, count: totalCount }],
+        target: query,
+        top_postcodes: [{ code: postcode || query, count: totalCount }],
         media_plan_allocation: plan,
         total_budget: budget,
       };
@@ -207,10 +224,10 @@ function searchVariable(query, container) {
       container.innerHTML = html;
 
       document.getElementById("resetButton").addEventListener("click", () => {
-        document.getElementById("postcodeInput").value = "";
+        document.getElementById("targetAreaInput").value = "";
         container.classList.add("hidden");
         container.innerHTML = "";
-        document.getElementById("postcodeInput").focus();
+        document.getElementById("targetAreaInput").focus();
         localStorage.removeItem('audienceResult');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       });
@@ -232,6 +249,27 @@ function determineBatchFile(postcode) {
     S: "9", T: "9", U: "9", V: "9", W: "9", X: "9", Y: "9", Z: "9"
   };
   return map[firstLetter] || "1";
+}
+
+async function loadAreaMapping(query) {
+  const files = [
+    'postcode_to_mosaic.json',
+    'city_to_mosaic.json',
+    'region_to_mosaic.json',
+    'local_authority_to_mosaic.json'
+  ];
+  const key = query.toUpperCase();
+  for (const f of files) {
+    try {
+      const r = await fetch(f);
+      if (!r.ok) continue;
+      const data = await r.json();
+      if (data[key]) return data[key];
+    } catch (_) {
+      // ignore
+    }
+  }
+  return null;
 }
 
 async function loadPostcodeData(postcode) {
@@ -284,15 +322,15 @@ function queryOpenAI(query, container) {
       Promise.all([
         fetch('/api/groupcounts').then(r => r.json()),
         fetch('noticed_adverts.json').then(r => r.json())
-      ]).then(([counts, media]) => {
-        displayGroupCounts(counts, media, budget, container);
+      ]).then(([counts, noticed]) => {
+        displayGroupCounts(counts, noticed, budget, container);
       }).catch(() => {
         container.innerHTML = `<p>There was an error processing your query.</p>`;
       });
     });
 }
 
-function displayGroupCounts(data, media, budget, container) {
+function displayGroupCounts(data, noticed, budget, container) {
   const groupsSorted = Object.entries(data)
     .sort((a, b) => b[1].total - a[1].total)
     .slice(0, 3)
@@ -309,14 +347,14 @@ function displayGroupCounts(data, media, budget, container) {
     .join('');
 
   groupsSorted.forEach(seg => {
-    const items = findMediaItems(seg.type, media);
+    const items = findMediaItems(seg.type, noticed);
     if (items) {
       html += `<h3 class='insight-subtitle'>Media Index for ${seg.type}</h3>`;
       html += items.map(it => `<div class="insight-card"><div class="insight-title">${it.channel}</div><div class="insight-index">Index = ${it.index}</div><div class="insight-message">${it.message ?? ''}</div></div>`).join('');
     }
   });
 
-  const { totalIndex, distribution } = calculateBudgetDistribution(groupsSorted, media, budget);
+  const { totalIndex, distribution } = calculateBudgetDistribution(groupsSorted, noticed, budget);
   html += `<h3 class='insight-subtitle'>Total Media Index: ${totalIndex}</h3>`;
   html += Object.entries(distribution)
     .map(([channel, info]) => `<div class="insight-card"><div class="insight-title">${channel}</div><div class="insight-index">Budget £${info.budget.toFixed(2)}</div></div>`)
@@ -325,10 +363,10 @@ function displayGroupCounts(data, media, budget, container) {
 
   container.innerHTML = html;
   document.getElementById("resetButton").addEventListener("click", () => {
-    document.getElementById("postcodeInput").value = "";
+    document.getElementById("targetAreaInput").value = "";
     container.classList.add("hidden");
     container.innerHTML = "";
-    document.getElementById("postcodeInput").focus();
+    document.getElementById("targetAreaInput").focus();
     localStorage.removeItem('audienceResult');
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
