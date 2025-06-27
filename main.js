@@ -39,7 +39,7 @@ document.getElementById("submitButton").addEventListener("click", () => {
       resultContainer.classList.remove("hidden");
       resultContainer.innerHTML = "";
 
-      let entries = data[postcode];
+      let entries = findPostcodeEntries(data, postcode);
       if (!entries && Array.isArray(area)) {
         entries = area;
       }
@@ -275,13 +275,33 @@ async function loadAreaMapping(query) {
   return null;
 }
 
+function postcodeCandidates(postcode) {
+  const normalized = postcode.toUpperCase().replace(/\s+/g, '');
+  const match = normalized.match(/^([A-Z]{1,2}[0-9][0-9A-Z]?)([0-9])/);
+  const candidates = new Set();
+  if (match) {
+    candidates.add(match[1] + match[2]);
+    candidates.add(match[1]);
+  }
+  candidates.add(normalized);
+  return Array.from(candidates);
+}
+
+function findPostcodeEntries(data, postcode) {
+  const cands = postcodeCandidates(postcode);
+  for (const c of cands) {
+    if (data[c]) return data[c];
+  }
+  return null;
+}
+
 async function loadPostcodeData(postcode) {
   const primary = `${determineBatchFile(postcode)}.json`;
   try {
     const r = await fetch(primary);
     if (r.ok) {
       const data = await r.json();
-      if (data[postcode]) return data;
+      if (findPostcodeEntries(data, postcode)) return data;
     }
   } catch (e) {
     console.warn('Primary file failed', e);
@@ -294,7 +314,7 @@ async function loadPostcodeData(postcode) {
       const r = await fetch(file);
       if (!r.ok) continue;
       const json = await r.json();
-      if (json[postcode]) return json;
+      if (findPostcodeEntries(json, postcode)) return json;
     } catch (_) {
       // ignore errors
     }
