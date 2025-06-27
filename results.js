@@ -17,11 +17,15 @@ function renderAudienceResults(data) {
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px;">
       ${data.demographics.map(d => `<div style="background: #111; border-radius: 12px; padding: 24px; box-shadow: 0 0 16px rgba(0,255,174,0.3);"><p style="color: #00ffae; font-weight: 600; margin-bottom: 4px;">${d.label}</p><p>${d.value}${d.index !== undefined ? ` <span style=\"color:#aaa\">(Index: ${d.index})</span>` : ''}</p></div>`).join('')}
     </div>
-    <div style="background: #111; border-radius: 12px; padding: 24px; box-shadow: 0 0 16px rgba(0,255,174,0.3);">
+    <div>
       <h4 style="color: #00ffae; margin-bottom: 12px;">Key Features</h4>
-      <ul style="margin: 0; padding-left: 20px; color: #ccc; line-height: 1.6;">
-        ${data.key_features.map(f => `<li>${f}</li>`).join('')}
-      </ul>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px;">
+        ${data.key_features.map(f => `
+          <div style="background:#111;border-radius:12px;padding:24px;box-shadow:0 0 16px rgba(0,255,174,0.3);">
+            <p style="margin:0;color:#ccc;">${f}</p>
+          </div>
+        `).join('')}
+      </div>
     </div>
     ${data.household_technology ? `<div style="background:#111;border-radius:12px;padding:24px;box-shadow:0 0 16px rgba(0,255,174,0.3);text-align:center;"><p style="margin:0;color:#ccc;">Household Technology Level</p><p style="margin:0;font-size:1.2rem;color:#00ffae;font-weight:600;">${data.household_technology}</p></div>` : ''}
     ${Array.isArray(data.noticed_channels) && data.noticed_channels.length ? `<div><h3 style="font-size:1.5rem;font-weight:700;color:#00ffae;">Advertising Mediums Noticed</h3><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:24px;margin-top:20px;">${data.noticed_channels.map(r => { const high = r.index >= 100; const color = high ? '#00ffae' : 'red'; const shadow = high ? '0 0 24px rgba(0,255,174,0.5)' : '0 0 24px rgba(255,0,0,0.5)'; return `<div style=\"background:#111;border-radius:12px;padding:20px;text-align:center;box-shadow:${shadow};\"><p style=\"margin:0;color:#ccc;\">${r.channel}</p><p style=\"color:${color};font-weight:bold;\">${r.index}</p></div>`; }).join('')}</div></div>` : ''}
