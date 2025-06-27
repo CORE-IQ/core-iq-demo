@@ -3,6 +3,13 @@ const fs = require('fs');
 const path = require('path');
 const { loadCounts } = require('./groupCounts');
 
+// Ensure `fetch` is available for older Node versions
+let fetchFn = global.fetch;
+if (typeof fetchFn !== 'function') {
+  fetchFn = (...args) =>
+    import('node-fetch').then(({ default: fetch }) => fetch(...args));
+}
+
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 
 const port = process.env.PORT || 8000;
@@ -26,7 +33,7 @@ async function handleOpenAIRequest(req, res) {
       }).join('\n');
 
       const prompt = `${query}\n\nUse the following JSON data to answer:`;
-      const response = await fetch('https://api.openai.com/v1/chat/completions', {
+      const response = await fetchFn('https://api.openai.com/v1/chat/completions', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
