@@ -12,7 +12,7 @@ This is a lightweight demo that displays audience insights by UK postcode or US 
 To enable natural language queries processed via OpenAI, set an environment variable `OPENAI_API_KEY` before starting the server:
 
 ```bash
-export OPENAI_API_KEY=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
+export OPENAI_API_KEY=<your-api-key>
 npm start
 ```
 
