@@ -125,6 +125,7 @@ document.getElementById("submitButton").addEventListener("click", () => {
       const featureInfo = features.find((f) => f.group_code === groupCode) || {};
       const mainMedia = findMediaItems(topSegments[0].type, noticed) || [];
       const helpfulMedia = findMediaItems(topSegments[0].type, helpful) || [];
+      let responseChannels = [];
       if (responseChannels.length === 0) {
         responseChannels = findMediaItems(topSegments[0].type, response) || [];
       }
@@ -142,7 +143,6 @@ document.getElementById("submitButton").addEventListener("click", () => {
       const groupName = groupInfo.group_name || topSegments[0].type;
       let detailedFeatures = featureInfo.features || [];
       let whoWeAre = [];
-      let responseChannels = [];
       let householdTech = '';
       try {
         const detailFile = `${groupName.replace(/ /g, '_')}_Detailed.json`;
