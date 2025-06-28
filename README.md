@@ -12,11 +12,22 @@ This is a lightweight demo that displays audience insights by UK postcode or US 
 To enable natural language queries processed via OpenAI, set an environment variable `OPENAI_API_KEY` before starting the server:
 
 ```bash
-export OPENAI_API_KEY=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
+export OPENAI_API_KEY=<your-api-key>
 npm start
 ```
 
-When a search term does not match local data, the server will forward the query and a snippet of the JSON files to OpenAI and display the response.
+When a search term does not match local data, the server forwards the query
+with excerpts from up to five relevant JSON files selected using the query text and
+Mosaic group names. Postcode lookups support partial codes like "EC1", and
+Mosaic group codes (like "A" for City Prosperity) also map
+to their detailed JSON automatically. This keeps requests focused on the most
+relevant data and helps avoid conflicting information in answers. The server selects only the most relevant files to minimise conflicting data. The server
+uses the `gpt-4o` (ChatGPT 4.0) model to generate responses.
+
+The results page includes a **Core-IQ™ Insight** card that shows the OpenAI
+response for the most relevant Mosaic group. You can ask follow‑up questions in
+the card’s input field. If the OpenAI request fails (for example, if the API
+key is missing), a helpful error message appears instead.
 
 The application is static and loads JSON data client-side, so it can be embedded in other pages (for example, within a HubSpot iframe).
 
