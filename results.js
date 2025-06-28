@@ -83,7 +83,6 @@ function renderAudienceResults(data) {
     body: JSON.stringify({ query: `Tell me about Experian Mosaic ${data.mosaic_group}` })
   })
     .then(r => r.json())
-    // Fallback logic from gp78hu-codex/fix-search-functionality-and-add-core-iq-card
     .then(d => { infoEl.textContent = d.answer || d.error || 'Core-IQ service unavailable.'; })
     .catch(() => { infoEl.textContent = 'Core-IQ service unavailable.'; });
 
