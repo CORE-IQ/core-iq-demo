@@ -4,9 +4,10 @@ This is a lightweight demo that displays audience insights by UK postcode or US 
 
 ## Usage
 1. Install Node.js (v18 or newer is recommended). If you must use an older version, install the `node-fetch` package so the OpenAI requests work.
-2. Run `npm start` from the project root to launch a small local server.
-3. Open `http://localhost:8000` in your browser.
-4. Enter a postcode or search term to view the Mosaic groups and weighted media budget.
+2. Run `./setup.sh` to install the `openai` and `dotenv` packages. If the install fails (for example, due to lack of internet access) the script copies local stub modules so the demo can run offline.
+3. Run `npm start` from the project root to launch a small local server.
+4. Open `http://localhost:8000` in your browser.
+5. Enter a postcode or search term to view the Mosaic groups and weighted media budget.
 
 ### OpenAI integration
 To enable natural language queries processed via OpenAI, set an environment variable `OPENAI_API_KEY` before starting the server:
@@ -38,6 +39,16 @@ Server-side responses now check for OpenAI errors and return that message in an
 `error` field so the page can surface the issue.
 If you start the server without setting `OPENAI_API_KEY`, the response will
 contain `{ "error": "OPENAI_API_KEY not set" }` to make troubleshooting clear.
+
+If the UI shows **"Core-IQ service unavailable"**, it usually means the page
+couldn't reach the local Node server or the server couldn't contact OpenAI.
+Make sure `npm start` is running and that your `.env` file contains a valid
+`OPENAI_API_KEY`. The server will return an error message if the key is missing
+or the request fails.
+
+You can also test the SDK locally with `node assistant.js`. When using the
+offline stubs (installed automatically by `./setup.sh` if `npm install` fails),
+the script prints a canned response so you can verify everything is wired up.
 
 The application is static and loads JSON data client-side, so it can be embedded in other pages (for example, within a HubSpot iframe).
 
