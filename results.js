@@ -93,8 +93,13 @@ function renderAudienceResults(data) {
     body: JSON.stringify({ query: `Tell me about Experian Mosaic ${data.mosaic_group}` })
   })
     .then(r => r.json())
-    .then(d => { infoEl.innerHTML = escapeHTML(d.answer || d.error || 'Core-IQ service unavailable.'); })
-    .catch(() => { infoEl.textContent = 'Core-IQ service unavailable.'; });
+    .then(d => {
+      infoEl.innerHTML = escapeHTML(d.answer || d.error || 'Core-IQ service unavailable.');
+    })
+    .catch(err => {
+      console.error('OpenAI fetch failed:', err);
+      infoEl.textContent = 'Core-IQ service unavailable. Is the server running and OPENAI_API_KEY set?';
+    });
 
   document.getElementById('openAIAskBtn').addEventListener('click', () => {
     const qInput = document.getElementById('openAIQuestion');
@@ -115,7 +120,10 @@ function renderAudienceResults(data) {
     })
       .then(r => r.json())
       .then(d => append('AI: ' + (d.answer || d.error || 'error')))
-      .catch(() => append('AI: error retrieving answer'));
+      .catch(err => {
+        console.error('OpenAI follow-up failed:', err);
+        append('AI: error retrieving answer');
+      });
   });
 }
 
@@ -155,7 +163,10 @@ function renderOpenAIResult(data) {
     })
       .then(r => r.json())
       .then(d => append('AI: ' + (d.answer || d.error || 'error')))
-      .catch(() => append('AI: error retrieving answer'));
+      .catch(err => {
+        console.error('OpenAI follow-up failed:', err);
+        append('AI: error retrieving answer');
+      });
   });
 }
 

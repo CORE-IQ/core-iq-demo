@@ -39,6 +39,12 @@ Server-side responses now check for OpenAI errors and return that message in an
 If you start the server without setting `OPENAI_API_KEY`, the response will
 contain `{ "error": "OPENAI_API_KEY not set" }` to make troubleshooting clear.
 
+If the UI shows **"Core-IQ service unavailable"**, it usually means the page
+couldn't reach the local Node server or the server couldn't contact OpenAI. Make
+sure `npm start` is running and that your `.env` file contains a valid
+`OPENAI_API_KEY`. When running without network access, execute `./setup.sh` first
+to install stub modules so the demo can still respond.
+
 The application is static and loads JSON data client-side, so it can be embedded in other pages (for example, within a HubSpot iframe).
 
 Animations rely on simple CSS transitions, so no external libraries such as AOS are required.
