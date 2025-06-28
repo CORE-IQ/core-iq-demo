@@ -115,7 +115,7 @@ function renderOpenAIResult(data) {
   const html = `
     <div id="openAIInfoCard" style="background:#111;border-radius:12px;padding:24px;box-shadow:0 0 16px rgba(0,255,174,0.3);">
       <p style="margin:0;color:#00ffae;font-weight:600;">Core-IQ™ Insight</p>
-      <div id="openAIContent" style="margin-top:10px;color:#ccc;">${data.answer}</div>
+      <div id="openAIContent" style="margin-top:10px;color:#ccc;"></div>
       <div style="margin-top:12px;display:flex;gap:8px;">
         <input id="openAIQuestion" placeholder="Ask a follow-up question" style="flex:1;padding:8px;border-radius:8px;border:none;background:#222;color:#fff;" />
         <button id="openAIAskBtn" style="background:#00ffae;color:#000;border:none;padding:8px 12px;border-radius:8px;font-weight:bold;">Ask</button>
@@ -124,6 +124,7 @@ function renderOpenAIResult(data) {
   root.innerHTML = html;
 
   const infoEl = document.getElementById('openAIContent');
+  infoEl.textContent = data.answer || '';
   document.getElementById('openAIAskBtn').addEventListener('click', () => {
     const qInput = document.getElementById('openAIQuestion');
     const question = qInput.value.trim();
