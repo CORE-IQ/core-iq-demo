@@ -16,10 +16,14 @@ const port = process.env.PORT || 8000;
 const GROUP_COUNTS = loadCounts();
 
 
-async function handleOpenAIRequest(req, res) {
-  if (!OPENAI_API_KEY) {
-    res.writeHead(500, { 'Content-Type': 'application/json' });
-    res.end(JSON.stringify({ error: 'OPENAI_API_KEY not set' }));
+if (!OPENAI_API_KEY) {
+  res.writeHead(500, { 'Content-Type': 'application/json' });
+  res.end(JSON.stringify({
+    error: 'OpenAI service unavailable. Please configure OPENAI_API_KEY.'
+  }));
+  return;
+}
+
     return;
   }
   let body = '';
@@ -59,7 +63,10 @@ async function handleOpenAIRequest(req, res) {
     } catch (err) {
       console.error(err);
       res.writeHead(200, { 'Content-Type': 'application/json' });
-      res.end(JSON.stringify({ error: err.message || 'OpenAI request failed' }));
+res.end(JSON.stringify({
+  error: err.message || 'OpenAI request failed. Please check your network connection.'
+}));
+
     }
   });
 }
