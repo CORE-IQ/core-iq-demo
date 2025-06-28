@@ -134,15 +134,7 @@ function renderOpenAIResult(data) {
   root.innerHTML = html;
 
   const infoEl = document.getElementById('openAIContent');
-<infoEl.innerHTML = escapeHTML(data.answer || '');
-function escapeHTML(str) {
-  return str
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#039;");
-}
+  infoEl.innerHTML = escapeHTML(data.answer || '');
 
   document.getElementById('openAIAskBtn').addEventListener('click', () => {
     const qInput = document.getElementById('openAIQuestion');
