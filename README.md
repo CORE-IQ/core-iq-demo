@@ -17,7 +17,7 @@ npm start
 ```
 
 When a search term does not match local data, the server forwards the query
-with snippets from **all** available JSON files. Postcode lookups support
+with snippets from **up to five** relevant JSON files. Postcode lookups support
 partial codes like "EC1", and Mosaic group codes (such as "A" for City
 Prosperity) automatically map to their detailed JSON. The server uses the
 `gpt-4o` (ChatGPT 4.0) model to generate responses.
