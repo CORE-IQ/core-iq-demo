@@ -15,40 +15,47 @@ const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 const port = process.env.PORT || 8000;
 const GROUP_COUNTS = loadCounts();
 
-
-if (!OPENAI_API_KEY) {
-  res.writeHead(500, { 'Content-Type': 'application/json' });
-  res.end(JSON.stringify({
-    error: 'OpenAI service unavailable. Please configure OPENAI_API_KEY.'
-  }));
-  return;
+function loadJsonSnippets() {
+  const files = fs.readdirSync(__dirname).filter(f => f.endsWith('.json'));
+  return files.map(f => {
+    const content = fs.readFileSync(path.join(__dirname, f), 'utf8');
+    return `File: ${f}\n${content.substring(0, 1000)}`;
+  });
 }
 
+const JSON_SNIPPETS = loadJsonSnippets();
+const JSON_SNIPPET_STRING = JSON_SNIPPETS.join('\n');
+
+
+async function handleOpenAIRequest(req, res) {
+  if (!OPENAI_API_KEY) {
+    res.writeHead(500, { 'Content-Type': 'application/json' });
+    res.end(JSON.stringify({
+      error: 'OpenAI service unavailable. Please configure OPENAI_API_KEY.'
+    }));
     return;
   }
   let body = '';
-  req.on('data', chunk => body += chunk);
+  req.on('data', chunk => (body += chunk));
   req.on('end', async () => {
     try {
       const { query = '' } = JSON.parse(body || '{}');
-      const files = fs.readdirSync(__dirname).filter(f => f.endsWith('.json'));
-      const dataSnippets = files.map(f => {
-        const content = fs.readFileSync(path.join(__dirname, f), 'utf8');
-        return `File: ${f}\n${content.substring(0, 1000)}`;
-      }).join('\n');
 
       const prompt = `${query}\n\nUse the following JSON data to answer:`;
       const response = await fetchFn('https://api.openai.com/v1/chat/completions', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer ${OPENAI_API_KEY}`
+          Authorization: `Bearer ${OPENAI_API_KEY}`
         },
         body: JSON.stringify({
           model: 'gpt-4o',
           messages: [
-            { role: 'system', content: 'You are a helpful assistant that answers questions about the provided JSON.' },
-            { role: 'user', content: `${prompt}\n${dataSnippets}` }
+            {
+              role: 'system',
+              content: 'You are a helpful assistant that answers questions about the provided JSON.'
+            },
+            { role: 'user', content: `${prompt}\n${JSON_SNIPPET_STRING}` }
           ]
         })
       });
@@ -63,10 +70,11 @@ if (!OPENAI_API_KEY) {
     } catch (err) {
       console.error(err);
       res.writeHead(200, { 'Content-Type': 'application/json' });
-res.end(JSON.stringify({
-  error: err.message || 'OpenAI request failed. Please check your network connection.'
-}));
-
+      res.end(
+        JSON.stringify({
+          error: err.message || 'OpenAI request failed. Please check your network connection.'
+        })
+      );
     }
   });
 }
