@@ -1,3 +1,13 @@
+function escapeHTML(str) {
+  return str.replace(/[&<>"']/g, c => ({
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#39;'
+  })[c]);
+}
+
 function renderAudienceResults(data) {
   const root = document.getElementById('resultsRoot');
   if (!root) return;
@@ -83,7 +93,7 @@ function renderAudienceResults(data) {
     body: JSON.stringify({ query: `Tell me about Experian Mosaic ${data.mosaic_group}` })
   })
     .then(r => r.json())
-    .then(d => { infoEl.textContent = d.answer || d.error || 'Core-IQ service unavailable.'; })
+    .then(d => { infoEl.innerHTML = escapeHTML(d.answer || d.error || 'Core-IQ service unavailable.'); })
     .catch(() => { infoEl.textContent = 'Core-IQ service unavailable.'; });
 
   document.getElementById('openAIAskBtn').addEventListener('click', () => {
@@ -94,7 +104,7 @@ function renderAudienceResults(data) {
     const append = txt => {
       const p = document.createElement('p');
       p.style.margin = '4px 0';
-      p.textContent = txt;
+      p.innerHTML = escapeHTML(txt);
       infoEl.appendChild(p);
     };
     append('You: ' + question);
@@ -124,7 +134,16 @@ function renderOpenAIResult(data) {
   root.innerHTML = html;
 
   const infoEl = document.getElementById('openAIContent');
-  infoEl.textContent = data.answer || '';
+<infoEl.innerHTML = escapeHTML(data.answer || '');
+function escapeHTML(str) {
+  return str
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
   document.getElementById('openAIAskBtn').addEventListener('click', () => {
     const qInput = document.getElementById('openAIQuestion');
     const question = qInput.value.trim();
@@ -133,7 +152,7 @@ function renderOpenAIResult(data) {
     const append = txt => {
       const p = document.createElement('p');
       p.style.margin = '4px 0';
-      p.textContent = txt;
+      p.innerHTML = escapeHTML(txt);
       infoEl.appendChild(p);
     };
     append('You: ' + question);
