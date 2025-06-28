@@ -12,11 +12,13 @@ This is a lightweight demo that displays audience insights by UK postcode or US 
 To enable natural language queries processed via OpenAI, set an environment variable `OPENAI_API_KEY` before starting the server:
 
 ```bash
-export OPENAI_API_KEY=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
+export OPENAI_API_KEY=<your-api-key>
 npm start
 ```
 
-When a search term does not match local data, the server will forward the query and a snippet of the JSON files to OpenAI and display the response.
+When a search term does not match local data, the server forwards the query
+and short excerpts from up to five relevant JSON files to OpenAI and displays
+the response. This keeps requests focused and avoids conflicting data.
 
 The application is static and loads JSON data client-side, so it can be embedded in other pages (for example, within a HubSpot iframe).
 
