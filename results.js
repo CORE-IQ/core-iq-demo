@@ -1,3 +1,12 @@
+function sanitize(text) {
+  if (!text) return '';
+  return text
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/\r?\n/g, '<br>');
+}
+
 function renderAudienceResults(data) {
   const root = document.getElementById('resultsRoot');
   if (!root) return;
@@ -83,29 +92,35 @@ function renderAudienceResults(data) {
     body: JSON.stringify({ query: `Tell me about Experian Mosaic ${data.mosaic_group}` })
   })
     .then(r => r.json())
-    .then(d => { infoEl.textContent = d.answer || d.error || 'Core-IQ service unavailable.'; })
-    .catch(() => { infoEl.textContent = 'Core-IQ service unavailable.'; });
+    .then(d => { infoEl.innerHTML = sanitize(d.answer || d.error || 'Core-IQ service unavailable.'); })
+    .catch(() => { infoEl.innerHTML = 'Core-IQ service unavailable.'; });
 
   document.getElementById('openAIAskBtn').addEventListener('click', () => {
     const qInput = document.getElementById('openAIQuestion');
     const question = qInput.value.trim();
     if (!question) return;
     qInput.value = '';
-    const append = txt => {
+    const appendText = txt => {
       const p = document.createElement('p');
       p.style.margin = '4px 0';
       p.textContent = txt;
       infoEl.appendChild(p);
     };
-    append('You: ' + question);
+    const appendAnswer = txt => {
+      const p = document.createElement('p');
+      p.style.margin = '4px 0';
+      p.innerHTML = sanitize(txt);
+      infoEl.appendChild(p);
+    };
+    appendText('You: ' + question);
     fetch('/api/openai', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ query: `${question} (about Experian Mosaic ${data.mosaic_group})` })
     })
       .then(r => r.json())
-      .then(d => append('AI: ' + (d.answer || d.error || 'error')))
-      .catch(() => append('AI: error retrieving answer'));
+      .then(d => appendAnswer('AI: ' + (d.answer || d.error || 'error')))
+      .catch(() => appendText('AI: error retrieving answer'));
   });
 }
 
@@ -115,7 +130,7 @@ function renderOpenAIResult(data) {
   const html = `
     <div id="openAIInfoCard" style="background:#111;border-radius:12px;padding:24px;box-shadow:0 0 16px rgba(0,255,174,0.3);">
       <p style="margin:0;color:#00ffae;font-weight:600;">Core-IQ™ Insight</p>
-      <div id="openAIContent" style="margin-top:10px;color:#ccc;">${data.answer}</div>
+      <div id="openAIContent" style="margin-top:10px;color:#ccc;"></div>
       <div style="margin-top:12px;display:flex;gap:8px;">
         <input id="openAIQuestion" placeholder="Ask a follow-up question" style="flex:1;padding:8px;border-radius:8px;border:none;background:#222;color:#fff;" />
         <button id="openAIAskBtn" style="background:#00ffae;color:#000;border:none;padding:8px 12px;border-radius:8px;font-weight:bold;">Ask</button>
@@ -124,26 +139,33 @@ function renderOpenAIResult(data) {
   root.innerHTML = html;
 
   const infoEl = document.getElementById('openAIContent');
+  infoEl.innerHTML = sanitize(data.answer || '');
   document.getElementById('openAIAskBtn').addEventListener('click', () => {
     const qInput = document.getElementById('openAIQuestion');
     const question = qInput.value.trim();
     if (!question) return;
     qInput.value = '';
-    const append = txt => {
+    const appendText = txt => {
       const p = document.createElement('p');
       p.style.margin = '4px 0';
       p.textContent = txt;
       infoEl.appendChild(p);
     };
-    append('You: ' + question);
+    const appendAnswer = txt => {
+      const p = document.createElement('p');
+      p.style.margin = '4px 0';
+      p.innerHTML = sanitize(txt);
+      infoEl.appendChild(p);
+    };
+    appendText('You: ' + question);
     fetch('/api/openai', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ query: `${question} (context: ${data.query})` })
     })
       .then(r => r.json())
-      .then(d => append('AI: ' + (d.answer || d.error || 'error')))
-      .catch(() => append('AI: error retrieving answer'));
+      .then(d => appendAnswer('AI: ' + (d.answer || d.error || 'error')))
+      .catch(() => appendText('AI: error retrieving answer'));
   });
 }
 
