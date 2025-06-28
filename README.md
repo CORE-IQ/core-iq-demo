@@ -36,6 +36,8 @@ the card’s input field. If the OpenAI request fails (for example, if the API
 key is missing or the network is down), a helpful error message appears instead.
 Server-side responses now check for OpenAI errors and return that message in an
 `error` field so the page can surface the issue.
+If you start the server without setting `OPENAI_API_KEY`, the response will
+contain `{ "error": "OPENAI_API_KEY not set" }` to make troubleshooting clear.
 
 The application is static and loads JSON data client-side, so it can be embedded in other pages (for example, within a HubSpot iframe).
 
