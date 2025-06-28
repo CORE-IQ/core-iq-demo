@@ -337,7 +337,8 @@ function queryOpenAI(query, container) {
   })
     .then(r => r.json())
     .then(data => {
-      container.innerHTML = `<div class="insight-card">${data.answer}</div>`;
+      localStorage.setItem('openAIResult', JSON.stringify({ query, answer: data.answer || data.error || 'No answer' }));
+      window.location.href = 'results.html';
     })
     .catch(err => {
       console.error('OpenAI request failed', err);
