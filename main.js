@@ -1,6 +1,6 @@
 // main.js
 
-document.getElementById("submitButton").addEventListener("click", () => {
+async function runSearch() {
   // start a fresh search and clear any stored result
   localStorage.removeItem('audienceResult');
   const rawInput = document.getElementById("targetAreaInput").value;
@@ -191,6 +191,17 @@ document.getElementById("submitButton").addEventListener("click", () => {
       resultContainer.classList.remove("hidden");
       resultContainer.innerHTML = `<p>There was an error loading insights.</p>`;
     });
+}
+
+document.getElementById("submitButton").addEventListener("click", runSearch);
+
+["targetAreaInput", "budgetInput"].forEach(id => {
+  const el = document.getElementById(id);
+  el.addEventListener("keydown", e => {
+    if (e.key === "Enter") {
+      runSearch();
+    }
+  });
 });
 
 function searchVariable(query, container) {
