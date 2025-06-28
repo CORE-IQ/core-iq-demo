@@ -101,8 +101,8 @@ async function handleOpenAIRequest(req, res) {
       res.end(JSON.stringify({ answer }));
     } catch (err) {
       console.error(err);
-      res.writeHead(500, { 'Content-Type': 'application/json' });
-      res.end(JSON.stringify({ error: 'OpenAI request failed' }));
+      res.writeHead(200, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({ answer: 'OpenAI request failed. Please check your network connection.' }));
     }
   });
 }
