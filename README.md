@@ -37,8 +37,8 @@ the card’s input field. If the OpenAI request fails (for example, if the API
 key is missing or the network is down), a helpful error message appears instead.
 Server-side responses now check for OpenAI errors and return that message in an
 `error` field so the page can surface the issue.
-If you start the server without setting `OPENAI_API_KEY`, the response will
-contain `{ "error": "OPENAI_API_KEY not set" }` to make troubleshooting clear.
+If you start the server without an API key, the response will
+contain `{ "error": "AI service not configured" }` to help troubleshoot.
 
 If the UI shows **"Core-IQ service unavailable"**, it usually means the page
 couldn't reach the local Node server or the server couldn't contact OpenAI.

@@ -341,7 +341,8 @@ function findMediaItems(segmentType, mediaData) {
 }
 
 function queryOpenAI(query, container) {
-  fetch('/api/openai', {
+  const base = typeof window !== 'undefined' ? window.location.origin : 'http://localhost:8000';
+  fetch(`${base}/api/openai`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ query })

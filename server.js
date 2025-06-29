@@ -29,7 +29,7 @@ const JSON_SNIPPET_STRING = JSON_SNIPPETS.join('\n');
 
 async function fetchOpenAIAnswer(query) {
   if (!OPENAI_API_KEY) {
-    throw new Error('OPENAI_API_KEY not set');
+    throw new Error('AI service not configured');
   }
   try {
     const prompt = `${query}\n\nUse the following JSON data to answer:`;
@@ -75,7 +75,7 @@ async function handleOpenAIRequest(req, res) {
     } catch (err) {
       console.error('Failed to process OpenAI request:', err);
       res.writeHead(500, { 'Content-Type': 'application/json' });
-      res.end(JSON.stringify({ error: err.message || 'OpenAI request failed' }));
+      res.end(JSON.stringify({ error: err.message || 'AI request failed' }));
     }
   });
 }
