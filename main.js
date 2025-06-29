@@ -297,6 +297,8 @@ async function loadAreaMapping(query) {
       if (!r.ok) continue;
       const data = await r.json();
       if (data[key]) return data[key];
+      const partialKey = Object.keys(data).find(k => k.includes(key));
+      if (partialKey) return data[partialKey];
     } catch (_) {
       // ignore
     }
