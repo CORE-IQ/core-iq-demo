@@ -195,6 +195,24 @@ async function runSearch() {
 
 document.getElementById("submitButton").addEventListener("click", runSearch);
 
+function askOpenAI() {
+  const q = document.getElementById('openAIInput').value.trim();
+  if (!q) return;
+  document.getElementById('openAIInput').value = '';
+  const container = document.getElementById('resultContainer');
+  container.classList.remove('hidden');
+  container.innerHTML = '<p>Loading...</p>';
+  queryOpenAI(q, container);
+}
+
+const askBtn = document.getElementById('openAIAskButton');
+if (askBtn) {
+  askBtn.addEventListener('click', askOpenAI);
+  document.getElementById('openAIInput').addEventListener('keydown', e => {
+    if (e.key === 'Enter') askOpenAI();
+  });
+}
+
 ["targetAreaInput", "budgetInput"].forEach(id => {
   const el = document.getElementById(id);
   el.addEventListener("keydown", e => {

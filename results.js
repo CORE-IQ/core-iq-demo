@@ -98,10 +98,10 @@ function renderAudienceResults(data) {
     })
     .catch(err => {
       console.error('OpenAI fetch failed:', err);
-      infoEl.textContent = 'Core-IQ service unavailable. Is the server running and OPENAI_API_KEY set?';
+      infoEl.textContent = 'Core-IQ service unavailable.';
     });
 
-  document.getElementById('openAIAskBtn').addEventListener('click', () => {
+  const ask = () => {
     const qInput = document.getElementById('openAIQuestion');
     const question = qInput.value.trim();
     if (!question) return;
@@ -124,6 +124,10 @@ function renderAudienceResults(data) {
         console.error('OpenAI follow-up failed:', err);
         append('AI: error retrieving answer');
       });
+  };
+  document.getElementById('openAIAskBtn').addEventListener('click', ask);
+  document.getElementById('openAIQuestion').addEventListener('keydown', e => {
+    if (e.key === 'Enter') ask();
   });
 }
 
@@ -144,7 +148,7 @@ function renderOpenAIResult(data) {
   const infoEl = document.getElementById('openAIContent');
   infoEl.innerHTML = escapeHTML(data.answer || '');
 
-  document.getElementById('openAIAskBtn').addEventListener('click', () => {
+  const ask = () => {
     const qInput = document.getElementById('openAIQuestion');
     const question = qInput.value.trim();
     if (!question) return;
@@ -167,6 +171,10 @@ function renderOpenAIResult(data) {
         console.error('OpenAI follow-up failed:', err);
         append('AI: error retrieving answer');
       });
+  };
+  document.getElementById('openAIAskBtn').addEventListener('click', ask);
+  document.getElementById('openAIQuestion').addEventListener('keydown', e => {
+    if (e.key === 'Enter') ask();
   });
 }
 
