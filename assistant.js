@@ -5,7 +5,7 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY
 });
 
-const assistantId = 'asst_abc123xyz456'; // replace with your real ID
+const assistantId = process.env.OPENAI_ASSISTANT_ID || '';
 
 async function runAssistant() {
   const thread = await openai.beta.threads.create();
