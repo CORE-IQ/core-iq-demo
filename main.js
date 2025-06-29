@@ -39,25 +39,33 @@ async function runSearch() {
       resultContainer.classList.remove("hidden");
       resultContainer.innerHTML = "";
 
-      let entries = findPostcodeEntries(data, postcode);
-      if (!entries && Array.isArray(area)) {
-        entries = area;
-      }
-      if (!entries) {
+      let entries = [];
+      const pcEntries = findPostcodeEntries(data, postcode);
+      if (pcEntries) entries = entries.concat(pcEntries);
+      if (Array.isArray(area)) entries = entries.concat(area);
+      if (entries.length === 0) {
         searchVariable(query, resultContainer);
         return;
       }
+      const groupNames = Object.fromEntries(groups.map(g => [g.group_code, g.group_name]));
+      const groupsSorted = aggregateGroupCounts(entries);
       const topSegments = entries
         .filter((e) => e.type)
         .sort((a, b) => b.count - a.count)
         .slice(0, 3);
       const budget = parseFloat(document.getElementById("budgetInput").value) || 0;
 
-      let html = `<h2 class="result-heading">Insights for ${postcode}</h2>`;
+      let html = `<h2 class="result-heading">Insights for ${query}</h2>`;
       html += `<div class="summary-card">Total Media Budget: £${budget.toFixed(2)}</div>`;
       html += `<div class='card-wrap'>`;
 
-      // Area 1: Mosaic Segments
+      // Area 1: Mosaic Groups
+      html += groupsSorted
+        .slice(0, 3)
+        .map(g => `<div class="insight-card"><div class="insight-title">${g.code} - ${groupNames[g.code] || ''}</div><div class="insight-index">Count = ${g.count}</div></div>`)
+        .join("");
+
+      // Area 2: Mosaic Segments
       html += topSegments
         .map(
           (entry) => `
@@ -285,7 +293,6 @@ function determineBatchFile(postcode) {
 
 async function loadAreaMapping(query) {
   const files = [
-    'postcode_to_mosaic.json',
     'city_to_mosaic.json',
     'region_to_mosaic.json',
     'local_authority_to_mosaic.json'
@@ -297,6 +304,8 @@ async function loadAreaMapping(query) {
       if (!r.ok) continue;
       const data = await r.json();
       if (data[key]) return data[key];
+      const partialKey = Object.keys(data).find(k => k.includes(key));
+      if (partialKey) return data[partialKey];
     } catch (_) {
       // ignore
     }
@@ -322,6 +331,19 @@ function findPostcodeEntries(data, postcode) {
     if (data[c]) return data[c];
   }
   return null;
+}
+
+function aggregateGroupCounts(entries) {
+  const totals = {};
+  entries.forEach(e => {
+    if (!e || !e.type) return;
+    const group = e.type.trim()[0];
+    const cnt = e.count || 0;
+    totals[group] = (totals[group] || 0) + cnt;
+  });
+  return Object.entries(totals)
+    .sort((a, b) => b[1] - a[1])
+    .map(([code, count]) => ({ code, count }));
 }
 
 async function loadPostcodeData(postcode) {
