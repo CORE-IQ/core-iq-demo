@@ -45,6 +45,23 @@ sure `npm start` is running and that your `.env` file contains a valid
 `OPENAI_API_KEY`. When running without network access, execute `./setup.sh` first
 to install stub modules so the demo can still respond.
 
+### Python assistant script
+If you prefer using Python, the `assistant_python.py` utility demonstrates
+how to call an OpenAI Assistant. Install the requirement with:
+
+```bash
+pip install -r requirements.txt
+```
+
+Then run the script:
+
+```bash
+python assistant_python.py
+```
+
+It expects the `OPENAI_API_KEY` environment variable (and optionally
+`OPENAI_ASSISTANT_ID`) to be set, mirroring the Node example.
+
 The application is static and loads JSON data client-side, so it can be embedded in other pages (for example, within a HubSpot iframe).
 
 Animations rely on simple CSS transitions, so no external libraries such as AOS are required.
