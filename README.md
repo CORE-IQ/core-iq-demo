@@ -4,9 +4,10 @@ This is a lightweight demo that displays audience insights by UK postcode or US 
 
 ## Usage
 1. Install Node.js (v18 or newer is recommended). If you must use an older version, install the `node-fetch` package so the OpenAI requests work.
-2. Run `npm start` from the project root to launch a small local server.
-3. Open `http://localhost:8000` in your browser.
-4. Enter a postcode or search term to view the Mosaic groups and weighted media budget.
+2. Run `npm install` (or `./setup.sh`) to install the `openai` and `dotenv` packages.
+3. Run `npm start` from the project root to launch a small local server.
+4. Open `http://localhost:8000` in your browser.
+5. Enter a postcode or search term to view the Mosaic groups and weighted media budget.
 
 ### OpenAI integration
 To enable natural language queries processed via OpenAI, set an environment variable `OPENAI_API_KEY` before starting the server:
@@ -36,8 +37,16 @@ the card’s input field. If the OpenAI request fails (for example, if the API
 key is missing or the network is down), a helpful error message appears instead.
 Server-side responses now check for OpenAI errors and return that message in an
 `error` field so the page can surface the issue.
-If you start the server without setting `OPENAI_API_KEY`, the response will
-contain `{ "error": "OPENAI_API_KEY not set" }` to make troubleshooting clear.
+If you start the server without an API key, the response will
+contain `{ "error": "AI service not configured" }` to help troubleshoot.
+
+If the UI shows **"Core-IQ service unavailable"**, it usually means the page
+couldn't reach the local Node server or the server couldn't contact OpenAI.
+Make sure `npm start` is running and that your `.env` file contains a valid
+`OPENAI_API_KEY`. The server will return an error message if the key is missing
+or the request fails.
+
+You can also test the SDK locally with `node assistant.js`.
 
 The application is static and loads JSON data client-side, so it can be embedded in other pages (for example, within a HubSpot iframe).
 

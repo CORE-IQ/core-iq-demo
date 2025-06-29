@@ -87,14 +87,20 @@ function renderAudienceResults(data) {
   root.innerHTML = html;
 
   const infoEl = document.getElementById('openAIContent');
-  fetch('/api/openai', {
+  const base = typeof window !== 'undefined' ? window.location.origin : 'http://localhost:8000';
+  fetch(`${base}/api/openai`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ query: `Tell me about Experian Mosaic ${data.mosaic_group}` })
   })
     .then(r => r.json())
-    .then(d => { infoEl.innerHTML = escapeHTML(d.answer || d.error || 'Core-IQ service unavailable.'); })
-    .catch(() => { infoEl.textContent = 'Core-IQ service unavailable.'; });
+    .then(d => {
+      infoEl.innerHTML = escapeHTML(d.answer || d.error || 'Core-IQ AI service unavailable.');
+    })
+    .catch(err => {
+      console.error('OpenAI fetch failed:', err);
+      infoEl.textContent = 'Core-IQ AI service unavailable. Is the server running with API access?';
+    });
 
   document.getElementById('openAIAskBtn').addEventListener('click', () => {
     const qInput = document.getElementById('openAIQuestion');
@@ -108,14 +114,18 @@ function renderAudienceResults(data) {
       infoEl.appendChild(p);
     };
     append('You: ' + question);
-    fetch('/api/openai', {
+    const base = typeof window !== 'undefined' ? window.location.origin : 'http://localhost:8000';
+    fetch(`${base}/api/openai`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ query: `${question} (about Experian Mosaic ${data.mosaic_group})` })
     })
       .then(r => r.json())
       .then(d => append('AI: ' + (d.answer || d.error || 'error')))
-      .catch(() => append('AI: error retrieving answer'));
+      .catch(err => {
+        console.error('OpenAI follow-up failed:', err);
+        append('AI: error retrieving answer');
+      });
   });
 }
 
@@ -148,14 +158,18 @@ function renderOpenAIResult(data) {
       infoEl.appendChild(p);
     };
     append('You: ' + question);
-    fetch('/api/openai', {
+    const base = typeof window !== 'undefined' ? window.location.origin : 'http://localhost:8000';
+    fetch(`${base}/api/openai`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ query: `${question} (context: ${data.query})` })
     })
       .then(r => r.json())
       .then(d => append('AI: ' + (d.answer || d.error || 'error')))
-      .catch(() => append('AI: error retrieving answer'));
+      .catch(err => {
+        console.error('OpenAI follow-up failed:', err);
+        append('AI: error retrieving answer');
+      });
   });
 }
 
