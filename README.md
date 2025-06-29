@@ -5,7 +5,14 @@ This is a lightweight demo that displays audience insights by UK postcode or US 
 ## Usage
 1. Install Node.js (v18 or newer is recommended). If you must use an older version, install the `node-fetch` package so the OpenAI requests work.
 2. Run `npm start` from the project root to launch a small local server.
-3. Open `http://localhost:8000` in your browser.
+   The server listens on port `8000` by default. Set the `PORT` environment
+   variable to use a different port, for example `3000`:
+
+   ```bash
+   PORT=3000 npm start
+   ```
+3. Open `http://localhost:8000` in your browser (replace `8000` with the port
+   you configured).
 4. Enter a postcode or search term to view the Mosaic groups and weighted media budget.
 
 ### OpenAI integration
@@ -51,19 +58,24 @@ to install stub modules so the demo can still respond.
 
 ### Python assistant script
 If you prefer using Python, the `assistant_python.py` utility demonstrates
-how to call an OpenAI Assistant. Install the requirement with:
+how to call an OpenAI Assistant.
+
+If network access is available, install the real client with:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Then run the script:
+When `pip install` is unavailable, the repository ships with a small stub
+implementation located in the `openai/` folder. Running `python
+assistant_python.py` from the project root automatically loads this stub so
+the script still works offline and prints a placeholder response.
 
 ```bash
 python assistant_python.py
 ```
 
-It expects the `OPENAI_API_KEY` environment variable (and optionally
+The script expects the `OPENAI_API_KEY` environment variable (and optionally
 `OPENAI_ASSISTANT_ID`) to be set, mirroring the Node example.
 
 The application is static and loads JSON data client-side, so it can be embedded in other pages (for example, within a HubSpot iframe).
