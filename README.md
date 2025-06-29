@@ -9,18 +9,19 @@ This is a lightweight demo that displays audience insights by UK postcode or US 
 4. Enter a postcode or search term to view the Mosaic groups and weighted media budget.
 
 ### OpenAI integration
-To enable natural language queries processed via OpenAI, set an environment variable `OPENAI_API_KEY` before starting the server:
+To enable natural language queries processed via OpenAI, set environment variables `OPENAI_API_KEY` and `OPENAI_ASSISTANT_ID` before starting the server.  You can copy `.env.example` to `.env` and fill in your credentials so they load automatically:
 
 ```bash
 export OPENAI_API_KEY=<your-api-key>
+export OPENAI_ASSISTANT_ID=<your-assistant-id>
 npm start
 ```
 
-When a search term does not match local data, the server forwards the query
-with snippets from **every** JSON file in the project so OpenAI has the full
-dataset. Postcode lookups support partial codes like "EC1", and Mosaic group
-codes (such as "A" for City Prosperity) automatically map to their detailed
-JSON. The server uses the `gpt-4o` (ChatGPT 4.0) model to generate responses.
+When a search term does not match local data, the server forwards the query to
+your configured OpenAI Assistant. Postcode lookups support partial codes like
+"EC1", and Mosaic group codes (such as "A" for City Prosperity) automatically
+map to their detailed JSON. The assistant handles these questions using the
+data uploaded to it.
 
 You can test the endpoint directly with `curl`:
 
@@ -32,18 +33,38 @@ curl -X POST http://localhost:8000/api/openai \
 
 The results page includes a **Core-IQ™ Insight** card that shows the OpenAI
 response for the most relevant Mosaic group. You can ask follow‑up questions in
-the card’s input field. If the OpenAI request fails (for example, if the API
+the card’s input field or use the **Ask Core-IQ** box on the home page to query
+the assistant directly. If the OpenAI request fails (for example, if the API
 key is missing or the network is down), a helpful error message appears instead.
 Server-side responses now check for OpenAI errors and return that message in an
 `error` field so the page can surface the issue.
-If you start the server without setting `OPENAI_API_KEY`, the response will
-contain `{ "error": "OPENAI_API_KEY not set" }` to make troubleshooting clear.
+If you start the server without the required environment variables, the response
+will contain `{ "error": "Core-IQ service unavailable" }` to make troubleshooting
+clear.
 
 If the UI shows **"Core-IQ service unavailable"**, it usually means the page
 couldn't reach the local Node server or the server couldn't contact OpenAI. Make
-sure `npm start` is running and that your `.env` file contains a valid
-`OPENAI_API_KEY`. When running without network access, execute `./setup.sh` first
+sure `npm start` is running and that your `.env` file contains valid
+`OPENAI_API_KEY` and `OPENAI_ASSISTANT_ID` values. When running without network
+access, execute `./setup.sh` first
 to install stub modules so the demo can still respond.
+
+### Python assistant script
+If you prefer using Python, the `assistant_python.py` utility demonstrates
+how to call an OpenAI Assistant. Install the requirement with:
+
+```bash
+pip install -r requirements.txt
+```
+
+Then run the script:
+
+```bash
+python assistant_python.py
+```
+
+It expects the `OPENAI_API_KEY` environment variable (and optionally
+`OPENAI_ASSISTANT_ID`) to be set, mirroring the Node example.
 
 The application is static and loads JSON data client-side, so it can be embedded in other pages (for example, within a HubSpot iframe).
 

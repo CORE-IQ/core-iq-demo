@@ -1,80 +1,56 @@
+require('dotenv').config();
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
+const { OpenAI } = require('openai');
 const { loadCounts } = require('./groupCounts');
 
-// Ensure `fetch` is available for older Node versions
-let fetchFn = global.fetch;
-if (typeof fetchFn !== 'function') {
-  fetchFn = (...args) =>
-    import('node-fetch').then(({ default: fetch }) => fetch(...args));
-}
-
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
+const ASSISTANT_ID = process.env.OPENAI_ASSISTANT_ID || 'asst_abc123xyz456';
+const openai = new OpenAI({ apiKey: OPENAI_API_KEY });
 
 const port = process.env.PORT || 8000;
 const GROUP_COUNTS = loadCounts();
 
-function loadJsonSnippets() {
-  const files = fs.readdirSync(__dirname).filter(f => f.endsWith('.json'));
-  return files.map(f => {
-    const content = fs.readFileSync(path.join(__dirname, f), 'utf8');
-    return `File: ${f}\n${content.substring(0, 1000)}`;
-  });
-}
+async function runAssistant(query) {
+  if (!OPENAI_API_KEY || !ASSISTANT_ID) {
+    throw new Error('unavailable');
+  }
 
-const JSON_SNIPPETS = loadJsonSnippets();
-const JSON_SNIPPET_STRING = JSON_SNIPPETS.join('\n');
+  const thread = await openai.beta.threads.create();
+  await openai.beta.threads.messages.create(thread.id, {
+    role: 'user',
+    content: query
+  });
+  const run = await openai.beta.threads.runs.create(thread.id, {
+    assistant_id: ASSISTANT_ID
+  });
+
+  let status = run.status;
+  while (status !== 'completed') {
+    await new Promise(r => setTimeout(r, 1000));
+    status = (await openai.beta.threads.runs.retrieve(thread.id, run.id)).status;
+  }
+
+  const messages = await openai.beta.threads.messages.list(thread.id);
+  const answer = messages.data.find(m => m.role === 'assistant');
+  return answer ? answer.content[0].text.value : '';
+}
 
 
 async function handleOpenAIRequest(req, res) {
-  if (!OPENAI_API_KEY) {
-    res.writeHead(500, { 'Content-Type': 'application/json' });
-    res.end(JSON.stringify({
-      error: 'OpenAI service unavailable. Please configure OPENAI_API_KEY.'
-    }));
-    return;
-  }
   let body = '';
   req.on('data', chunk => (body += chunk));
   req.on('end', async () => {
     try {
       const { query = '' } = JSON.parse(body || '{}');
-
-      const prompt = `${query}\n\nUse the following JSON data to answer:`;
-      const response = await fetchFn('https://api.openai.com/v1/chat/completions', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Authorization: `Bearer ${OPENAI_API_KEY}`
-        },
-        body: JSON.stringify({
-          model: 'gpt-4o',
-          messages: [
-            {
-              role: 'system',
-              content: 'You are a helpful assistant that answers questions about the provided JSON.'
-            },
-            { role: 'user', content: `${prompt}\n${JSON_SNIPPET_STRING}` }
-          ]
-        })
-      });
-      if (!response.ok) {
-        const error = await response.text();
-        throw new Error(error);
-      }
-      const result = await response.json();
-      const answer = result.choices?.[0]?.message?.content || 'No answer';
+      const answer = await runAssistant(query);
       res.writeHead(200, { 'Content-Type': 'application/json' });
       res.end(JSON.stringify({ answer }));
     } catch (err) {
       console.error(err);
       res.writeHead(200, { 'Content-Type': 'application/json' });
-      res.end(
-        JSON.stringify({
-          error: err.message || 'OpenAI request failed. Please check your network connection.'
-        })
-      );
+      res.end(JSON.stringify({ error: 'Core-IQ service unavailable' }));
     }
   });
 }
