@@ -98,7 +98,7 @@ function renderAudienceResults(data) {
     })
     .catch(err => {
       console.error('OpenAI fetch failed:', err);
-      infoEl.textContent = 'Core-IQ service unavailable. Is the server running and OPENAI_API_KEY set?';
+      infoEl.textContent = 'Core-IQ service unavailable.';
     });
 
   document.getElementById('openAIAskBtn').addEventListener('click', () => {
