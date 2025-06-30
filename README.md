@@ -6,7 +6,7 @@ This is a lightweight demo that displays audience insights by UK postcode or US 
 1. Install Node.js (v18 or newer is recommended). If you must use an older version, install the `node-fetch` package so the OpenAI requests work.
 2. Run `npm start` from the project root to launch a small local server.
 3. Open `http://localhost:8000` in your browser.
-4. Enter a postcode or search term to view the Mosaic groups and weighted media budget.
+4. Enter a postcode, city, or region to view the Mosaic groups and weighted media budget.
 
 ### OpenAI integration
 To enable natural language queries processed via OpenAI, set environment variables `OPENAI_API_KEY` and `OPENAI_ASSISTANT_ID` before starting the server:
