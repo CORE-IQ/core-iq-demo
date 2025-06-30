@@ -53,12 +53,15 @@ async function runSearch() {
       const pcEntries = findPostcodeEntries(data, postcode);
       if (pcEntries) entries = entries.concat(pcEntries);
       if (Array.isArray(area)) entries = entries.concat(area);
-      if (Array.isArray(cityCodes)) entries = entries.concat(cityCodes);
-      if (entries.length === 0) {
-        searchVariable(query, resultContainer);
-        return;
-      }
-      entries = mergeEntries(entries);
+if (Array.isArray(cityCodes)) entries = entries.concat(cityCodes);
+
+if (entries.length === 0) {
+  searchVariable(query, resultContainer);
+  return;
+}
+
+entries = mergeEntries(entries);
+
       const groupNames = Object.fromEntries(groups.map(g => [g.group_code, g.group_name]));
       const groupsSorted = aggregateGroupCounts(entries);
       const topSegments = entries
@@ -382,7 +385,6 @@ function findPostcodeEntries(data, postcode) {
   }
   return null;
 }
-
 function mergeEntries(entries) {
   const merged = new Map();
   entries.forEach(e => {
@@ -409,6 +411,7 @@ function aggregateGroupCounts(entries) {
   return Object.entries(totals)
     .sort((a, b) => b[1] - a[1])
     .map(([code, count]) => ({ code, count }));
+}
 }
 
 async function loadPostcodeData(postcode) {
