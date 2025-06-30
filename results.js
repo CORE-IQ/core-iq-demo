@@ -20,6 +20,7 @@ function renderAudienceResults(data) {
       <p style="color: #aaa; font-size: 1.2rem; max-width: 720px; margin: 12px auto 0;">${data.description}</p>
     </div>
     ${typeof data.total_budget === 'number' ? `<div style="background:#111; border-radius:12px; padding:24px; box-shadow:0 0 16px rgba(0,255,174,0.3); text-align:center;"><p style="margin:0;color:#00ffae;font-weight:600;">Total Media Budget</p><p style="margin:0;font-size:1.4rem;">£${data.total_budget.toFixed(2)}</p></div>` : ''}
+    ${typeof data.total_households === 'number' ? `<div style="background:#111; border-radius:12px; padding:24px; box-shadow:0 0 16px rgba(0,255,174,0.3); text-align:center;"><p style="margin:0;color:#00ffae;font-weight:600;">Total Households</p><p style="margin:0;font-size:1.4rem;">${data.total_households.toLocaleString()}</p></div>` : ''}
     <div style="background: #111; border-left: 4px solid #00ffae; border-radius: 12px; padding: 24px; box-shadow: 0 0 16px rgba(0,255,174,0.3);">
       <h3 style="color: #00ffae; margin-bottom: 8px;">What is an Index?</h3>
       <p style="margin: 0; color: #ccc;">An index score compares this group’s likelihood of a behaviour or trait against the UK average (100). An index of 130 means this group is 30% more likely than average to exhibit that trait.</p>
