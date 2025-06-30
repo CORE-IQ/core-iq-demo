@@ -75,6 +75,32 @@ entries = mergeEntries(entries);
 
       const groupNames = Object.fromEntries(groups.map(g => [g.group_code, g.group_name]));
       const groupsSorted = aggregateGroupCounts(entries);
+
+      const filters = {
+        income: document.getElementById('incomeFilter')?.value || '',
+        ageMin: parseInt(document.getElementById('ageMin')?.value || '18'),
+        ageMax: parseInt(document.getElementById('ageMax')?.value || '80'),
+        children: document.getElementById('childrenFilter')?.value || '',
+        tenure: document.getElementById('tenureFilter')?.value || '',
+        keyword: (document.getElementById('keywordFilter')?.value || '').toLowerCase()
+      };
+      const filtersUsed = Object.values(filters).some(v => v && !(typeof v === 'number' && (v===18||v===80))) ? true : false;
+
+      let rankedGroups = groupsSorted.map(g => ({...g, name: groupNames[g.code], score: 0, rationale: ''}));
+
+      if (filtersUsed) {
+        rankedGroups = await Promise.all(rankedGroups.map(async g => {
+          const detail = await loadGroupDetail(g.name);
+          const feats = (features.find(f => f.group_code === g.code) || {}).features || [];
+          const {score, rationale} = scoreGroup(detail, feats, filters);
+          return {...g, score, rationale};
+        }));
+        rankedGroups.sort((a,b) => b.score - a.score || b.count - a.count);
+      } else {
+        rankedGroups.sort((a,b) => b.count - a.count);
+      }
+
+      const topGroup = rankedGroups[0];
       const topSegments = entries
         .filter((e) => e.type)
         .sort((a, b) => b.count - a.count)
@@ -86,9 +112,9 @@ entries = mergeEntries(entries);
       html += `<div class='card-wrap'>`;
 
       // Area 1: Mosaic Groups
-      html += groupsSorted
+      html += rankedGroups
         .slice(0, 3)
-        .map(g => `<div class="insight-card"><div class="insight-title">${g.code} - ${groupNames[g.code] || ''}</div><div class="insight-index">Count = ${g.count}</div></div>`)
+        .map(g => `<div class="insight-card"><div class="insight-title">${g.code} - ${groupNames[g.code] || ''}</div><div class="insight-index">Score = ${(g.score*100).toFixed(0)}</div></div>`)
         .join("");
 
       // Area 2: Mosaic Segments
@@ -154,7 +180,7 @@ entries = mergeEntries(entries);
       window.scrollTo({ top: document.getElementById("resultContainer").offsetTop - 50, behavior: 'smooth' });
 
       // Build detailed result object for results.html
-      const groupCode = topSegments[0].type[0];
+      const groupCode = topGroup.code;
       const groupInfo = groups.find((g) => g.group_code === groupCode) || {};
       const featureInfo = features.find((f) => f.group_code === groupCode) || {};
       const mainMedia = findMediaItems(topSegments[0].type, noticed) || [];
@@ -174,7 +200,7 @@ entries = mergeEntries(entries);
         };
       });
 
-      const groupName = groupInfo.group_name || topSegments[0].type;
+      const groupName = groupInfo.group_name || topGroup.name || topSegments[0].type;
       let detailedFeatures = featureInfo.features || [];
       let whoWeAre = [];
       let householdTech = '';
@@ -215,6 +241,8 @@ entries = mergeEntries(entries);
         total_households: totalCount,
         media_plan_allocation: plan,
         total_budget: budget,
+        rationale: topGroup.rationale,
+        ranked_groups: rankedGroups.map(g => ({ code: g.code, name: g.name, score: g.score }))
       };
 
       localStorage.setItem('audienceResult', JSON.stringify(resultObj));
@@ -527,5 +555,82 @@ function displayGroupCounts(data, noticed, budget, container) {
   });
 
   window.scrollTo({ top: container.offsetTop - 50, behavior: 'smooth' });
+}
+
+const detailCache = {};
+async function loadGroupDetail(name) {
+  if (detailCache[name]) return detailCache[name];
+  try {
+    const file = `${name.replace(/ /g, '_')}_Detailed.json`;
+    const r = await fetch(file);
+    if (r.ok) {
+      const d = await r.json();
+      detailCache[name] = d;
+      return d;
+    }
+  } catch (_) {}
+  return null;
+}
+
+function parseAgeRange(str) {
+  if (!str) return null;
+  const nums = str.match(/\d+/g);
+  if (!nums) return null;
+  const min = parseInt(nums[0]);
+  let max = min;
+  if (str.includes('+')) max = 99;
+  else if (nums[1]) max = parseInt(nums[1]);
+  return {min, max};
+}
+
+function incomeCategory(str) {
+  if (!str) return 0;
+  const m = str.replace(/[,£]/g,'').match(/(\d+\.?\d*)/);
+  if (!m) return 0;
+  const val = parseFloat(m[1]);
+  if (val < 20) return 1;
+  if (val < 40) return 2;
+  if (val < 60) return 3;
+  if (val < 100) return 4;
+  return 5;
+}
+
+function matchChildren(str, filter) {
+  if (!str) return false;
+  if (str.toLowerCase().includes('no')) return filter === '0';
+  const m = str.match(/(\d)/);
+  if (!m) return false;
+  const num = parseInt(m[1]);
+  if (filter === '5') return num >= 5;
+  return num === parseInt(filter);
+}
+
+function scoreGroup(detail, feats, filters) {
+  let used = 0; let hits = 0; const why = [];
+  const who = (detail && detail['Who We Are']) || {};
+  if (filters.ageMin > 18 || filters.ageMax < 80) {
+    used++;
+    const r = parseAgeRange(who['Age']);
+    if (r && r.max >= filters.ageMin && r.min <= filters.ageMax) { hits++; why.push('age range'); }
+  }
+  if (filters.income) {
+    used++;
+    if (incomeCategory(who['Household Income']) === parseInt(filters.income)) { hits++; why.push('income level'); }
+  }
+  if (filters.children) {
+    used++;
+    if (matchChildren(who['Number of Children'], filters.children)) { hits++; why.push('children'); }
+  }
+  if (filters.tenure) {
+    used++;
+    const t = (who['Tenure'] || '').toLowerCase();
+    if (t.includes(filters.tenure)) { hits++; why.push('tenure'); }
+  }
+  if (filters.keyword) {
+    used++;
+    const kw = filters.keyword;
+    if (feats.some(f => f.toLowerCase().includes(kw))) { hits++; why.push(`keyword '${kw}'`); }
+  }
+  return {score: used ? hits/used : 0, rationale: why.join(', ')};
 }
 
