@@ -5,7 +5,7 @@ import os
 
 def build_mapping():
     mapping = {}
-    for fname in glob.glob('*_postcodes.json'):
+    for fname in sorted(glob.glob('*_postcodes.json')):
         if os.path.basename(fname) == 'city_to_postcodes.json':
             continue
         city = fname[:-len('_postcodes.json')]
@@ -20,7 +20,8 @@ def build_mapping():
             london_prefixes.update(prefixes)
     if london_prefixes:
         mapping['LONDON'] = sorted(london_prefixes)
-    return mapping
+    ordered = {k: mapping[k] for k in sorted(mapping)}
+    return ordered
 
 
 def main():
