@@ -28,6 +28,7 @@ def main():
     mapping = build_mapping()
     with open('city_to_postcodes.json', 'w') as f:
         json.dump(mapping, f, indent=2)
+        f.write('\n')
     print(f'Wrote {len(mapping)} cities to city_to_postcodes.json')
 
 
