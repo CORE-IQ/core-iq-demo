@@ -424,7 +424,6 @@ function aggregateGroupCounts(entries) {
     .sort((a, b) => b[1] - a[1])
     .map(([code, count]) => ({ code, count }));
 }
-}
 
 async function loadPostcodeData(postcode) {
   const primary = `${determineBatchFile(postcode)}.json`;
