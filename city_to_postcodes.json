@@ -1,312 +1,104 @@
 {
-  "ABERDEEN": [
-    "AB"
-  ],
-  "BATH": [
-    "BA"
-  ],
-  "BIRMINGHAM": [
-    "B"
-  ],
-  "BLACKBURN": [
-    "BB"
-  ],
-  "BLACKPOOL": [
-    "FY"
-  ],
-  "BOLTON": [
-    "BL"
-  ],
-  "BOURNEMOUTH": [
-    "BH"
-  ],
-  "BRADFORD": [
-    "BD"
-  ],
-  "BRIGHTON": [
-    "BN"
-  ],
-  "BRISTOL": [
-    "BS"
-  ],
-  "BROMLEY": [
-    "BR"
-  ],
-  "CANTERBURY": [
-    "CT"
-  ],
-  "CARDIFF": [
-    "CF"
-  ],
-  "CARLISLE": [
-    "CA"
-  ],
-  "CHELMSFORD": [
-    "CM"
-  ],
-  "CHESTER": [
-    "CH"
-  ],
-  "COLCHESTER": [
-    "CO"
-  ],
-  "COVENTRY": [
-    "CV"
-  ],
-  "CREWE": [
-    "CW"
-  ],
-  "DARLINGTON": [
-    "DL"
-  ],
-  "DARTFORD": [
-    "DA"
-  ],
-  "DERBY": [
-    "DE"
-  ],
-  "DONCASTER": [
-    "DN"
-  ],
-  "DORCHESTER": [
-    "DT"
-  ],
-  "DUDLEY": [
-    "DY"
-  ],
-  "DUMFRIES": [
-    "DG"
-  ],
-  "DUNDEE": [
-    "DD"
-  ],
-  "ENFIELD": [
-    "EN"
-  ],
-  "EXETER": [
-    "EX"
-  ],
-  "GALASHIELS": [
-    "TD"
-  ],
-  "GLASGOW": [
-    "G"
-  ],
-  "GUILFORD": [
-    "GU"
-  ],
-  "HALIFAX": [
-    "HX"
-  ],
-  "HARROGATE": [
-    "HG"
-  ],
-  "HEMEL": [
-    "HP"
-  ],
-  "HEREFORD": [
-    "HR"
-  ],
-  "HUDDERSFIELD": [
-    "HD"
-  ],
-  "HULL": [
-    "HU"
-  ],
-  "INVERNESS": [
-    "IV"
-  ],
-  "IPSWICH": [
-    "IP"
-  ],
-  "KIRKCALDY": [
-    "KY"
-  ],
-  "LANCASTER": [
-    "LA"
-  ],
-  "LEEDS": [
-    "LS"
-  ],
-  "LEICESTER": [
-    "LE"
-  ],
-  "LIVERPOOL": [
-    "L"
-  ],
-  "LLANDRINDOD": [
-    "LD"
-  ],
-  "LONDON": [
-    "N",
-    "NW",
-    "SE",
-    "SW",
-    "W"
-  ],
-  "LUTON": [
-    "LU"
-  ],
-  "MAIDSTONE": [
-    "ME"
-  ],
-  "MANCHESTER": [
-    "M"
-  ],
-  "MIDDLESBROUGH": [
-    "TS"
-  ],
-  "MILTON KEYNES": [
-    "MK"
-  ],
-  "MOTHERWELL": [
-    "ML"
-  ],
-  "NEWCASTLE": [
-    "NE"
-  ],
-  "NEWPORT": [
-    "NP"
-  ],
-  "NORTH LONDON": [
-    "N"
-  ],
-  "NORTHAMPTON": [
-    "NN"
-  ],
-  "NORTHWEST LONDON": [
-    "NW"
-  ],
-  "NORWICH": [
-    "NR"
-  ],
-  "NOTTINGHAM": [
-    "NG"
-  ],
-  "OLDHAM": [
-    "OL"
-  ],
-  "OXFORD": [
-    "OX"
-  ],
-  "PERTH": [
-    "PH"
-  ],
-  "PETERBOROUGH": [
-    "PE"
-  ],
-  "PLYMOUTH": [
-    "PL"
-  ],
-  "PORTSMOUTH": [
-    "PO"
-  ],
-  "PRESTON": [
-    "PR"
-  ],
-  "READING": [
-    "RG"
-  ],
-  "REDHILL": [
-    "RH"
-  ],
-  "ROMFORD": [
-    "RM"
-  ],
-  "SALISBURY": [
-    "SP"
-  ],
-  "SHREWSBURY": [
-    "SY"
-  ],
-  "SLOUGH": [
-    "SL"
-  ],
-  "SOUTHALL": [
-    "UB"
-  ],
-  "SOUTHAMPTON": [
-    "SO"
-  ],
-  "SOUTHEAST LONDON": [
-    "SE"
-  ],
-  "SOUTHEND": [
-    "SS"
-  ],
-  "SOUTHWEST LONDON": [
-    "SW"
-  ],
-  "STALBANS": [
-    "AL"
-  ],
-  "STEVENAGE": [
-    "SG"
-  ],
-  "STOCKPORT": [
-    "SK"
-  ],
-  "STOKE": [
-    "ST"
-  ],
-  "SUNDERLAND": [
-    "SR"
-  ],
-  "SWANSEA": [
-    "SA"
-  ],
-  "SWINDON": [
-    "SN"
-  ],
-  "TAUNTON": [
-    "TA"
-  ],
-  "TELFORD": [
-    "TF"
-  ],
-  "TONBRIDGE": [
-    "TN"
-  ],
-  "TORQUAY": [
-    "TQ"
-  ],
-  "TRURO": [
-    "TR"
-  ],
-  "TWICKENHAM": [
-    "TW"
-  ],
-  "WAKEFIELD": [
-    "WF"
-  ],
-  "WALSALL": [
-    "WS"
-  ],
-  "WARRINGTON": [
-    "WA"
-  ],
-  "WATFORD": [
-    "WD"
-  ],
-  "WEST LONDON": [
-    "W"
-  ],
-  "WICK": [
-    "KW"
-  ],
-  "WIGAN": [
-    "WN"
-  ],
-  "WOLVERHAMPTON": [
-    "WV"
-  ],
-  "WORCESTER": [
-    "WR"
-  ],
-  "WREXHAM": [
-    "LL"
-  ],
-  "YORK": [
-    "YO"
-  ]
+  "ABERDEEN": ["AB"],
+  "BATH": ["BA"],
+  "BIRMINGHAM": ["B"],
+  "BLACKBURN": ["BB"],
+  "BLACKPOOL": ["FY"],
+  "BOLTON": ["BL"],
+  "BOURNEMOUTH": ["BH"],
+  "BRADFORD": ["BD"],
+  "BRIGHTON": ["BN"],
+  "BRISTOL": ["BS"],
+  "BROMLEY": ["BR"],
+  "CANTERBURY": ["CT"],
+  "CARDIFF": ["CF"],
+  "CARLISLE": ["CA"],
+  "CHELMSFORD": ["CM"],
+  "CHESTER": ["CH"],
+  "COLCHESTER": ["CO"],
+  "COVENTRY": ["CV"],
+  "CREWE": ["CW"],
+  "DARLINGTON": ["DL"],
+  "DARTFORD": ["DA"],
+  "DERBY": ["DE"],
+  "DONCASTER": ["DN"],
+  "DORCHESTER": ["DT"],
+  "DUDLEY": ["DY"],
+  "DUMFRIES": ["DG"],
+  "DUNDEE": ["DD"],
+  "ENFIELD": ["EN"],
+  "EXETER": ["EX"],
+  "GALASHIELS": ["TD"],
+  "GLASGOW": ["G"],
+  "GUILFORD": ["GU"],
+  "HALIFAX": ["HX"],
+  "HARROGATE": ["HG"],
+  "HEMEL": ["HP"],
+  "HEREFORD": ["HR"],
+  "HUDDERSFIELD": ["HD"],
+  "HULL": ["HU"],
+  "INVERNESS": ["IV"],
+  "IPSWICH": ["IP"],
+  "KIRKCALDY": ["KY"],
+  "LANCASTER": ["LA"],
+  "LEEDS": ["LS"],
+  "LEICESTER": ["LE"],
+  "LIVERPOOL": ["L"],
+  "LLANDRINDOD": ["LD"],
+  "LONDON": ["N", "NW", "SE", "SW", "W"],
+  "LUTON": ["LU"],
+  "MAIDSTONE": ["ME"],
+  "MANCHESTER": ["M"],
+  "MIDDLESBROUGH": ["TS"],
+  "MILTON KEYNES": ["MK"],
+  "MOTHERWELL": ["ML"],
+  "NEWCASTLE": ["NE"],
+  "NEWPORT": ["NP"],
+  "NORTH LONDON": ["N"],
+  "NORTHAMPTON": ["NN"],
+  "NORTHWEST LONDON": ["NW"],
+  "NORWICH": ["NR"],
+  "NOTTINGHAM": ["NG"],
+  "OLDHAM": ["OL"],
+  "OXFORD": ["OX"],
+  "PERTH": ["PH"],
+  "PETERBOROUGH": ["PE"],
+  "PLYMOUTH": ["PL"],
+  "PORTSMOUTH": ["PO"],
+  "PRESTON": ["PR"],
+  "READING": ["RG"],
+  "REDHILL": ["RH"],
+  "ROMFORD": ["RM"],
+  "SALISBURY": ["SP"],
+  "SHREWSBURY": ["SY"],
+  "SLOUGH": ["SL"],
+  "SOUTHALL": ["UB"],
+  "SOUTHAMPTON": ["SO"],
+  "SOUTHEAST LONDON": ["SE"],
+  "SOUTHEND": ["SS"],
+  "SOUTHWEST LONDON": ["SW"],
+  "STALBANS": ["AL"],
+  "STEVENAGE": ["SG"],
+  "STOCKPORT": ["SK"],
+  "STOKE": ["ST"],
+  "SUNDERLAND": ["SR"],
+  "SWANSEA": ["SA"],
+  "SWINDON": ["SN"],
+  "TAUNTON": ["TA"],
+  "TELFORD": ["TF"],
+  "TONBRIDGE": ["TN"],
+  "TORQUAY": ["TQ"],
+  "TRURO": ["TR"],
+  "TWICKENHAM": ["TW"],
+  "WAKEFIELD": ["WF"],
+  "WALSALL": ["WS"],
+  "WARRINGTON": ["WA"],
+  "WATFORD": ["WD"],
+  "WEST LONDON": ["W"],
+  "WICK": ["KW"],
+  "WIGAN": ["WN"],
+  "WOLVERHAMPTON": ["WV"],
+  "WORCESTER": ["WR"],
+  "WREXHAM": ["LL"],
+  "YORK": ["YO"]
 }

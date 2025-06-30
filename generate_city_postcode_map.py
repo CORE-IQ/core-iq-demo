@@ -14,12 +14,14 @@ def build_mapping():
             data = json.load(f)
         prefixes = list(data.keys())
         mapping[city_key] = prefixes
+
     london_prefixes = set()
     for key, prefixes in mapping.items():
         if 'LONDON' in key:
             london_prefixes.update(prefixes)
     if london_prefixes:
         mapping['LONDON'] = sorted(london_prefixes)
+
     ordered = {k: mapping[k] for k in sorted(mapping)}
     return ordered
 
@@ -34,3 +36,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
