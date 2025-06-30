@@ -1,10 +1,21 @@
 // main.js
 
+function escapeHTML(str) {
+  return str.replace(/[&<>"']/g, c => ({
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#39;'
+  })[c]);
+}
+
 async function runSearch() {
   // start a fresh search and clear any stored result
   localStorage.removeItem('audienceResult');
   const rawInput = document.getElementById("targetAreaInput").value;
   const query = rawInput.toUpperCase().trim();
+  const safeQuery = escapeHTML(query);
   const postcode = query.replace(/\s+/g, "");
   const postcodeData = loadPostcodeData(postcode);
   const areaData = loadAreaMapping(query);
@@ -70,7 +81,7 @@ entries = mergeEntries(entries);
         .slice(0, 3);
       const budget = parseFloat(document.getElementById("budgetInput").value) || 0;
 
-      let html = `<h2 class="result-heading">Insights for ${query}</h2>`;
+      let html = `<h2 class="result-heading">Insights for ${safeQuery}</h2>`;
       html += `<div class="summary-card">Total Media Budget: £${budget.toFixed(2)}</div>`;
       html += `<div class='card-wrap'>`;
 
@@ -246,6 +257,7 @@ if (askBtn) {
 });
 
 function searchVariable(query, container) {
+  const safeQuery = escapeHTML(query);
   fetch("primary_content.json")
     .then((r) => {
       if (!r.ok) throw new Error("Variable file not found");
@@ -263,7 +275,7 @@ function searchVariable(query, container) {
         return;
       }
 
-      let html = `<h2 class="result-heading">Results for ${query}</h2><div class='card-wrap'>`;
+      let html = `<h2 class="result-heading">Results for ${safeQuery}</h2><div class='card-wrap'>`;
       html += results
         .slice(0, 5)
         .map(
