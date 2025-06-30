@@ -39,6 +39,7 @@ function renderAudienceResults(data) {
         `).join('')}
       </div>
     </div>
+    ${Array.isArray(data.type_breakdown) ? `<div><h3 style="color:#00ffae;text-align:center;">Mosaic Type Breakdown</h3><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;">${data.type_breakdown.map((t,i)=>{const color=t.percent<25?'red':'#00ffae';const border=i===0?'4px solid #00ffae':'none';return `<div style=\"background:#111;border-radius:12px;padding:16px;border-left:${border};\"><p style=\"margin:0;color:${color};font-weight:600;\">${t.type}</p><p style=\"margin:0;color:${color};\">${t.percent.toFixed(0)}%</p></div>`}).join('')}</div></div>`:''}
     ${Array.isArray(data.ranked_groups) ? `<div><h3 style="color:#00ffae;text-align:center;">All Mosaic Groups</h3><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;">${data.ranked_groups.map(g => `<div style="background:#111;border-radius:12px;padding:16px;border-left:4px solid #00ffae;"><p style="margin:0;font-weight:600;">${g.code} - ${g.name}</p><p style="margin:0;color:#ccc;">Score ${(g.score*100).toFixed(0)}</p></div>`).join('')}</div></div>` : ''}
     ${data.household_technology ? `<div style="background:#111;border-radius:12px;padding:24px;box-shadow:0 0 16px rgba(0,255,174,0.3);text-align:center;"><p style="margin:0;color:#ccc;">Household Technology Level</p><p style="margin:0;font-size:1.2rem;color:#00ffae;font-weight:600;">${data.household_technology}</p></div>` : ''}
     ${Array.isArray(data.noticed_channels) && data.noticed_channels.length ? `<div><h3 style="font-size:1.5rem;font-weight:700;color:#00ffae;">Advertising Mediums Noticed</h3><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:24px;margin-top:20px;">${data.noticed_channels.map(r => { const high = r.index >= 100; const color = high ? '#00ffae' : 'red'; const shadow = high ? '0 0 24px rgba(0,255,174,0.5)' : '0 0 24px rgba(255,0,0,0.5)'; return `<div style="background:#111;border-radius:12px;padding:20px;text-align:center;box-shadow:${shadow};"><p style="margin:0;color:#ccc;">${r.channel}</p><p style="color:${color};font-weight:bold;">${r.index}</p></div>`; }).join('')}</div></div>` : ''}
@@ -192,3 +193,27 @@ if (stored) {
 } else {
   fetch('sample_result.json').then(r => r.json()).then(data => renderAudienceResults(data));
 }
+
+function setupROICalc() {
+  const btn = document.getElementById('roiButton');
+  const container = document.getElementById('roiContainer');
+  if (!btn || !container) return;
+  container.style.display = 'block';
+  btn.addEventListener('click', () => {
+    const budget = document.getElementById('budgetInput').value;
+    const productPrice = document.getElementById('productPriceInput').value;
+    const servicePrice = document.getElementById('servicePriceInput').value;
+    const targetSales = document.getElementById('salesInput').value;
+    const reach = document.getElementById('reachInput').value;
+    const res = calculateROIForecast({ budget, productPrice, servicePrice, targetSales, reach });
+    container.innerHTML = `
+      <h3 style="color:#00ffae;text-align:center;margin-top:0;">ROI Forecast</h3>
+      <p style="margin:0;color:#ccc;">Required Conversion: ${res.requiredConversion.toFixed(2)}%</p>
+      <p style="margin:0;color:#ccc;">Total Revenue: £${res.totalRevenue.toFixed(2)}</p>
+      <p style="margin:0;color:#ccc;">Net Profit: £${res.netProfit.toFixed(2)}</p>
+      <p style="margin:0;color:#ccc;">ROAS: ${res.roas.toFixed(2)}x</p>
+    `;
+  });
+}
+
+setupROICalc();
