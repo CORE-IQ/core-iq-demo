@@ -15,7 +15,8 @@ function renderAudienceResults(data) {
 
   const html = `
     <div style="text-align: center;">
-      <h2 style="font-size: clamp(2rem, 5vw, 3rem); font-weight: 800; color: #00ffae;">${data.mosaic_group}</h2>
+      <h2 style="font-size: clamp(2rem, 5vw, 3rem); font-weight: 800; color: #00ffae;">Top Fit Group: ${data.mosaic_group}</h2>
+      ${data.rationale ? `<p style="margin:0;color:#ccc;">${escapeHTML(data.rationale)}</p>` : ''}
       ${data.target ? `<p style="margin:0;color:#ccc;font-size:1rem;">Target: ${data.target}</p>` : ''}
       <p style="color: #aaa; font-size: 1.2rem; max-width: 720px; margin: 12px auto 0;">${data.description}</p>
     </div>
@@ -38,6 +39,7 @@ function renderAudienceResults(data) {
         `).join('')}
       </div>
     </div>
+    ${Array.isArray(data.ranked_groups) ? `<div><h3 style="color:#00ffae;text-align:center;">All Mosaic Groups</h3><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;">${data.ranked_groups.map(g => `<div style="background:#111;border-radius:12px;padding:16px;border-left:4px solid #00ffae;"><p style="margin:0;font-weight:600;">${g.code} - ${g.name}</p><p style="margin:0;color:#ccc;">Score ${(g.score*100).toFixed(0)}</p></div>`).join('')}</div></div>` : ''}
     ${data.household_technology ? `<div style="background:#111;border-radius:12px;padding:24px;box-shadow:0 0 16px rgba(0,255,174,0.3);text-align:center;"><p style="margin:0;color:#ccc;">Household Technology Level</p><p style="margin:0;font-size:1.2rem;color:#00ffae;font-weight:600;">${data.household_technology}</p></div>` : ''}
     ${Array.isArray(data.noticed_channels) && data.noticed_channels.length ? `<div><h3 style="font-size:1.5rem;font-weight:700;color:#00ffae;">Advertising Mediums Noticed</h3><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:24px;margin-top:20px;">${data.noticed_channels.map(r => { const high = r.index >= 100; const color = high ? '#00ffae' : 'red'; const shadow = high ? '0 0 24px rgba(0,255,174,0.5)' : '0 0 24px rgba(255,0,0,0.5)'; return `<div style="background:#111;border-radius:12px;padding:20px;text-align:center;box-shadow:${shadow};"><p style="margin:0;color:#ccc;">${r.channel}</p><p style="color:${color};font-weight:bold;">${r.index}</p></div>`; }).join('')}</div></div>` : ''}
     ${Array.isArray(data.helpful_channels) && data.helpful_channels.length ? `<div><h3 style="font-size:1.5rem;font-weight:700;color:#00ffae;">Advertising Mediums Found Helpful</h3><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:24px;margin-top:20px;">${data.helpful_channels.map(r => { const high = r.index >= 100; const color = high ? '#00ffae' : 'red'; const shadow = high ? '0 0 24px rgba(0,255,174,0.5)' : '0 0 24px rgba(255,0,0,0.5)'; return `<div style="background:#111;border-radius:12px;padding:20px;text-align:center;box-shadow:${shadow};"><p style="margin:0;color:#ccc;">${r.channel}</p><p style="color:${color};font-weight:bold;">${r.index}</p></div>`; }).join('')}</div></div>` : ''}
