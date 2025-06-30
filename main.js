@@ -8,6 +8,7 @@ async function runSearch() {
   const postcode = query.replace(/\s+/g, "");
   const postcodeData = loadPostcodeData(postcode);
   const areaData = loadAreaMapping(query);
+  const cityPostcodeData = loadCityPostcodeEntries(query);
 
   const noticedData = fetch("noticed_adverts.json").then((r) => {
     if (!r.ok) throw new Error("Media file not found");
@@ -34,30 +35,39 @@ async function runSearch() {
     return r.json();
   });
 
-  Promise.all([postcodeData, areaData, noticedData, helpfulData, responseData, featureData, groupData]).then(async ([data, area, noticed, helpful, response, features, groups]) => {
+  Promise.all([postcodeData, areaData, cityPostcodeData, noticedData, helpfulData, responseData, featureData, groupData]).then(async ([data, area, cityCodes, noticed, helpful, response, features, groups]) => {
       const resultContainer = document.getElementById("resultContainer");
       resultContainer.classList.remove("hidden");
       resultContainer.innerHTML = "";
 
-      let entries = findPostcodeEntries(data, postcode);
-      if (!entries && Array.isArray(area)) {
-        entries = area;
-      }
-      if (!entries) {
+      let entries = [];
+      const pcEntries = findPostcodeEntries(data, postcode);
+      if (pcEntries) entries = entries.concat(pcEntries);
+      if (Array.isArray(area)) entries = entries.concat(area);
+      if (Array.isArray(cityCodes)) entries = entries.concat(cityCodes);
+      if (entries.length === 0) {
         searchVariable(query, resultContainer);
         return;
       }
+      const groupNames = Object.fromEntries(groups.map(g => [g.group_code, g.group_name]));
+      const groupsSorted = aggregateGroupCounts(entries);
       const topSegments = entries
         .filter((e) => e.type)
         .sort((a, b) => b.count - a.count)
         .slice(0, 3);
       const budget = parseFloat(document.getElementById("budgetInput").value) || 0;
 
-      let html = `<h2 class="result-heading">Insights for ${postcode}</h2>`;
+      let html = `<h2 class="result-heading">Insights for ${query}</h2>`;
       html += `<div class="summary-card">Total Media Budget: £${budget.toFixed(2)}</div>`;
       html += `<div class='card-wrap'>`;
 
-      // Area 1: Mosaic Segments
+      // Area 1: Mosaic Groups
+      html += groupsSorted
+        .slice(0, 3)
+        .map(g => `<div class="insight-card"><div class="insight-title">${g.code} - ${groupNames[g.code] || ''}</div><div class="insight-index">Count = ${g.count}</div></div>`)
+        .join("");
+
+      // Area 2: Mosaic Segments
       html += topSegments
         .map(
           (entry) => `
@@ -285,7 +295,6 @@ function determineBatchFile(postcode) {
 
 async function loadAreaMapping(query) {
   const files = [
-    'postcode_to_mosaic.json',
     'city_to_mosaic.json',
     'region_to_mosaic.json',
     'local_authority_to_mosaic.json'
@@ -297,11 +306,51 @@ async function loadAreaMapping(query) {
       if (!r.ok) continue;
       const data = await r.json();
       if (data[key]) return data[key];
+      const partialKey = Object.keys(data).find(k => k.includes(key));
+      if (partialKey) return data[partialKey];
     } catch (_) {
       // ignore
     }
   }
   return null;
+}
+
+async function loadCityPostcodes(city) {
+  try {
+    const r = await fetch('city_to_postcodes.json');
+    if (!r.ok) return [];
+    const data = await r.json();
+    return data[city.toUpperCase()] || [];
+  } catch (_) {
+    return [];
+  }
+}
+
+async function loadPrefixEntries(prefix) {
+  const file = `${determineBatchFile(prefix)}.json`;
+  try {
+    const r = await fetch(file);
+    if (!r.ok) return [];
+    const data = await r.json();
+    const entries = [];
+    for (const [pc, list] of Object.entries(data)) {
+      if (pc.startsWith(prefix)) entries.push(...list);
+    }
+    return entries;
+  } catch (_) {
+    return [];
+  }
+}
+
+async function loadCityPostcodeEntries(city) {
+  const prefixes = await loadCityPostcodes(city);
+  if (!Array.isArray(prefixes) || prefixes.length === 0) return [];
+  let results = [];
+  for (const pre of prefixes) {
+    const entries = await loadPrefixEntries(pre);
+    results = results.concat(entries);
+  }
+  return results;
 }
 
 function postcodeCandidates(postcode) {
@@ -322,6 +371,19 @@ function findPostcodeEntries(data, postcode) {
     if (data[c]) return data[c];
   }
   return null;
+}
+
+function aggregateGroupCounts(entries) {
+  const totals = {};
+  entries.forEach(e => {
+    if (!e || !e.type) return;
+    const group = e.type.trim()[0];
+    const cnt = e.count || 0;
+    totals[group] = (totals[group] || 0) + cnt;
+  });
+  return Object.entries(totals)
+    .sort((a, b) => b[1] - a[1])
+    .map(([code, count]) => ({ code, count }));
 }
 
 async function loadPostcodeData(postcode) {
