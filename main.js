@@ -8,6 +8,7 @@ async function runSearch() {
   const postcode = query.replace(/\s+/g, "");
   const postcodeData = loadPostcodeData(postcode);
   const areaData = loadAreaMapping(query);
+  const cityPostcodeData = loadCityPostcodeEntries(query);
 
   const noticedData = fetch("noticed_adverts.json").then((r) => {
     if (!r.ok) throw new Error("Media file not found");
@@ -34,7 +35,16 @@ async function runSearch() {
     return r.json();
   });
 
-  Promise.all([postcodeData, areaData, noticedData, helpfulData, responseData, featureData, groupData]).then(async ([data, area, noticed, helpful, response, features, groups]) => {
+  Promise.all([
+    postcodeData,
+    areaData,
+    cityPostcodeData,
+    noticedData,
+    helpfulData,
+    responseData,
+    featureData,
+    groupData,
+  ]).then(async ([data, area, cityCodes, noticed, helpful, response, features, groups]) => {
       const resultContainer = document.getElementById("resultContainer");
       resultContainer.classList.remove("hidden");
       resultContainer.innerHTML = "";
@@ -43,10 +53,15 @@ async function runSearch() {
       const pcEntries = findPostcodeEntries(data, postcode);
       if (pcEntries) entries = entries.concat(pcEntries);
       if (Array.isArray(area)) entries = entries.concat(area);
-      if (entries.length === 0) {
-        searchVariable(query, resultContainer);
-        return;
-      }
+if (Array.isArray(cityCodes)) entries = entries.concat(cityCodes);
+
+if (entries.length === 0) {
+  searchVariable(query, resultContainer);
+  return;
+}
+
+entries = mergeEntries(entries);
+
       const groupNames = Object.fromEntries(groups.map(g => [g.group_code, g.group_name]));
       const groupsSorted = aggregateGroupCounts(entries);
       const topSegments = entries
@@ -313,6 +328,44 @@ async function loadAreaMapping(query) {
   return null;
 }
 
+async function loadCityPostcodes(city) {
+  try {
+    const r = await fetch('city_to_postcodes.json');
+    if (!r.ok) return [];
+    const data = await r.json();
+    return data[city.toUpperCase()] || [];
+  } catch (_) {
+    return [];
+  }
+}
+
+async function loadPrefixEntries(prefix) {
+  const file = `${determineBatchFile(prefix)}.json`;
+  try {
+    const r = await fetch(file);
+    if (!r.ok) return [];
+    const data = await r.json();
+    const entries = [];
+    for (const [pc, list] of Object.entries(data)) {
+      if (pc.startsWith(prefix)) entries.push(...list);
+    }
+    return entries;
+  } catch (_) {
+    return [];
+  }
+}
+
+async function loadCityPostcodeEntries(city) {
+  const prefixes = await loadCityPostcodes(city);
+  if (!Array.isArray(prefixes) || prefixes.length === 0) return [];
+  let results = [];
+  for (const pre of prefixes) {
+    const entries = await loadPrefixEntries(pre);
+    results = results.concat(entries);
+  }
+  return results;
+}
+
 function postcodeCandidates(postcode) {
   const normalized = postcode.toUpperCase().replace(/\s+/g, '');
   const match = normalized.match(/^([A-Z]{1,2}[0-9][0-9A-Z]?)([0-9])/);
@@ -332,6 +385,20 @@ function findPostcodeEntries(data, postcode) {
   }
   return null;
 }
+function mergeEntries(entries) {
+  const merged = new Map();
+  entries.forEach(e => {
+    if (!e || !e.type) return;
+    const key = e.type;
+    const count = e.count || 0;
+    if (!merged.has(key)) {
+      merged.set(key, { type: e.type, count });
+    } else {
+      merged.get(key).count += count;
+    }
+  });
+  return Array.from(merged.values());
+}
 
 function aggregateGroupCounts(entries) {
   const totals = {};
@@ -344,6 +411,7 @@ function aggregateGroupCounts(entries) {
   return Object.entries(totals)
     .sort((a, b) => b[1] - a[1])
     .map(([code, count]) => ({ code, count }));
+}
 }
 
 async function loadPostcodeData(postcode) {
