@@ -212,6 +212,7 @@ entries = mergeEntries(entries);
         household_technology: householdTech,
         target: query,
         top_postcodes: [{ code: postcode || query, count: totalCount }],
+        total_households: totalCount,
         media_plan_allocation: plan,
         total_budget: budget,
       };
