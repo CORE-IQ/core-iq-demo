@@ -35,7 +35,16 @@ async function runSearch() {
     return r.json();
   });
 
-  Promise.all([postcodeData, areaData, cityPostcodeData, noticedData, helpfulData, responseData, featureData, groupData]).then(async ([data, area, cityCodes, noticed, helpful, response, features, groups]) => {
+  Promise.all([
+    postcodeData,
+    areaData,
+    cityPostcodeData,
+    noticedData,
+    helpfulData,
+    responseData,
+    featureData,
+    groupData,
+  ]).then(async ([data, area, cityCodes, noticed, helpful, response, features, groups]) => {
       const resultContainer = document.getElementById("resultContainer");
       resultContainer.classList.remove("hidden");
       resultContainer.innerHTML = "";
