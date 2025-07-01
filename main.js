@@ -76,8 +76,9 @@ entries = mergeEntries(entries);
       const groupNames = Object.fromEntries(groups.map(g => [g.group_code, g.group_name]));
       const groupsSorted = aggregateGroupCounts(entries);
 
+      const incomeEl = document.getElementById('incomeSlider') || document.getElementById('incomeFilter');
       const filters = {
-        income: document.getElementById('incomeFilter')?.value || '',
+        income: incomeEl ? incomeEl.value : '',
         ageMin: parseInt(document.getElementById('ageMin')?.value || '18'),
         ageMax: parseInt(document.getElementById('ageMax')?.value || '80'),
         children: document.getElementById('childrenFilter')?.value || '',
@@ -108,6 +109,8 @@ entries = mergeEntries(entries);
       const budget = parseFloat(document.getElementById("budgetInput").value) || 0;
 
       let html = `<h2 class="result-heading">Insights for ${safeQuery}</h2>`;
+      html += `<div class="summary-card">Target Area: ${safeQuery}</div>`;
+      if (filters.income) html += `<div class="summary-card">Income Band: ${filters.income}</div>`;
       html += `<div class="summary-card">Total Media Budget: £${budget.toFixed(2)}</div>`;
       html += `<div class='card-wrap'>`;
 
@@ -191,6 +194,10 @@ entries = mergeEntries(entries);
       }
 
       const totalCount = entries.reduce((sum, e) => sum + (e.count || 0), 0);
+      const maxType = Math.max(...entries.map(e => e.count || 0));
+      const typeBreakdown = entries
+        .sort((a,b) => b.count - a.count)
+        .map(e => ({ type: e.type, percent: maxType ? (e.count / maxType) * 100 : 0 }));
       const plan = mainMedia.map((m) => {
         const dist = distribution[m.channel];
         return {
@@ -242,7 +249,8 @@ entries = mergeEntries(entries);
         media_plan_allocation: plan,
         total_budget: budget,
         rationale: topGroup.rationale,
-        ranked_groups: rankedGroups.map(g => ({ code: g.code, name: g.name, score: g.score }))
+        ranked_groups: rankedGroups.map(g => ({ code: g.code, name: g.name, score: g.score })),
+        type_breakdown: typeBreakdown
       };
 
       localStorage.setItem('audienceResult', JSON.stringify(resultObj));
@@ -257,6 +265,30 @@ entries = mergeEntries(entries);
 }
 
 document.getElementById("submitButton").addEventListener("click", runSearch);
+
+function setupROICalc() {
+  const btn = document.getElementById('roiButton');
+  const container = document.getElementById('roiContainer');
+  if (!btn || !container) return;
+  btn.addEventListener('click', () => {
+    container.style.display = 'block';
+    const budget = document.getElementById('budgetInput').value;
+    const productPrice = document.getElementById('productPriceInput').value;
+    const servicePrice = document.getElementById('servicePriceInput').value;
+    const targetSales = document.getElementById('salesInput').value;
+    const reach = document.getElementById('reachInput').value;
+    const res = calculateROIForecast({ budget, productPrice, servicePrice, targetSales, reach });
+    container.innerHTML = `
+      <h3 style="color:#00ffae;text-align:center;margin-top:0;">ROI Forecast</h3>
+      <p style="margin:0;color:#ccc;">Required Conversion: ${res.requiredConversion.toFixed(2)}%</p>
+      <p style="margin:0;color:#ccc;">Total Revenue: £${res.totalRevenue.toFixed(2)}</p>
+      <p style="margin:0;color:#ccc;">Net Profit: £${res.netProfit.toFixed(2)}</p>
+      <p style="margin:0;color:#ccc;">ROAS: ${res.roas.toFixed(2)}x</p>
+    `;
+  });
+}
+
+setupROICalc();
 
 function askOpenAI() {
   const q = document.getElementById('openAIInput').value.trim();
