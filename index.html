@@ -81,7 +81,7 @@
           <button id="openAIAskButton" type="button" style="background:#00ffae;color:#000;font-weight:bold;font-size:1rem;padding:12px;border-radius:12px;border:none;">Ask</button>
         </div>
         <label style="text-align:left;font-size:0.9rem;">Income Band:
-          <input type="range" id="incomeSlider" min="10000" max="100000" value="10000" step="1000" style="width:100%;accent-color:#00ff00;" oninput="document.getElementById('incomeValue').textContent="£"+(this.value/1000)+"K";" />
+          <input type="range" id="incomeSlider" min="10000" max="100000" value="10000" step="1000" style="width:100%;accent-color:#00ffae;" />
           <span id="incomeValue">£10K</span>
         </label>
         <select id="childrenFilter" style="padding:12px;border-radius:12px;border:none;font-size:1rem;background:#111;color:#fff;">
@@ -109,6 +109,7 @@
 
   <script src="roi.js"></script>
   <script src="budget.js"></script>
+  <script src="slider.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
