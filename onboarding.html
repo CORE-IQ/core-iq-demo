@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CORE-IQ™ | Client Onboarding</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    .onboard-wrap {
+      min-height: 100vh;
+      background: linear-gradient(to bottom, #000, #0a0a0a);
+      padding: 60px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .onboard-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .onboard-header h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 800;
+      color: #00ffae;
+      margin: 0 0 12px;
+    }
+
+    .onboard-header p {
+      color: #aaa;
+      font-size: 1rem;
+      margin: 0;
+    }
+
+    .onboard-form {
+      width: 100%;
+      max-width: 620px;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    .form-section {
+      background: #0c0c0c;
+      border: 1px solid rgba(0, 255, 174, 0.2);
+      border-radius: 16px;
+      padding: 28px 24px;
+      box-shadow: 0 0 20px rgba(0, 255, 174, 0.08);
+    }
+
+    .form-section h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #00ffae;
+      margin: 0 0 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .field-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .field-grid .full-width {
+      grid-column: 1 / -1;
+    }
+
+    .field-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .field-group label {
+      font-size: 0.8rem;
+      color: #aaa;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .field-group label .req {
+      color: #00ffae;
+      margin-left: 2px;
+    }
+
+    .field-group input,
+    .field-group select,
+    .field-group textarea {
+      padding: 12px 14px;
+      border-radius: 10px;
+      border: 1px solid #222;
+      font-size: 0.95rem;
+      background: #111;
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      box-shadow: inset 0 0 6px rgba(0, 255, 174, 0.1);
+      transition: border-color 0.2s;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .field-group input:focus,
+    .field-group select:focus,
+    .field-group textarea:focus {
+      outline: none;
+      border-color: #00ffae;
+    }
+
+    .field-group select option {
+      background: #111;
+    }
+
+    .field-group textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+
+    .submit-btn {
+      background: #00ffae;
+      color: #000;
+      font-weight: 800;
+      font-size: 1rem;
+      padding: 16px;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+      width: 100%;
+      letter-spacing: 0.04em;
+    }
+
+    .submit-btn:hover {
+      background: #00e09a;
+    }
+
+    .submit-btn:active {
+      transform: scale(0.98);
+    }
+
+    .submit-btn:disabled {
+      background: #333;
+      color: #666;
+      cursor: not-allowed;
+    }
+
+    #statusMsg {
+      text-align: center;
+      padding: 16px;
+      border-radius: 12px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      display: none;
+    }
+
+    #statusMsg.success {
+      background: rgba(0, 255, 174, 0.1);
+      border: 1px solid #00ffae;
+      color: #00ffae;
+    }
+
+    #statusMsg.error {
+      background: rgba(255, 60, 60, 0.1);
+      border: 1px solid #ff3c3c;
+      color: #ff6b6b;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 32px;
+      color: #00ffae;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      opacity: 0.8;
+      transition: opacity 0.2s;
+    }
+
+    .back-link:hover { opacity: 1; }
+
+    @media (max-width: 480px) {
+      .field-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="onboard-wrap">
+    <div style="width:100%;max-width:620px;">
+      <a href="index.html" class="back-link">&#8592; Back to Audience Lookup</a>
+    </div>
+
+    <div class="onboard-header">
+      <h1>Client Onboarding</h1>
+      <p>Complete the form below and your details will be synced directly to HubSpot.</p>
+    </div>
+
+    <form class="onboard-form" id="onboardForm" novalidate>
+
+      <!-- Section 1: Contact Details -->
+      <div class="form-section">
+        <h2>Contact Details</h2>
+        <div class="field-grid">
+          <div class="field-group">
+            <label>First Name <span class="req">*</span></label>
+            <input type="text" id="firstname" placeholder="Jane" required />
+          </div>
+          <div class="field-group">
+            <label>Last Name <span class="req">*</span></label>
+            <input type="text" id="lastname" placeholder="Smith" required />
+          </div>
+          <div class="field-group">
+            <label>Email <span class="req">*</span></label>
+            <input type="email" id="email" placeholder="jane@company.com" required />
+          </div>
+          <div class="field-group">
+            <label>Phone</label>
+            <input type="tel" id="phone" placeholder="+44 7700 900000" />
+          </div>
+          <div class="field-group full-width">
+            <label>Company <span class="req">*</span></label>
+            <input type="text" id="company" placeholder="Acme Ltd" required />
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 2: Campaign Brief -->
+      <div class="form-section">
+        <h2>Campaign Brief</h2>
+        <div class="field-grid">
+          <div class="field-group">
+            <label>Target Area</label>
+            <input type="text" id="targetArea" placeholder="Postcode, city or region" />
+          </div>
+          <div class="field-group">
+            <label>Media Budget (£)</label>
+            <input type="number" id="budget" placeholder="5000" min="0" />
+          </div>
+          <div class="field-group full-width">
+            <label>Product / Service</label>
+            <input type="text" id="product" placeholder="What are you promoting?" />
+          </div>
+          <div class="field-group full-width">
+            <label>Campaign Goals</label>
+            <textarea id="goals" placeholder="What do you want to achieve with this campaign?"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 3: Deal Information -->
+      <div class="form-section">
+        <h2>Deal Information</h2>
+        <div class="field-grid">
+          <div class="field-group">
+            <label>Deal Stage</label>
+            <select id="dealStage">
+              <option value="">Select stage</option>
+              <option value="Prospecting">Prospecting</option>
+              <option value="Proposal Sent">Proposal Sent</option>
+              <option value="Negotiation">Negotiation</option>
+              <option value="Closed Won">Closed Won</option>
+            </select>
+          </div>
+          <div class="field-group">
+            <label>Estimated Deal Value (£)</label>
+            <input type="number" id="dealValue" placeholder="10000" min="0" />
+          </div>
+          <div class="field-group full-width">
+            <label>Expected Close Date</label>
+            <input type="date" id="closeDate" style="color-scheme:dark;" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 4: Brand & Audience -->
+      <div class="form-section">
+        <h2>Brand &amp; Audience</h2>
+        <div class="field-grid">
+          <div class="field-group full-width">
+            <label>Industry</label>
+            <select id="industry">
+              <option value="">Select industry</option>
+              <option value="Retail">Retail</option>
+              <option value="Financial Services">Financial Services</option>
+              <option value="Healthcare">Healthcare</option>
+              <option value="Property & Real Estate">Property &amp; Real Estate</option>
+              <option value="Automotive">Automotive</option>
+              <option value="Hospitality & Leisure">Hospitality &amp; Leisure</option>
+              <option value="Technology">Technology</option>
+              <option value="Education">Education</option>
+              <option value="Charity & Non-Profit">Charity &amp; Non-Profit</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="field-group full-width">
+            <label>Target Audience Description</label>
+            <textarea id="targetAudience" placeholder="Describe your ideal customer — age, lifestyle, interests…"></textarea>
+          </div>
+          <div class="field-group full-width">
+            <label>Regions of Interest</label>
+            <input type="text" id="regions" placeholder="e.g. Manchester, Leeds, Sheffield" />
+          </div>
+        </div>
+      </div>
+
+      <div id="statusMsg"></div>
+
+      <button type="submit" class="submit-btn" id="submitBtn">SYNC TO HUBSPOT</button>
+    </form>
+  </div>
+
+  <script src="onboarding.js"></script>
+</body>
+</html>

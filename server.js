@@ -4,6 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const { OpenAI } = require('openai');
 const { loadCounts } = require('./groupCounts');
+const { upsertContact } = require('./hubspot');
 
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 const ASSISTANT_ID = process.env.OPENAI_ASSISTANT_ID || 'asst_abc123xyz456';
@@ -55,9 +56,41 @@ async function handleOpenAIRequest(req, res) {
   });
 }
 
+async function handleHubSpotOnboard(req, res) {
+  let body = '';
+  req.on('data', chunk => (body += chunk));
+  req.on('end', async () => {
+    try {
+      const data = JSON.parse(body || '{}');
+      const { firstname, lastname, email, company } = data;
+      if (!firstname || !lastname || !email || !company) {
+        res.writeHead(400, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify({ error: 'firstname, lastname, email and company are required' }));
+        return;
+      }
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        res.writeHead(400, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify({ error: 'Invalid email address' }));
+        return;
+      }
+      const result = await upsertContact(data);
+      res.writeHead(200, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({ success: true, ...result }));
+    } catch (err) {
+      console.error('HubSpot onboard error:', err);
+      res.writeHead(500, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({ error: err.message || 'HubSpot sync failed' }));
+    }
+  });
+}
+
 const server = http.createServer((req, res) => {
   if (req.method === 'POST' && req.url === '/api/openai') {
     handleOpenAIRequest(req, res);
+    return;
+  }
+  if (req.method === 'POST' && req.url === '/api/hubspot/onboard') {
+    handleHubSpotOnboard(req, res);
     return;
   }
   if (req.method === 'GET' && req.url === '/api/groupcounts') {
